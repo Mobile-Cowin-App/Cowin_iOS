@@ -1,6 +1,0 @@
-framework module Pods_Cowin {
-  umbrella header "Pods-Cowin-umbrella.h"
-
-  export *
-  module * { export * }
-}

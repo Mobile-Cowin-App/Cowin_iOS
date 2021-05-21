@@ -14,8 +14,6 @@
 		E3E6B122265784C000CB39CC /* Cowin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3E6B120265784C000CB39CC /* Cowin.xcdatamodeld */; };
 		E3E6B124265784C200CB39CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E6B123265784C200CB39CC /* Assets.xcassets */; };
 		E3E6B127265784C300CB39CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E6B125265784C300CB39CC /* LaunchScreen.storyboard */; };
-		E3E6B132265784C300CB39CC /* CowinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6B131265784C300CB39CC /* CowinTests.swift */; };
-		E3E6B13D265784C300CB39CC /* CowinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6B13C265784C300CB39CC /* CowinUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +44,7 @@
 		E3E6B126265784C300CB39CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3E6B128265784C300CB39CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3E6B12D265784C300CB39CC /* CowinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CowinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3E6B131265784C300CB39CC /* CowinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowinTests.swift; sourceTree = "<group>"; };
-		E3E6B133265784C300CB39CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3E6B138265784C300CB39CC /* CowinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CowinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3E6B13C265784C300CB39CC /* CowinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowinUITests.swift; sourceTree = "<group>"; };
-		E3E6B13E265784C300CB39CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				E3E6B116265784C000CB39CC /* Cowin */,
-				E3E6B130265784C300CB39CC /* CowinTests */,
-				E3E6B13B265784C300CB39CC /* CowinUITests */,
 				E3E6B115265784C000CB39CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,24 +103,6 @@
 				E3E6B120265784C000CB39CC /* Cowin.xcdatamodeld */,
 			);
 			path = Cowin;
-			sourceTree = "<group>";
-		};
-		E3E6B130265784C300CB39CC /* CowinTests */ = {
-			isa = PBXGroup;
-			children = (
-				E3E6B131265784C300CB39CC /* CowinTests.swift */,
-				E3E6B133265784C300CB39CC /* Info.plist */,
-			);
-			path = CowinTests;
-			sourceTree = "<group>";
-		};
-		E3E6B13B265784C300CB39CC /* CowinUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E3E6B13C265784C300CB39CC /* CowinUITests.swift */,
-				E3E6B13E265784C300CB39CC /* Info.plist */,
-			);
-			path = CowinUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E6B132265784C300CB39CC /* CowinTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E6B13D265784C300CB39CC /* CowinUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,7 +4,8 @@
 def cowinapp_inhouse_pods
   
   #Development Pod
-    pod 'CWNetworkSDK', :path => "/Users/anatarajan/Documents/Development/Cowin_iOS"
+    pod 'CWNetworkSDK', :path => "SDKS/"
+    
     
 end
 

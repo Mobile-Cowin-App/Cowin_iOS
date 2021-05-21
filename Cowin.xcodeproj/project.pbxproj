@@ -31,9 +31,12 @@
 		E3BDB69F26582A7E00DC74AE /* CWStatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB69E26582A7E00DC74AE /* CWStatsModel.swift */; };
 		E3BDB6A126582AD100DC74AE /* CWStatsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A026582AD100DC74AE /* CWStatsRouter.swift */; };
 		E3BDB6A426582C9700DC74AE /* CWStatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A326582C9700DC74AE /* CWStatsManager.swift */; };
-		E3BDB6A626582E6400DC74AE /* CWStateDistrictCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A526582E6400DC74AE /* CWStateDistrictCodeModel.swift */; };
-		E3BDB6A826582EB100DC74AE /* CWStateDistrictRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A726582EB100DC74AE /* CWStateDistrictRouter.swift */; };
+		E3BDB6A626582E6400DC74AE /* CWStateDistrictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A526582E6400DC74AE /* CWStateDistrictModel.swift */; };
+		E3BDB6A826582EB100DC74AE /* CWUniqueIDRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A726582EB100DC74AE /* CWUniqueIDRouter.swift */; };
 		E3BDB6AA26582FEE00DC74AE /* CWUniqueIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A926582FEE00DC74AE /* CWUniqueIDManager.swift */; };
+		E3BDB6AD2658322300DC74AE /* CWBeneficiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6AC2658322300DC74AE /* CWBeneficiaryModel.swift */; };
+		E3BDB6AF2658352800DC74AE /* CWMembersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6AE2658352800DC74AE /* CWMembersRouter.swift */; };
+		E3BDB6B2265836D700DC74AE /* CWMembersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6B1265836D700DC74AE /* CWMembersManager.swift */; };
 		E3E6B118265784C000CB39CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6B117265784C000CB39CC /* AppDelegate.swift */; };
 		E3E6B11A265784C000CB39CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6B119265784C000CB39CC /* SceneDelegate.swift */; };
 		E3E6B11F265784C000CB39CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E6B11D265784C000CB39CC /* Main.storyboard */; };
@@ -84,9 +87,12 @@
 		E3BDB69E26582A7E00DC74AE /* CWStatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsModel.swift; sourceTree = "<group>"; };
 		E3BDB6A026582AD100DC74AE /* CWStatsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsRouter.swift; sourceTree = "<group>"; };
 		E3BDB6A326582C9700DC74AE /* CWStatsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsManager.swift; sourceTree = "<group>"; };
-		E3BDB6A526582E6400DC74AE /* CWStateDistrictCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStateDistrictCodeModel.swift; sourceTree = "<group>"; };
-		E3BDB6A726582EB100DC74AE /* CWStateDistrictRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStateDistrictRouter.swift; sourceTree = "<group>"; };
+		E3BDB6A526582E6400DC74AE /* CWStateDistrictModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStateDistrictModel.swift; sourceTree = "<group>"; };
+		E3BDB6A726582EB100DC74AE /* CWUniqueIDRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWUniqueIDRouter.swift; sourceTree = "<group>"; };
 		E3BDB6A926582FEE00DC74AE /* CWUniqueIDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWUniqueIDManager.swift; sourceTree = "<group>"; };
+		E3BDB6AC2658322300DC74AE /* CWBeneficiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWBeneficiaryModel.swift; sourceTree = "<group>"; };
+		E3BDB6AE2658352800DC74AE /* CWMembersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMembersRouter.swift; sourceTree = "<group>"; };
+		E3BDB6B1265836D700DC74AE /* CWMembersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMembersManager.swift; sourceTree = "<group>"; };
 		E3E6B114265784C000CB39CC /* Cowin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cowin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E6B117265784C000CB39CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E6B119265784C000CB39CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,7 +171,8 @@
 			children = (
 				E3BDB69B265824FE00DC74AE /* CWAuthModel.swift */,
 				E3BDB69E26582A7E00DC74AE /* CWStatsModel.swift */,
-				E3BDB6A526582E6400DC74AE /* CWStateDistrictCodeModel.swift */,
+				E3BDB6A526582E6400DC74AE /* CWStateDistrictModel.swift */,
+				E3BDB6AC2658322300DC74AE /* CWBeneficiaryModel.swift */,
 			);
 			path = Decoders;
 			sourceTree = "<group>";
@@ -175,7 +182,8 @@
 			children = (
 				E3BDB69726581F4100DC74AE /* CWAuthRouter.swift */,
 				E3BDB6A026582AD100DC74AE /* CWStatsRouter.swift */,
-				E3BDB6A726582EB100DC74AE /* CWStateDistrictRouter.swift */,
+				E3BDB6A726582EB100DC74AE /* CWUniqueIDRouter.swift */,
+				E3BDB6AE2658352800DC74AE /* CWMembersRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 		E3BDB67D26581CB900DC74AE /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				E3BDB6B0265836CB00DC74AE /* Members */,
 				E3BDB6AB26582FF400DC74AE /* UniqueID */,
 				E3BDB6A226582C8800DC74AE /* Stats */,
 				E3BDB69426581EFA00DC74AE /* Auth */,
@@ -249,6 +258,14 @@
 				E3BDB6A926582FEE00DC74AE /* CWUniqueIDManager.swift */,
 			);
 			path = UniqueID;
+			sourceTree = "<group>";
+		};
+		E3BDB6B0265836CB00DC74AE /* Members */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB6B1265836D700DC74AE /* CWMembersManager.swift */,
+			);
+			path = Members;
 			sourceTree = "<group>";
 		};
 		E3E6B10B265784C000CB39CC = {
@@ -489,7 +506,7 @@
 				E3BDB66C2657F68200DC74AE /* CWOnboardRouter.swift in Sources */,
 				E3BDB69F26582A7E00DC74AE /* CWStatsModel.swift in Sources */,
 				E3BDB6712657F68200DC74AE /* CWOnboardManager.swift in Sources */,
-				E3BDB6A626582E6400DC74AE /* CWStateDistrictCodeModel.swift in Sources */,
+				E3BDB6A626582E6400DC74AE /* CWStateDistrictModel.swift in Sources */,
 				E3E6B118265784C000CB39CC /* AppDelegate.swift in Sources */,
 				E3BDB68226581D1300DC74AE /* CQNetworkUtilities.swift in Sources */,
 				E3BDB68026581CEF00DC74AE /* CWNetworkLogger.swift in Sources */,
@@ -498,18 +515,21 @@
 				E3BDB68C26581DA100DC74AE /* CWNetworkRouter.swift in Sources */,
 				E3BDB68626581D4B00DC74AE /* CWHTTPMethod.swift in Sources */,
 				E3BDB66B2657F68200DC74AE /* CWOnboardPresenter.swift in Sources */,
+				E3BDB6AD2658322300DC74AE /* CWBeneficiaryModel.swift in Sources */,
 				E3BDB6782657F77F00DC74AE /* AppDelegate+Extension.swift in Sources */,
 				E3E6B122265784C000CB39CC /* Cowin.xcdatamodeld in Sources */,
 				E3BDB68A26581D7D00DC74AE /* CWEndPointType.swift in Sources */,
 				E3BDB68F26581E0500DC74AE /* JSONParameterEncoder.swift in Sources */,
+				E3BDB6AF2658352800DC74AE /* CWMembersRouter.swift in Sources */,
 				E3BDB69226581EC900DC74AE /* CWNetworkManager.swift in Sources */,
 				E3BDB69626581F0D00DC74AE /* CWAuthManager.swift in Sources */,
 				E3E6B11A265784C000CB39CC /* SceneDelegate.swift in Sources */,
 				E3BDB66D2657F68200DC74AE /* CWOnboardViewController.swift in Sources */,
 				E3BDB69A2658200800DC74AE /* CWURLConstants.swift in Sources */,
 				E3BDB6AA26582FEE00DC74AE /* CWUniqueIDManager.swift in Sources */,
+				E3BDB6B2265836D700DC74AE /* CWMembersManager.swift in Sources */,
 				E3BDB69826581F4100DC74AE /* CWAuthRouter.swift in Sources */,
-				E3BDB6A826582EB100DC74AE /* CWStateDistrictRouter.swift in Sources */,
+				E3BDB6A826582EB100DC74AE /* CWUniqueIDRouter.swift in Sources */,
 				E3BDB66A2657F68200DC74AE /* CWOnboardConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

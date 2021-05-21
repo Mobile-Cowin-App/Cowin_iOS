@@ -28,4 +28,8 @@ public extension String {
 
       return hash.map { String(format: "%02hhx", $0) }.joined()
   }
+    
+    static var makeEmpty: String {
+        return ""
+    }
 }

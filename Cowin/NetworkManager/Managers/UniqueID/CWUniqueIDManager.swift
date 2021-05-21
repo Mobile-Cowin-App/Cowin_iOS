@@ -9,16 +9,23 @@ import Foundation
 
 extension CWNetworkManager {
     
-    internal func triggerStateID(auth: String, onCompletion result:((CWStateCodeModel? , String?) -> ())? = nil) {
-        uniqueidrouter.request(.getStateID(auth: auth)) { data, response, error in
-            let networkModel = CWNetworkUtilities.getResponseModel(data: data, error: error, response: response, type: CWStateCodeModel.self)
+    internal func triggerStateID(auth: String, onCompletion result:((CWStateModel? , String?) -> ())? = nil) {
+        uniqueidrouter.request(.getStateID) { data, response, error in
+            let networkModel = CWNetworkUtilities.getResponseModel(data: data, error: error, response: response, type: CWStateModel.self)
             result?(networkModel.model , networkModel.error)
         }
     }
     
-    internal func triggerDistrictID(stateID: String , auth: String , onCompletion result:((CWDistrictCodeModel? , String?) -> ())? = nil) {
-        uniqueidrouter.request(.getDistrictID(stateID: stateID, auth: auth)) { data, response, error in
-            let networkModel = CWNetworkUtilities.getResponseModel(data: data, error: error, response: response, type: CWDistrictCodeModel.self)
+    internal func triggerDistrictID(stateID: String , auth: String , onCompletion result:((CWDistrictModel? , String?) -> ())? = nil) {
+        uniqueidrouter.request(.getDistrictID(stateID: stateID)) { data, response, error in
+            let networkModel = CWNetworkUtilities.getResponseModel(data: data, error: error, response: response, type: CWDistrictModel.self)
+            result?(networkModel.model , networkModel.error)
+        }
+    }
+    
+    internal func triggerBeneficiaryID(onCompletion result:((CWBeneficiaryModel? , String?) -> ())? = nil) {
+        uniqueidrouter.request(.getbeneficiary) { data, response, error in
+            let networkModel = CWNetworkUtilities.getResponseModel(data: data, error: error, response: response, type: CWBeneficiaryModel.self)
             result?(networkModel.model , networkModel.error)
         }
     }

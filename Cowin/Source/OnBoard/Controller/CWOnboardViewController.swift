@@ -18,15 +18,14 @@ class CWOnboardViewController: UIViewController {
     
     @IBOutlet var otpField: UITextField!
     
-    var tranxID: String = ""
+    var tranxID: String = .makeEmpty
+    
 	override func viewDidLoad() {
         super.viewDidLoad()
 		// do someting...
         
         self.view.backgroundColor = .secondarySystemBackground
         
-//        self.prepareOTP()
-        self.reportAPI()
     }
     
     @IBAction func otpTaped() {
@@ -43,20 +42,20 @@ extension CWOnboardViewController {
     
     fileprivate func prepareOTP() {
         CWNetworkManager.requester.triggerGenerateOTP(mobile: "8883311311") { otpModel, errorDesc in
-            self.tranxID = otpModel?.txnID ?? ""
+            self.tranxID = otpModel?.txnID ?? .makeEmpty
             print(self.tranxID)
 
         }
     }
     
     fileprivate func validateOTP() {
-        CWNetworkManager.requester.triggerValidateOTP(txnID: self.tranxID, otpValue: otpField.text ?? "") { otpModel, errorDesc in
-            print(otpModel?.token ?? "")
+        CWNetworkManager.requester.triggerValidateOTP(txnID: self.tranxID, otpValue: otpField.text ?? .makeEmpty) { otpModel, errorDesc in
+             
         }
     }
     
     fileprivate func reportAPI() {
-        CWNetworkManager.requester.triggerStatsReport(stateID: "", districtID: "", date: "") { statsModel, errorDesc in
+        CWNetworkManager.requester.triggerStatsReport(stateID: .makeEmpty, districtID: .makeEmpty, date: .makeEmpty) { statsModel, errorDesc in
              
         }
     }

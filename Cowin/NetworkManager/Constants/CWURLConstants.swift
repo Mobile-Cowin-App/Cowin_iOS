@@ -19,6 +19,10 @@ struct CWURLConstants {
         case getReport = "/api/v1/reports/v2/getPublicReports"
         case getStateID = "/api/v2/admin/location/states"
         case getDistrictID = "/api/v2/admin/location/districts/"
+        case getbeneficiaryID = "/api/v2/registration/beneficiary/idTypes"
+        case getGenderID = "/api/v2/registration/beneficiary/genders"
+        case membersList = "/api/v2/appointment/beneficiaries"
+        case addmember = "/api/v2/registration/beneficiary/new"
     }
     
 }

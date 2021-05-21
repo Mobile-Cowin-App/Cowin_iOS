@@ -30,6 +30,10 @@ public struct CWNetworkManager {
     }()
     
     internal let uniqueidrouter = {
-        return CWRouter<CWStateDistrictRouter>()
+        return CWRouter<CWUniqueIDRouter>()
+    }()
+    
+    internal let membersrouter = {
+        return CWRouter<CWMembersRouter>()
     }()
 }

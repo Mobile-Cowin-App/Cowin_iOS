@@ -7,7 +7,7 @@
 
 import Foundation
 // MARK: - CWStateCodeModel
-public struct CWStateCodeModel: Codable {
+public struct CWStateModel: Codable {
     public let states: [State]
     public let ttl: Int
 
@@ -34,7 +34,7 @@ public struct State: Codable {
 }
 
 // MARK: - CWDistrictCodeModel
-public struct CWDistrictCodeModel: Codable {
+public struct CWDistrictModel: Codable {
     public let districts: [District]
     public let ttl: Int
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ICWOnboardInteractor: class {
+protocol ICWOnboardInteractor: AnyObject {
 	var parameters: [String: Any]? { get set }
 }
 

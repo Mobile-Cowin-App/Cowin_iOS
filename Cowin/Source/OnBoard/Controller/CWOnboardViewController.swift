@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ICWOnboardViewController: class {
+protocol ICWOnboardViewController: AnyObject {
 	var router: ICWOnboardRouter? { get set }
 }
 
@@ -57,7 +57,7 @@ extension CWOnboardViewController {
     
     fileprivate func reportAPI() {
         CWNetworkManager.requester.triggerStatsReport(stateID: "", districtID: "", date: "") { statsModel, errorDesc in
-            print(statsModel)
+             
         }
     }
     

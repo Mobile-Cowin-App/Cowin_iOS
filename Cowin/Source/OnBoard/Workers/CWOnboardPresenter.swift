@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ICWOnboardPresenter: class {
+protocol ICWOnboardPresenter: AnyObject {
 	// do someting...
 }
 

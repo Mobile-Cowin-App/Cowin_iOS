@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ICWOnboardRouter: class {
+protocol ICWOnboardRouter: AnyObject {
 	// do someting...
 }
 

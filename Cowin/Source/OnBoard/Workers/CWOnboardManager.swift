@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ICWOnboardManager: class {
+protocol ICWOnboardManager: AnyObject {
 	// do someting...
 }
 

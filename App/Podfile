@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+def cowinapp_inhouse_pods
+  
+  #Development Pod
+    pod 'CWNetworkSDK', :path => "/Users/anatarajan/Documents/Development/Cowin_iOS"
+    
+end
+
+target 'Cowin' do
+  use_frameworks!
+  cowinapp_inhouse_pods
+end
+

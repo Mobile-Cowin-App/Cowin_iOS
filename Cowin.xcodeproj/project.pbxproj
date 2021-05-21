@@ -7,9 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3BDB66A2657F68200DC74AE /* CWOnboardConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6622657F68200DC74AE /* CWOnboardConfiguration.swift */; };
+		E3BDB66B2657F68200DC74AE /* CWOnboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6632657F68200DC74AE /* CWOnboardPresenter.swift */; };
+		E3BDB66C2657F68200DC74AE /* CWOnboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6642657F68200DC74AE /* CWOnboardRouter.swift */; };
+		E3BDB66D2657F68200DC74AE /* CWOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6652657F68200DC74AE /* CWOnboardViewController.swift */; };
+		E3BDB66E2657F68200DC74AE /* CWOnboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6662657F68200DC74AE /* CWOnboardInteractor.swift */; };
+		E3BDB6712657F68200DC74AE /* CWOnboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6692657F68200DC74AE /* CWOnboardManager.swift */; };
+		E3BDB6762657F73D00DC74AE /* CWUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6752657F73D00DC74AE /* CWUtility.swift */; };
+		E3BDB6782657F77F00DC74AE /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6772657F77F00DC74AE /* AppDelegate+Extension.swift */; };
+		E3BDB68026581CEF00DC74AE /* CWNetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB67F26581CEF00DC74AE /* CWNetworkLogger.swift */; };
+		E3BDB68226581D1300DC74AE /* CQNetworkUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB68126581D1300DC74AE /* CQNetworkUtilities.swift */; };
+		E3BDB68626581D4B00DC74AE /* CWHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB68526581D4B00DC74AE /* CWHTTPMethod.swift */; };
+		E3BDB68826581D6400DC74AE /* CWHttpTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB68726581D6400DC74AE /* CWHttpTask.swift */; };
+		E3BDB68A26581D7D00DC74AE /* CWEndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB68926581D7D00DC74AE /* CWEndPointType.swift */; };
+		E3BDB68C26581DA100DC74AE /* CWNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB68B26581DA100DC74AE /* CWNetworkRouter.swift */; };
+		E3BDB68F26581E0500DC74AE /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB68D26581E0500DC74AE /* JSONParameterEncoder.swift */; };
+		E3BDB69026581E0500DC74AE /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB68E26581E0500DC74AE /* URLParameterEncoder.swift */; };
+		E3BDB69226581EC900DC74AE /* CWNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB69126581EC900DC74AE /* CWNetworkManager.swift */; };
+		E3BDB69626581F0D00DC74AE /* CWAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB69526581F0D00DC74AE /* CWAuthManager.swift */; };
+		E3BDB69826581F4100DC74AE /* CWAuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB69726581F4100DC74AE /* CWAuthRouter.swift */; };
+		E3BDB69A2658200800DC74AE /* CWURLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6992658200800DC74AE /* CWURLConstants.swift */; };
+		E3BDB69C265824FE00DC74AE /* CWAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB69B265824FE00DC74AE /* CWAuthModel.swift */; };
+		E3BDB69F26582A7E00DC74AE /* CWStatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB69E26582A7E00DC74AE /* CWStatsModel.swift */; };
+		E3BDB6A126582AD100DC74AE /* CWStatsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A026582AD100DC74AE /* CWStatsRouter.swift */; };
+		E3BDB6A426582C9700DC74AE /* CWStatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A326582C9700DC74AE /* CWStatsManager.swift */; };
+		E3BDB6A626582E6400DC74AE /* CWStateDistrictCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A526582E6400DC74AE /* CWStateDistrictCodeModel.swift */; };
+		E3BDB6A826582EB100DC74AE /* CWStateDistrictRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A726582EB100DC74AE /* CWStateDistrictRouter.swift */; };
+		E3BDB6AA26582FEE00DC74AE /* CWUniqueIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6A926582FEE00DC74AE /* CWUniqueIDManager.swift */; };
 		E3E6B118265784C000CB39CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6B117265784C000CB39CC /* AppDelegate.swift */; };
 		E3E6B11A265784C000CB39CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6B119265784C000CB39CC /* SceneDelegate.swift */; };
-		E3E6B11C265784C000CB39CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6B11B265784C000CB39CC /* ViewController.swift */; };
 		E3E6B11F265784C000CB39CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E6B11D265784C000CB39CC /* Main.storyboard */; };
 		E3E6B122265784C000CB39CC /* Cowin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3E6B120265784C000CB39CC /* Cowin.xcdatamodeld */; };
 		E3E6B124265784C200CB39CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E6B123265784C200CB39CC /* Assets.xcassets */; };
@@ -34,10 +60,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E3BDB6622657F68200DC74AE /* CWOnboardConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardConfiguration.swift; sourceTree = "<group>"; };
+		E3BDB6632657F68200DC74AE /* CWOnboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardPresenter.swift; sourceTree = "<group>"; };
+		E3BDB6642657F68200DC74AE /* CWOnboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardRouter.swift; sourceTree = "<group>"; };
+		E3BDB6652657F68200DC74AE /* CWOnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardViewController.swift; sourceTree = "<group>"; };
+		E3BDB6662657F68200DC74AE /* CWOnboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardInteractor.swift; sourceTree = "<group>"; };
+		E3BDB6692657F68200DC74AE /* CWOnboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardManager.swift; sourceTree = "<group>"; };
+		E3BDB6752657F73D00DC74AE /* CWUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWUtility.swift; sourceTree = "<group>"; };
+		E3BDB6772657F77F00DC74AE /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
+		E3BDB67F26581CEF00DC74AE /* CWNetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWNetworkLogger.swift; sourceTree = "<group>"; };
+		E3BDB68126581D1300DC74AE /* CQNetworkUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQNetworkUtilities.swift; sourceTree = "<group>"; };
+		E3BDB68526581D4B00DC74AE /* CWHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHTTPMethod.swift; sourceTree = "<group>"; };
+		E3BDB68726581D6400DC74AE /* CWHttpTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHttpTask.swift; sourceTree = "<group>"; };
+		E3BDB68926581D7D00DC74AE /* CWEndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWEndPointType.swift; sourceTree = "<group>"; };
+		E3BDB68B26581DA100DC74AE /* CWNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWNetworkRouter.swift; sourceTree = "<group>"; };
+		E3BDB68D26581E0500DC74AE /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		E3BDB68E26581E0500DC74AE /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		E3BDB69126581EC900DC74AE /* CWNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWNetworkManager.swift; sourceTree = "<group>"; };
+		E3BDB69526581F0D00DC74AE /* CWAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWAuthManager.swift; sourceTree = "<group>"; };
+		E3BDB69726581F4100DC74AE /* CWAuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWAuthRouter.swift; sourceTree = "<group>"; };
+		E3BDB6992658200800DC74AE /* CWURLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWURLConstants.swift; sourceTree = "<group>"; };
+		E3BDB69B265824FE00DC74AE /* CWAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWAuthModel.swift; sourceTree = "<group>"; };
+		E3BDB69E26582A7E00DC74AE /* CWStatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsModel.swift; sourceTree = "<group>"; };
+		E3BDB6A026582AD100DC74AE /* CWStatsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsRouter.swift; sourceTree = "<group>"; };
+		E3BDB6A326582C9700DC74AE /* CWStatsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsManager.swift; sourceTree = "<group>"; };
+		E3BDB6A526582E6400DC74AE /* CWStateDistrictCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStateDistrictCodeModel.swift; sourceTree = "<group>"; };
+		E3BDB6A726582EB100DC74AE /* CWStateDistrictRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStateDistrictRouter.swift; sourceTree = "<group>"; };
+		E3BDB6A926582FEE00DC74AE /* CWUniqueIDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWUniqueIDManager.swift; sourceTree = "<group>"; };
 		E3E6B114265784C000CB39CC /* Cowin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cowin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E6B117265784C000CB39CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E6B119265784C000CB39CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E3E6B11B265784C000CB39CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E3E6B11E265784C000CB39CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3E6B121265784C000CB39CC /* Cowin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cowin.xcdatamodel; sourceTree = "<group>"; };
 		E3E6B123265784C200CB39CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +124,133 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3BDB6722657F69E00DC74AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB6652657F68200DC74AE /* CWOnboardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3BDB6732657F6A500DC74AE /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB6622657F68200DC74AE /* CWOnboardConfiguration.swift */,
+			);
+			path = Initializer;
+			sourceTree = "<group>";
+		};
+		E3BDB6742657F6AE00DC74AE /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB6632657F68200DC74AE /* CWOnboardPresenter.swift */,
+				E3BDB6642657F68200DC74AE /* CWOnboardRouter.swift */,
+				E3BDB6662657F68200DC74AE /* CWOnboardInteractor.swift */,
+				E3BDB6692657F68200DC74AE /* CWOnboardManager.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		E3BDB67926581C8700DC74AE /* Encoders */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB68D26581E0500DC74AE /* JSONParameterEncoder.swift */,
+				E3BDB68E26581E0500DC74AE /* URLParameterEncoder.swift */,
+			);
+			path = Encoders;
+			sourceTree = "<group>";
+		};
+		E3BDB67A26581C9000DC74AE /* Decoders */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB69B265824FE00DC74AE /* CWAuthModel.swift */,
+				E3BDB69E26582A7E00DC74AE /* CWStatsModel.swift */,
+				E3BDB6A526582E6400DC74AE /* CWStateDistrictCodeModel.swift */,
+			);
+			path = Decoders;
+			sourceTree = "<group>";
+		};
+		E3BDB67B26581C9A00DC74AE /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB69726581F4100DC74AE /* CWAuthRouter.swift */,
+				E3BDB6A026582AD100DC74AE /* CWStatsRouter.swift */,
+				E3BDB6A726582EB100DC74AE /* CWStateDistrictRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		E3BDB67C26581CA300DC74AE /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB68126581D1300DC74AE /* CQNetworkUtilities.swift */,
+				E3BDB68926581D7D00DC74AE /* CWEndPointType.swift */,
+				E3BDB68526581D4B00DC74AE /* CWHTTPMethod.swift */,
+				E3BDB68726581D6400DC74AE /* CWHttpTask.swift */,
+				E3BDB68B26581DA100DC74AE /* CWNetworkRouter.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		E3BDB67D26581CB900DC74AE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB6AB26582FF400DC74AE /* UniqueID */,
+				E3BDB6A226582C8800DC74AE /* Stats */,
+				E3BDB69426581EFA00DC74AE /* Auth */,
+				E3BDB69326581EEC00DC74AE /* Core */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E3BDB67E26581CCF00DC74AE /* Loggers */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB67F26581CEF00DC74AE /* CWNetworkLogger.swift */,
+			);
+			path = Loggers;
+			sourceTree = "<group>";
+		};
+		E3BDB69326581EEC00DC74AE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB69126581EC900DC74AE /* CWNetworkManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E3BDB69426581EFA00DC74AE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB69526581F0D00DC74AE /* CWAuthManager.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E3BDB69D265827AE00DC74AE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB6992658200800DC74AE /* CWURLConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E3BDB6A226582C8800DC74AE /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB6A326582C9700DC74AE /* CWStatsManager.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		E3BDB6AB26582FF400DC74AE /* UniqueID */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB6A926582FEE00DC74AE /* CWUniqueIDManager.swift */,
+			);
+			path = UniqueID;
+			sourceTree = "<group>";
+		};
 		E3E6B10B265784C000CB39CC = {
 			isa = PBXGroup;
 			children = (
@@ -93,16 +272,83 @@
 		E3E6B116265784C000CB39CC /* Cowin */ = {
 			isa = PBXGroup;
 			children = (
-				E3E6B117265784C000CB39CC /* AppDelegate.swift */,
-				E3E6B119265784C000CB39CC /* SceneDelegate.swift */,
-				E3E6B11B265784C000CB39CC /* ViewController.swift */,
-				E3E6B11D265784C000CB39CC /* Main.storyboard */,
-				E3E6B123265784C200CB39CC /* Assets.xcassets */,
-				E3E6B125265784C300CB39CC /* LaunchScreen.storyboard */,
-				E3E6B128265784C300CB39CC /* Info.plist */,
-				E3E6B120265784C000CB39CC /* Cowin.xcdatamodeld */,
+				E3E6B14B2657F54E00CB39CC /* Source */,
+				E3E6B14A2657F54200CB39CC /* NetworkManager */,
+				E3E6B14C2657F56000CB39CC /* Utilities */,
 			);
 			path = Cowin;
+			sourceTree = "<group>";
+		};
+		E3E6B14A2657F54200CB39CC /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB69D265827AE00DC74AE /* Constants */,
+				E3BDB67E26581CCF00DC74AE /* Loggers */,
+				E3BDB67D26581CB900DC74AE /* Managers */,
+				E3BDB67C26581CA300DC74AE /* Others */,
+				E3BDB67B26581C9A00DC74AE /* Routers */,
+				E3BDB67A26581C9000DC74AE /* Decoders */,
+				E3BDB67926581C8700DC74AE /* Encoders */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		E3E6B14B2657F54E00CB39CC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E3E6B1502657F5B500CB39CC /* OnBoard */,
+				E3E6B14F2657F59E00CB39CC /* AppDelegate */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E3E6B14C2657F56000CB39CC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E3E6B14E2657F58000CB39CC /* Database */,
+				E3E6B128265784C300CB39CC /* Info.plist */,
+				E3E6B123265784C200CB39CC /* Assets.xcassets */,
+				E3E6B14D2657F56900CB39CC /* StoryBoard */,
+				E3BDB6752657F73D00DC74AE /* CWUtility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E3E6B14D2657F56900CB39CC /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E3E6B125265784C300CB39CC /* LaunchScreen.storyboard */,
+				E3E6B11D265784C000CB39CC /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		E3E6B14E2657F58000CB39CC /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				E3E6B120265784C000CB39CC /* Cowin.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		E3E6B14F2657F59E00CB39CC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E3E6B119265784C000CB39CC /* SceneDelegate.swift */,
+				E3E6B117265784C000CB39CC /* AppDelegate.swift */,
+				E3BDB6772657F77F00DC74AE /* AppDelegate+Extension.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E3E6B1502657F5B500CB39CC /* OnBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDB6732657F6A500DC74AE /* Initializer */,
+				E3BDB6722657F69E00DC74AE /* Controller */,
+				E3BDB6742657F6AE00DC74AE /* Workers */,
+			);
+			path = OnBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,10 +481,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E6B11C265784C000CB39CC /* ViewController.swift in Sources */,
+				E3BDB69026581E0500DC74AE /* URLParameterEncoder.swift in Sources */,
+				E3BDB69C265824FE00DC74AE /* CWAuthModel.swift in Sources */,
+				E3BDB6A426582C9700DC74AE /* CWStatsManager.swift in Sources */,
+				E3BDB6A126582AD100DC74AE /* CWStatsRouter.swift in Sources */,
+				E3BDB66E2657F68200DC74AE /* CWOnboardInteractor.swift in Sources */,
+				E3BDB66C2657F68200DC74AE /* CWOnboardRouter.swift in Sources */,
+				E3BDB69F26582A7E00DC74AE /* CWStatsModel.swift in Sources */,
+				E3BDB6712657F68200DC74AE /* CWOnboardManager.swift in Sources */,
+				E3BDB6A626582E6400DC74AE /* CWStateDistrictCodeModel.swift in Sources */,
 				E3E6B118265784C000CB39CC /* AppDelegate.swift in Sources */,
+				E3BDB68226581D1300DC74AE /* CQNetworkUtilities.swift in Sources */,
+				E3BDB68026581CEF00DC74AE /* CWNetworkLogger.swift in Sources */,
+				E3BDB6762657F73D00DC74AE /* CWUtility.swift in Sources */,
+				E3BDB68826581D6400DC74AE /* CWHttpTask.swift in Sources */,
+				E3BDB68C26581DA100DC74AE /* CWNetworkRouter.swift in Sources */,
+				E3BDB68626581D4B00DC74AE /* CWHTTPMethod.swift in Sources */,
+				E3BDB66B2657F68200DC74AE /* CWOnboardPresenter.swift in Sources */,
+				E3BDB6782657F77F00DC74AE /* AppDelegate+Extension.swift in Sources */,
 				E3E6B122265784C000CB39CC /* Cowin.xcdatamodeld in Sources */,
+				E3BDB68A26581D7D00DC74AE /* CWEndPointType.swift in Sources */,
+				E3BDB68F26581E0500DC74AE /* JSONParameterEncoder.swift in Sources */,
+				E3BDB69226581EC900DC74AE /* CWNetworkManager.swift in Sources */,
+				E3BDB69626581F0D00DC74AE /* CWAuthManager.swift in Sources */,
 				E3E6B11A265784C000CB39CC /* SceneDelegate.swift in Sources */,
+				E3BDB66D2657F68200DC74AE /* CWOnboardViewController.swift in Sources */,
+				E3BDB69A2658200800DC74AE /* CWURLConstants.swift in Sources */,
+				E3BDB6AA26582FEE00DC74AE /* CWUniqueIDManager.swift in Sources */,
+				E3BDB69826581F4100DC74AE /* CWAuthRouter.swift in Sources */,
+				E3BDB6A826582EB100DC74AE /* CWStateDistrictRouter.swift in Sources */,
+				E3BDB66A2657F68200DC74AE /* CWOnboardConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,14 +685,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45325HKZCH;
-				INFOPLIST_FILE = Cowin/Info.plist;
+				DEVELOPMENT_TEAM = 54HSWPSU32;
+				INFOPLIST_FILE = Cowin/Utilities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Cowin.Cowin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.cowinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,14 +705,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45325HKZCH;
-				INFOPLIST_FILE = Cowin/Info.plist;
+				DEVELOPMENT_TEAM = 54HSWPSU32;
+				INFOPLIST_FILE = Cowin/Utilities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Cowin.Cowin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.cowinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

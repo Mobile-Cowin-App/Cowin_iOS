@@ -21,7 +21,7 @@ class CWOnboardChildViewController: UIViewController {
     }
     
     fileprivate func prepareContentView() {
-        let contentView = CWOnboardContentView.fromNib()
+        let contentView = CWOnboardContentView.loadFromXib()
         self.view.addSubview(contentView)
         
         let image = UIImage(named: images[index])

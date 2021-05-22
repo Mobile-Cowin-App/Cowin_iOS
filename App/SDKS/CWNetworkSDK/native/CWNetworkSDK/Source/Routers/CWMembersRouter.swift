@@ -9,6 +9,7 @@ import Foundation
 enum CWMembersRouter {
     case membersList(auth: String)
     case addMembers(auth: String , body: Parameters)
+    case removeMember(auth: String , body: Parameters)
 }
 
 extension CWMembersRouter: CWEndPointType {
@@ -22,6 +23,8 @@ extension CWMembersRouter: CWEndPointType {
             return CWURLConstants.Service.membersList.rawValue
         case .addMembers:
             return CWURLConstants.Service.addmember.rawValue
+        case .removeMember:
+            return CWURLConstants.Service.removemember.rawValue
         }
     }
     
@@ -41,6 +44,10 @@ extension CWMembersRouter: CWEndPointType {
             return .requestParametersAndHeaders(bodyParameters: nil, urlParameters: nil, additionalHeaders: header)
        
         case let .addMembers(auth: authtocken, body: bodyParams):
+            let header = ["authorization": authtocken]
+            return .requestParametersAndHeaders(bodyParameters: bodyParams, urlParameters: nil, additionalHeaders: header)
+            
+        case let .removeMember(auth: authtocken, body: bodyParams):
             let header = ["authorization": authtocken]
             return .requestParametersAndHeaders(bodyParameters: bodyParams, urlParameters: nil, additionalHeaders: header)
         }

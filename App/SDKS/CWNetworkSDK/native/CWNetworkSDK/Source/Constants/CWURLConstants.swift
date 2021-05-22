@@ -23,6 +23,12 @@ struct CWURLConstants {
         case getGenderID = "/api/v2/registration/beneficiary/genders"
         case membersList = "/api/v2/appointment/beneficiaries"
         case addmember = "/api/v2/registration/beneficiary/new"
+        case removemember = "/api/v2/registration/beneficiary/delete"
+        case getSlotsByDistrict = "/api/v2/appointment/sessions/public/findByDistrict"
+        case getSlotsByPinCode = "/api/v2/appointment/sessions/public/calendarByPin"
+        case scheduleAppointment = "/api/v2/appointment/schedule"
+        case cancelAppointment = "/api/v2/appointment/cancel"
+        case getCaptcha = "/api/v2/auth/getRecaptcha"
     }
     
 }

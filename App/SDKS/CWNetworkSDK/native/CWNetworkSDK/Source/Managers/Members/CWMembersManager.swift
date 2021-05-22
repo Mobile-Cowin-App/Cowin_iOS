@@ -34,4 +34,12 @@ extension CWNetworkManager {
         }
     }
     
+    public func triggerRemoveFamilyMember(auth: String , memberID: String, onCompletion result:((Bool , String?) -> ())? = nil) -> Void {
+        
+        let body = ["beneficiary_reference_id":  memberID] as [String : Any]
+        membersrouter.request(.removeMember(auth: auth, body: body)) { data, response, error in
+            result?(error == nil , error.debugDescription)
+        }
+    }
+    
 }

@@ -36,4 +36,8 @@ public struct CWNetworkManager {
     internal let membersrouter = {
         return CWRouter<CWMembersRouter>()
     }()
+    
+    internal let vaccinnationrouter = {
+        return CWRouter<CWVaccineRouter>()
+    }()
 }

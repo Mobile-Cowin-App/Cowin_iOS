@@ -11,7 +11,7 @@ import HelperKit
 
 class CWOnboardChildViewController: UIViewController {
     
-    var images = ["splash3" , "splash3" , "splash3" , "splash3"]
+    var images = ["onboard1" , "onboard2" , "onboard3" , "onboard2"]
     var primaryContents = [CWStringConstant.onBoarding.registerPrimary.rawValue,
                            CWStringConstant.onBoarding.locationPrimary.rawValue,
                            CWStringConstant.onBoarding.confirmSlotPrimary.rawValue,

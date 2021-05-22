@@ -119,8 +119,8 @@ extension CWOnboardViewController {
         self.topPageControlHolderView.backgroundColor = .clear
         pageControl.numberOfPages = 4
         pageControl.radius = 4
-        pageControl.tintColor = .white
-        pageControl.currentPageTintColor = .white
+        pageControl.tintColor = .systemBlue
+        pageControl.currentPageTintColor = .systemBlue
         pageControl.padding = 6
         self.topPageControlHolderView.addSubview(pageControl)
         pageControl.g_pinEdges()

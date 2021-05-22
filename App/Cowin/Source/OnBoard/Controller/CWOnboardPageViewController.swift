@@ -38,7 +38,7 @@ class CWOnboardPageViewController: UIPageViewController {
     }
     
     fileprivate func createCarouselItemControler(index: Int) -> UIViewController {
-        let controller = CWUtility.getController("Main", "CWOnboardChildViewController", type: CWOnboardChildViewController.self)
+        let controller = CWUtility.getController("OnBoard", "CWOnboardChildViewController", type: CWOnboardChildViewController.self)
         controller.index = index
        return controller
     }

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboard View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CWOnboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CWOnboardViewController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnC-AP-sxn">
+                                <rect key="frame" x="0.0" y="104" width="414" height="648"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLu-xC-eqH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="648"/>
+                                        <connections>
+                                            <segue destination="XHk-ot-CkA" kind="embed" id="hOw-gj-fkp"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="uLu-xC-eqH" secondAttribute="bottom" id="Do6-S9-cOl"/>
+                                    <constraint firstAttribute="trailing" secondItem="uLu-xC-eqH" secondAttribute="trailing" id="bgN-qb-2xP"/>
+                                    <constraint firstItem="uLu-xC-eqH" firstAttribute="leading" secondItem="SnC-AP-sxn" secondAttribute="leading" id="miU-IR-1Il"/>
+                                    <constraint firstItem="uLu-xC-eqH" firstAttribute="top" secondItem="SnC-AP-sxn" secondAttribute="top" id="yFq-OM-8a0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdq-Ya-i09">
+                                <rect key="frame" x="10" y="54" width="394" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vjW-Ss-ACp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3y-U2-zzO">
+                                <rect key="frame" x="177" y="782" width="60" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lU9-gq-LMZ">
+                                        <rect key="frame" x="15" y="15" width="30" height="30"/>
+                                        <state key="normal" title="-&gt;"/>
+                                        <connections>
+                                            <action selector="showLoginScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="peO-aD-rC2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="6XS-C0-rI7"/>
+                                    <constraint firstItem="lU9-gq-LMZ" firstAttribute="centerY" secondItem="T3y-U2-zzO" secondAttribute="centerY" id="KOu-FL-i26"/>
+                                    <constraint firstItem="lU9-gq-LMZ" firstAttribute="centerX" secondItem="T3y-U2-zzO" secondAttribute="centerX" id="ShJ-jp-roh"/>
+                                    <constraint firstAttribute="height" constant="60" id="fXz-rY-8hs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SnC-AP-sxn" secondAttribute="trailing" id="4y6-Ry-a6P"/>
+                            <constraint firstItem="SnC-AP-sxn" firstAttribute="top" secondItem="jdq-Ya-i09" secondAttribute="bottom" constant="20" id="69v-Jt-kw9"/>
+                            <constraint firstItem="jdq-Ya-i09" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="MZR-S9-Q9A"/>
+                            <constraint firstItem="T3y-U2-zzO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NQM-vv-486"/>
+                            <constraint firstItem="jdq-Ya-i09" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="PtQ-ds-SnM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jdq-Ya-i09" secondAttribute="trailing" constant="10" id="Zth-Vo-wpG"/>
+                            <constraint firstItem="T3y-U2-zzO" firstAttribute="top" secondItem="SnC-AP-sxn" secondAttribute="bottom" constant="30" id="gqo-cf-BUe"/>
+                            <constraint firstItem="T3y-U2-zzO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="lce-O5-Y1e"/>
+                            <constraint firstItem="SnC-AP-sxn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xE8-D6-pyi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="uLu-xC-eqH" id="FOK-Kz-ZSk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="11"/>
+        </scene>
+        <!--Onboard Page View Controller-->
+        <scene sceneID="w6Z-ew-yrw">
+            <objects>
+                <pageViewController storyboardIdentifier="CWOnboardPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="XHk-ot-CkA" customClass="CWOnboardPageViewController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMw-jT-V8z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="-14"/>
+        </scene>
+        <!--Onboard Child View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CWOnboardChildViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CWOnboardChildViewController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741" y="112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

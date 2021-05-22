@@ -10,7 +10,7 @@ import UIKit
 
 class CWOnboardConfiguration {
     static func setup(parameters: [String: Any] = [:]) -> CWOnboardViewController {
-        let controller = CWUtility.getController("Main", "CWOnboardViewController", type: CWOnboardViewController.self)
+        let controller = CWUtility.getController("OnBoard", "CWOnboardViewController", type: CWOnboardViewController.self)
         let router = CWOnboardRouter(view: controller)
         let presenter = CWOnboardPresenter(view: controller)
         let manager = CWOnboardManager()

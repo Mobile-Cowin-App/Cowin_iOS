@@ -17,6 +17,8 @@ class CWHomeViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 		// do someting...
+        
+        self.title = "HOME"
     }
 }
 

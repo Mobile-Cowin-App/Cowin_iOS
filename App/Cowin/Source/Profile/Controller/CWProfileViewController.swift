@@ -17,6 +17,8 @@ class CWProfileViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 		// do someting...
+        
+        self.title = "PROFILE"
     }
 }
 

@@ -39,32 +39,24 @@
 		E3EDA55F26590F7C00E9943D /* CWHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA55726590F7C00E9943D /* CWHomeRouter.swift */; };
 		E3EDA56026590F7C00E9943D /* CWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA55826590F7C00E9943D /* CWHomeViewController.swift */; };
 		E3EDA56126590F7C00E9943D /* CWHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA55926590F7C00E9943D /* CWHomeInteractor.swift */; };
-		E3EDA56226590F7C00E9943D /* CWHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA55A26590F7C00E9943D /* CWHomeModel.swift */; };
-		E3EDA56326590F7C00E9943D /* CWHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA55B26590F7C00E9943D /* CWHomeViewController.xib */; };
 		E3EDA56426590F7C00E9943D /* CWHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA55C26590F7C00E9943D /* CWHomeManager.swift */; };
 		E3EDA56E26590FAC00E9943D /* CWStatsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA56626590FAC00E9943D /* CWStatsConfiguration.swift */; };
 		E3EDA56F26590FAC00E9943D /* CWStatsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA56726590FAC00E9943D /* CWStatsPresenter.swift */; };
 		E3EDA57026590FAC00E9943D /* CWStatsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA56826590FAC00E9943D /* CWStatsRouter.swift */; };
 		E3EDA57126590FAC00E9943D /* CWStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA56926590FAC00E9943D /* CWStatsViewController.swift */; };
 		E3EDA57226590FAC00E9943D /* CWStatsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA56A26590FAC00E9943D /* CWStatsInteractor.swift */; };
-		E3EDA57326590FAC00E9943D /* CWStatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA56B26590FAC00E9943D /* CWStatsModel.swift */; };
-		E3EDA57426590FAC00E9943D /* CWStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA56C26590FAC00E9943D /* CWStatsViewController.xib */; };
 		E3EDA57526590FAC00E9943D /* CWStatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA56D26590FAC00E9943D /* CWStatsManager.swift */; };
 		E3EDA57F26590FD500E9943D /* CWBookingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA57726590FD500E9943D /* CWBookingConfiguration.swift */; };
 		E3EDA58026590FD500E9943D /* CWBookingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA57826590FD500E9943D /* CWBookingPresenter.swift */; };
 		E3EDA58126590FD500E9943D /* CWBookingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA57926590FD500E9943D /* CWBookingRouter.swift */; };
 		E3EDA58226590FD500E9943D /* CWBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA57A26590FD500E9943D /* CWBookingViewController.swift */; };
 		E3EDA58326590FD500E9943D /* CWBookingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA57B26590FD500E9943D /* CWBookingInteractor.swift */; };
-		E3EDA58426590FD500E9943D /* CWBookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA57C26590FD500E9943D /* CWBookingModel.swift */; };
-		E3EDA58526590FD500E9943D /* CWBookingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA57D26590FD500E9943D /* CWBookingViewController.xib */; };
 		E3EDA58626590FD500E9943D /* CWBookingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA57E26590FD500E9943D /* CWBookingManager.swift */; };
 		E3EDA5902659100400E9943D /* CWProfileConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA5882659100400E9943D /* CWProfileConfiguration.swift */; };
 		E3EDA5912659100400E9943D /* CWProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA5892659100400E9943D /* CWProfilePresenter.swift */; };
 		E3EDA5922659100400E9943D /* CWProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA58A2659100400E9943D /* CWProfileRouter.swift */; };
 		E3EDA5932659100400E9943D /* CWProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA58B2659100400E9943D /* CWProfileViewController.swift */; };
 		E3EDA5942659100400E9943D /* CWProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA58C2659100400E9943D /* CWProfileInteractor.swift */; };
-		E3EDA5952659100400E9943D /* CWProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA58D2659100400E9943D /* CWProfileModel.swift */; };
-		E3EDA5962659100400E9943D /* CWProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA58E2659100400E9943D /* CWProfileViewController.xib */; };
 		E3EDA5972659100400E9943D /* CWProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA58F2659100400E9943D /* CWProfileManager.swift */; };
 		E3EDA5992659104300E9943D /* CWBaseTabViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA5982659104300E9943D /* CWBaseTabViewConfiguration.swift */; };
 		E3EDA59B265910E500E9943D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA59A265910E500E9943D /* Home.storyboard */; };
@@ -129,32 +121,24 @@
 		E3EDA55726590F7C00E9943D /* CWHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomeRouter.swift; sourceTree = "<group>"; };
 		E3EDA55826590F7C00E9943D /* CWHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomeViewController.swift; sourceTree = "<group>"; };
 		E3EDA55926590F7C00E9943D /* CWHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomeInteractor.swift; sourceTree = "<group>"; };
-		E3EDA55A26590F7C00E9943D /* CWHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomeModel.swift; sourceTree = "<group>"; };
-		E3EDA55B26590F7C00E9943D /* CWHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomeViewController.xib; sourceTree = "<group>"; };
 		E3EDA55C26590F7C00E9943D /* CWHomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomeManager.swift; sourceTree = "<group>"; };
 		E3EDA56626590FAC00E9943D /* CWStatsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsConfiguration.swift; sourceTree = "<group>"; };
 		E3EDA56726590FAC00E9943D /* CWStatsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsPresenter.swift; sourceTree = "<group>"; };
 		E3EDA56826590FAC00E9943D /* CWStatsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsRouter.swift; sourceTree = "<group>"; };
 		E3EDA56926590FAC00E9943D /* CWStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsViewController.swift; sourceTree = "<group>"; };
 		E3EDA56A26590FAC00E9943D /* CWStatsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsInteractor.swift; sourceTree = "<group>"; };
-		E3EDA56B26590FAC00E9943D /* CWStatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsModel.swift; sourceTree = "<group>"; };
-		E3EDA56C26590FAC00E9943D /* CWStatsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWStatsViewController.xib; sourceTree = "<group>"; };
 		E3EDA56D26590FAC00E9943D /* CWStatsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStatsManager.swift; sourceTree = "<group>"; };
 		E3EDA57726590FD500E9943D /* CWBookingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWBookingConfiguration.swift; sourceTree = "<group>"; };
 		E3EDA57826590FD500E9943D /* CWBookingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWBookingPresenter.swift; sourceTree = "<group>"; };
 		E3EDA57926590FD500E9943D /* CWBookingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWBookingRouter.swift; sourceTree = "<group>"; };
 		E3EDA57A26590FD500E9943D /* CWBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWBookingViewController.swift; sourceTree = "<group>"; };
 		E3EDA57B26590FD500E9943D /* CWBookingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWBookingInteractor.swift; sourceTree = "<group>"; };
-		E3EDA57C26590FD500E9943D /* CWBookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWBookingModel.swift; sourceTree = "<group>"; };
-		E3EDA57D26590FD500E9943D /* CWBookingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWBookingViewController.xib; sourceTree = "<group>"; };
 		E3EDA57E26590FD500E9943D /* CWBookingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWBookingManager.swift; sourceTree = "<group>"; };
 		E3EDA5882659100400E9943D /* CWProfileConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWProfileConfiguration.swift; sourceTree = "<group>"; };
 		E3EDA5892659100400E9943D /* CWProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWProfilePresenter.swift; sourceTree = "<group>"; };
 		E3EDA58A2659100400E9943D /* CWProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWProfileRouter.swift; sourceTree = "<group>"; };
 		E3EDA58B2659100400E9943D /* CWProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWProfileViewController.swift; sourceTree = "<group>"; };
 		E3EDA58C2659100400E9943D /* CWProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWProfileInteractor.swift; sourceTree = "<group>"; };
-		E3EDA58D2659100400E9943D /* CWProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWProfileModel.swift; sourceTree = "<group>"; };
-		E3EDA58E2659100400E9943D /* CWProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWProfileViewController.xib; sourceTree = "<group>"; };
 		E3EDA58F2659100400E9943D /* CWProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWProfileManager.swift; sourceTree = "<group>"; };
 		E3EDA5982659104300E9943D /* CWBaseTabViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWBaseTabViewConfiguration.swift; sourceTree = "<group>"; };
 		E3EDA59A265910E500E9943D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -392,14 +376,9 @@
 		E3EDA55426590F6800E9943D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E3EDA55526590F7C00E9943D /* CWHomeConfiguration.swift */,
-				E3EDA55626590F7C00E9943D /* CWHomePresenter.swift */,
-				E3EDA55726590F7C00E9943D /* CWHomeRouter.swift */,
-				E3EDA55826590F7C00E9943D /* CWHomeViewController.swift */,
-				E3EDA55926590F7C00E9943D /* CWHomeInteractor.swift */,
-				E3EDA55A26590F7C00E9943D /* CWHomeModel.swift */,
-				E3EDA55B26590F7C00E9943D /* CWHomeViewController.xib */,
-				E3EDA55C26590F7C00E9943D /* CWHomeManager.swift */,
+				E3EDA5A42659123F00E9943D /* Workers */,
+				E3EDA5A32659123900E9943D /* Initializer */,
+				E3EDA5A22659123300E9943D /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -407,14 +386,9 @@
 		E3EDA56526590F9E00E9943D /* Stats */ = {
 			isa = PBXGroup;
 			children = (
-				E3EDA56626590FAC00E9943D /* CWStatsConfiguration.swift */,
-				E3EDA56726590FAC00E9943D /* CWStatsPresenter.swift */,
-				E3EDA56826590FAC00E9943D /* CWStatsRouter.swift */,
-				E3EDA56926590FAC00E9943D /* CWStatsViewController.swift */,
-				E3EDA56A26590FAC00E9943D /* CWStatsInteractor.swift */,
-				E3EDA56B26590FAC00E9943D /* CWStatsModel.swift */,
-				E3EDA56C26590FAC00E9943D /* CWStatsViewController.xib */,
-				E3EDA56D26590FAC00E9943D /* CWStatsManager.swift */,
+				E3EDA5A72659125900E9943D /* Workers */,
+				E3EDA5A62659125500E9943D /* Controller */,
+				E3EDA5A52659124F00E9943D /* Initializer */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
@@ -422,14 +396,9 @@
 		E3EDA57626590FC700E9943D /* Booking */ = {
 			isa = PBXGroup;
 			children = (
-				E3EDA57726590FD500E9943D /* CWBookingConfiguration.swift */,
-				E3EDA57826590FD500E9943D /* CWBookingPresenter.swift */,
-				E3EDA57926590FD500E9943D /* CWBookingRouter.swift */,
-				E3EDA57A26590FD500E9943D /* CWBookingViewController.swift */,
-				E3EDA57B26590FD500E9943D /* CWBookingInteractor.swift */,
-				E3EDA57C26590FD500E9943D /* CWBookingModel.swift */,
-				E3EDA57D26590FD500E9943D /* CWBookingViewController.xib */,
-				E3EDA57E26590FD500E9943D /* CWBookingManager.swift */,
+				E3EDA5AA2659126F00E9943D /* Initializer */,
+				E3EDA5A92659126B00E9943D /* Workers */,
+				E3EDA5A82659126700E9943D /* Controller */,
 			);
 			path = Booking;
 			sourceTree = "<group>";
@@ -437,16 +406,119 @@
 		E3EDA58726590FF400E9943D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				E3EDA5882659100400E9943D /* CWProfileConfiguration.swift */,
-				E3EDA5892659100400E9943D /* CWProfilePresenter.swift */,
-				E3EDA58A2659100400E9943D /* CWProfileRouter.swift */,
-				E3EDA58B2659100400E9943D /* CWProfileViewController.swift */,
-				E3EDA58C2659100400E9943D /* CWProfileInteractor.swift */,
-				E3EDA58D2659100400E9943D /* CWProfileModel.swift */,
-				E3EDA58E2659100400E9943D /* CWProfileViewController.xib */,
-				E3EDA58F2659100400E9943D /* CWProfileManager.swift */,
+				E3EDA5AD2659128600E9943D /* Workers */,
+				E3EDA5AC2659128100E9943D /* Initializer */,
+				E3EDA5AB2659127D00E9943D /* Controller */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		E3EDA5A22659123300E9943D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA55826590F7C00E9943D /* CWHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3EDA5A32659123900E9943D /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA55526590F7C00E9943D /* CWHomeConfiguration.swift */,
+			);
+			path = Initializer;
+			sourceTree = "<group>";
+		};
+		E3EDA5A42659123F00E9943D /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA55626590F7C00E9943D /* CWHomePresenter.swift */,
+				E3EDA55726590F7C00E9943D /* CWHomeRouter.swift */,
+				E3EDA55926590F7C00E9943D /* CWHomeInteractor.swift */,
+				E3EDA55C26590F7C00E9943D /* CWHomeManager.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		E3EDA5A52659124F00E9943D /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA56626590FAC00E9943D /* CWStatsConfiguration.swift */,
+			);
+			path = Initializer;
+			sourceTree = "<group>";
+		};
+		E3EDA5A62659125500E9943D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA56926590FAC00E9943D /* CWStatsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3EDA5A72659125900E9943D /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA56726590FAC00E9943D /* CWStatsPresenter.swift */,
+				E3EDA56826590FAC00E9943D /* CWStatsRouter.swift */,
+				E3EDA56A26590FAC00E9943D /* CWStatsInteractor.swift */,
+				E3EDA56D26590FAC00E9943D /* CWStatsManager.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		E3EDA5A82659126700E9943D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA57A26590FD500E9943D /* CWBookingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3EDA5A92659126B00E9943D /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA57826590FD500E9943D /* CWBookingPresenter.swift */,
+				E3EDA57926590FD500E9943D /* CWBookingRouter.swift */,
+				E3EDA57B26590FD500E9943D /* CWBookingInteractor.swift */,
+				E3EDA57E26590FD500E9943D /* CWBookingManager.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		E3EDA5AA2659126F00E9943D /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA57726590FD500E9943D /* CWBookingConfiguration.swift */,
+			);
+			path = Initializer;
+			sourceTree = "<group>";
+		};
+		E3EDA5AB2659127D00E9943D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA58B2659100400E9943D /* CWProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3EDA5AC2659128100E9943D /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA5882659100400E9943D /* CWProfileConfiguration.swift */,
+			);
+			path = Initializer;
+			sourceTree = "<group>";
+		};
+		E3EDA5AD2659128600E9943D /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA5892659100400E9943D /* CWProfilePresenter.swift */,
+				E3EDA58A2659100400E9943D /* CWProfileRouter.swift */,
+				E3EDA58C2659100400E9943D /* CWProfileInteractor.swift */,
+				E3EDA58F2659100400E9943D /* CWProfileManager.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,15 +629,11 @@
 				E3EDA5442658EA7900E9943D /* Login.storyboard in Resources */,
 				E3EDA59B265910E500E9943D /* Home.storyboard in Resources */,
 				E3EDA59F2659114600E9943D /* Booking.storyboard in Resources */,
-				E3EDA57426590FAC00E9943D /* CWStatsViewController.xib in Resources */,
 				E3E6B127265784C300CB39CC /* LaunchScreen.storyboard in Resources */,
 				E3EDA5A12659116F00E9943D /* Profile.storyboard in Resources */,
 				E3E6B124265784C200CB39CC /* Assets.xcassets in Resources */,
-				E3EDA56326590F7C00E9943D /* CWHomeViewController.xib in Resources */,
 				E3EDA59D2659111100E9943D /* Stats.storyboard in Resources */,
 				E3EDA54B265907AA00E9943D /* CWOnboardContentView.xib in Resources */,
-				E3EDA5962659100400E9943D /* CWProfileViewController.xib in Resources */,
-				E3EDA58526590FD500E9943D /* CWBookingViewController.xib in Resources */,
 				E3E6B11F265784C000CB39CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -645,14 +713,12 @@
 				E3EDA55D26590F7C00E9943D /* CWHomeConfiguration.swift in Sources */,
 				E3EDA53B2658E88500E9943D /* OTPLoginViewController.swift in Sources */,
 				E3EDA58126590FD500E9943D /* CWBookingRouter.swift in Sources */,
-				E3EDA58426590FD500E9943D /* CWBookingModel.swift in Sources */,
 				E3EDA55126590ECD00E9943D /* CWBaseTabViewController.swift in Sources */,
 				E3EDA5382658E88500E9943D /* OTPLoginConfiguration.swift in Sources */,
 				E3EDA546265904E000E9943D /* CWOnboardPageViewController.swift in Sources */,
 				E3EDA54D2659083200E9943D /* CWViewUtils.swift in Sources */,
 				E3EDA5902659100400E9943D /* CWProfileConfiguration.swift in Sources */,
 				E3EDA57026590FAC00E9943D /* CWStatsRouter.swift in Sources */,
-				E3EDA56226590F7C00E9943D /* CWHomeModel.swift in Sources */,
 				E3BDB6712657F68200DC74AE /* CWOnboardManager.swift in Sources */,
 				E3EDA58626590FD500E9943D /* CWBookingManager.swift in Sources */,
 				E3E6B118265784C000CB39CC /* AppDelegate.swift in Sources */,
@@ -661,7 +727,6 @@
 				E3BDB6762657F73D00DC74AE /* CWUtility.swift in Sources */,
 				E3EDA56426590F7C00E9943D /* CWHomeManager.swift in Sources */,
 				E3EDA55326590F4A00E9943D /* CWBaseTabViewModel.swift in Sources */,
-				E3EDA5952659100400E9943D /* CWProfileModel.swift in Sources */,
 				E3BDB66B2657F68200DC74AE /* CWOnboardPresenter.swift in Sources */,
 				E3EDA5942659100400E9943D /* CWProfileInteractor.swift in Sources */,
 				E3BDB6782657F77F00DC74AE /* AppDelegate+Extension.swift in Sources */,
@@ -674,7 +739,6 @@
 				E3EDA5992659104300E9943D /* CWBaseTabViewConfiguration.swift in Sources */,
 				E3EDA549265907A400E9943D /* CWOnboardContentView.swift in Sources */,
 				E3BDB66D2657F68200DC74AE /* CWOnboardViewController.swift in Sources */,
-				E3EDA57326590FAC00E9943D /* CWStatsModel.swift in Sources */,
 				E3EDA5922659100400E9943D /* CWProfileRouter.swift in Sources */,
 				E3EDA58326590FD500E9943D /* CWBookingInteractor.swift in Sources */,
 				E3EDA53A2658E88500E9943D /* OTPLoginRouter.swift in Sources */,

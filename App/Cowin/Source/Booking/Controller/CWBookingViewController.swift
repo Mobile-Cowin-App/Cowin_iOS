@@ -17,6 +17,7 @@ class CWBookingViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 		// do someting...
+        self.title = "BOOK"
     }
 }
 

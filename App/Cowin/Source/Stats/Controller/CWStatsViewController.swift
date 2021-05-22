@@ -17,6 +17,7 @@ class CWStatsViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 		// do someting...
+        self.title = "STATS"
     }
 }
 

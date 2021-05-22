@@ -9,10 +9,16 @@ import Foundation
 import UIKit
 import HelperKit
 
+public protocol CWOnboardDelegate {
+    func didChangeController(at index: Int)
+}
+
 class CWOnboardPageViewController: UIPageViewController {
     fileprivate var items: [UIViewController] = []
     let pageControl = UIPageControl()
 
+    var onboardDelegate: CWOnboardDelegate? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
@@ -92,6 +98,7 @@ extension CWOnboardPageViewController: UIPageViewControllerDataSource {
                 return 0
         }
         
+        self.onboardDelegate?.didChangeController(at: firstViewControllerIndex)
         return firstViewControllerIndex
     }
      

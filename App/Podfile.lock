@@ -1,15 +1,34 @@
 PODS:
+  - CHIPageControl (0.2):
+    - CHIPageControl/Aji (= 0.2)
+    - CHIPageControl/Aleppo (= 0.2)
+    - CHIPageControl/Chimayo (= 0.2)
+    - CHIPageControl/Fresno (= 0.2)
+    - CHIPageControl/Jalapeno (= 0.2)
+    - CHIPageControl/Jaloro (= 0.2)
+    - CHIPageControl/Paprika (= 0.2)
+    - CHIPageControl/Puya (= 0.2)
+  - CHIPageControl/Aji (0.2)
+  - CHIPageControl/Aleppo (0.2)
+  - CHIPageControl/Chimayo (0.2)
+  - CHIPageControl/Fresno (0.2)
+  - CHIPageControl/Jalapeno (0.2)
+  - CHIPageControl/Jaloro (0.2)
+  - CHIPageControl/Paprika (0.2)
+  - CHIPageControl/Puya (0.2)
   - CWNetworkSDK (1.0.0)
   - HelperKit (1.0.0)
   - Hero (1.6.1)
 
 DEPENDENCIES:
+  - CHIPageControl
   - CWNetworkSDK (from `SDKS/`)
   - HelperKit (from `https://github.com/MobileUtils/HelperKit-iOS`)
   - Hero
 
 SPEC REPOS:
   trunk:
+    - CHIPageControl
     - Hero
 
 EXTERNAL SOURCES:
@@ -24,10 +43,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/MobileUtils/HelperKit-iOS
 
 SPEC CHECKSUMS:
+  CHIPageControl: a787bf7205c9b7e7fbfc412be36c5e8636b68f86
   CWNetworkSDK: f5790d24f523b8b99587e11d75fb86a9b3b87d90
   HelperKit: ec57ab3dbf3e1465bccf5b0fa74e1c630f02a637
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
 
-PODFILE CHECKSUM: 71447a2c360ef9599c09f0a103fef87f66b5f499
+PODFILE CHECKSUM: ac45d528fe210fe68ac618dcc11ca85d2dfd1292
 
 COCOAPODS: 1.10.1

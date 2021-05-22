@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnC-AP-sxn">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="648"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLu-xC-eqH">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="717"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="648"/>
                                         <connections>
                                             <segue destination="XHk-ot-CkA" kind="embed" id="hOw-gj-fkp"/>
                                         </connections>
@@ -29,43 +29,44 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="uLu-xC-eqH" firstAttribute="top" secondItem="SnC-AP-sxn" secondAttribute="top" id="AJL-KI-sXJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="uLu-xC-eqH" secondAttribute="bottom" id="ZQy-2z-Rla"/>
+                                    <constraint firstAttribute="bottom" secondItem="uLu-xC-eqH" secondAttribute="bottom" id="Do6-S9-cOl"/>
                                     <constraint firstAttribute="trailing" secondItem="uLu-xC-eqH" secondAttribute="trailing" id="bgN-qb-2xP"/>
                                     <constraint firstItem="uLu-xC-eqH" firstAttribute="leading" secondItem="SnC-AP-sxn" secondAttribute="leading" id="miU-IR-1Il"/>
+                                    <constraint firstItem="uLu-xC-eqH" firstAttribute="top" secondItem="SnC-AP-sxn" secondAttribute="top" id="yFq-OM-8a0"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOx-Bl-08b">
-                                <rect key="frame" x="20" y="802" width="374" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.68137722499999998" blue="0.61363557300000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdq-Ya-i09">
+                                <rect key="frame" x="10" y="54" width="394" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="WdR-9k-Inx"/>
+                                    <constraint firstAttribute="height" constant="30" id="vjW-Ss-ACp"/>
                                 </constraints>
-                                <state key="normal" title="LOGIN"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="showLoginScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="9jz-qB-5Rt"/>
-                                </connections>
-                            </button>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3y-U2-zzO">
+                                <rect key="frame" x="177" y="782" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="6XS-C0-rI7"/>
+                                    <constraint firstAttribute="height" constant="60" id="fXz-rY-8hs"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rOx-Bl-08b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="04D-P5-jpy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SnC-AP-sxn" secondAttribute="trailing" id="4y6-Ry-a6P"/>
-                            <constraint firstItem="SnC-AP-sxn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="IpE-bx-buz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rOx-Bl-08b" secondAttribute="trailing" constant="20" id="aRc-Ro-S5m"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rOx-Bl-08b" secondAttribute="bottom" constant="20" id="eRa-tT-hbG"/>
-                            <constraint firstItem="SnC-AP-sxn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="m6l-2d-3eN"/>
+                            <constraint firstItem="SnC-AP-sxn" firstAttribute="top" secondItem="jdq-Ya-i09" secondAttribute="bottom" constant="20" id="69v-Jt-kw9"/>
+                            <constraint firstItem="jdq-Ya-i09" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="MZR-S9-Q9A"/>
+                            <constraint firstItem="T3y-U2-zzO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NQM-vv-486"/>
+                            <constraint firstItem="jdq-Ya-i09" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="PtQ-ds-SnM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jdq-Ya-i09" secondAttribute="trailing" constant="10" id="Zth-Vo-wpG"/>
+                            <constraint firstItem="T3y-U2-zzO" firstAttribute="top" secondItem="SnC-AP-sxn" secondAttribute="bottom" constant="30" id="gqo-cf-BUe"/>
+                            <constraint firstItem="T3y-U2-zzO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="lce-O5-Y1e"/>
                             <constraint firstItem="SnC-AP-sxn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xE8-D6-pyi"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="containerView" destination="uLu-xC-eqH" id="FOK-Kz-ZSk"/>
-                        <outlet property="startButton" destination="rOx-Bl-08b" id="iAJ-6T-GAL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -154,6 +155,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

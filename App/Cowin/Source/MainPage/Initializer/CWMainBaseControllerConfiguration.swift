@@ -10,7 +10,7 @@ import UIKit
 
 class CWMainBaseControllerConfiguration {
     
-    static func setup(parameters: [String: Any] = [:]) -> UIViewController {
+    static func setup(parameters: [String: Any] = [:]) -> CWMainBaseController {
         let controller = CWUtility.getController("Main", "CWMainBaseController", type: CWMainBaseController.self)
         return controller
     }

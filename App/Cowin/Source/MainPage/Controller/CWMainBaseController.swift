@@ -24,6 +24,8 @@ class CWMainBaseController: UIViewController {
         return self.children.first as! CWMainBasePageController
     }()
     
+    var authTocken: String = "" // We will save auth tocken in User Defaults until you can use this property
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

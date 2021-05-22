@@ -81,16 +81,17 @@ extension OTPLoginViewController: IOTPLoginViewController {
         self.stopLoader()
     }
     func triggerValidateOTPResult(model: CWOTPValidateModel?) {
-        self.navigateToHomeScreen()
+        self.navigateToHomeScreen(auth: model?.token ?? "")
     }
 }
 
 extension OTPLoginViewController {
     // do someting...
     
-    func navigateToHomeScreen() {
+    func navigateToHomeScreen(auth: String = "") {
         DispatchQueue.main.async {
             let controller = CWMainBaseControllerConfiguration.setup()
+            controller.authTocken = auth
             controller.hero.isEnabled = true
             controller.hero.modalAnimationType = .zoom
             controller.modalPresentationStyle = .fullScreen

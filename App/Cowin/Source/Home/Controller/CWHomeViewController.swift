@@ -13,12 +13,12 @@ protocol ICWHomeViewController: AnyObject {
 class CWHomeViewController: UIViewController {
 	var interactor: ICWHomeInteractor?
 	var router: ICWHomeRouter?
-
+    
+    @IBOutlet var tableView: UITableView!
+    
 	override func viewDidLoad() {
         super.viewDidLoad()
 		// do someting...
-        
-        self.title = "HOME"
     }
 }
 

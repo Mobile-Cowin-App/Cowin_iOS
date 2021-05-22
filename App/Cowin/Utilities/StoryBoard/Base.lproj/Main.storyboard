@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,24 +17,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2f-7i-nrO">
-                                <rect key="frame" x="0.0" y="44" width="414" height="743"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="758"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="gtD-IX-ZwJ" kind="embed" id="lJY-nf-MAV"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ldo-dr-iQH">
-                                <rect key="frame" x="0.0" y="787" width="414" height="75"/>
+                                <rect key="frame" x="0.0" y="802" width="414" height="94"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fir-NW-tzy">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="DRU-ed-dN6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="OG6-5o-WS6"/>
+                                    <constraint firstItem="Fir-NW-tzy" firstAttribute="top" secondItem="Ldo-dr-iQH" secondAttribute="top" id="PLA-oh-5jI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fir-NW-tzy" secondAttribute="trailing" constant="20" id="v5m-rn-nTd"/>
+                                    <constraint firstItem="Fir-NW-tzy" firstAttribute="leading" secondItem="Ldo-dr-iQH" secondAttribute="leading" constant="20" id="ybB-0n-Pwo"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a16-YH-rzg"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="a16-YH-rzg" firstAttribute="bottom" secondItem="Ldo-dr-iQH" secondAttribute="bottom" id="06O-ZI-Nef"/>
+                            <constraint firstAttribute="bottom" secondItem="Ldo-dr-iQH" secondAttribute="bottom" id="06O-ZI-Nef"/>
+                            <constraint firstItem="Fir-NW-tzy" firstAttribute="bottom" secondItem="a16-YH-rzg" secondAttribute="bottom" id="5Da-Wo-sJT"/>
                             <constraint firstItem="a16-YH-rzg" firstAttribute="trailing" secondItem="N2f-7i-nrO" secondAttribute="trailing" id="GNr-ed-FcE"/>
                             <constraint firstItem="N2f-7i-nrO" firstAttribute="leading" secondItem="a16-YH-rzg" secondAttribute="leading" id="GeY-Er-bhF"/>
                             <constraint firstItem="a16-YH-rzg" firstAttribute="trailing" secondItem="Ldo-dr-iQH" secondAttribute="trailing" id="hT2-Ya-D2T"/>
@@ -44,8 +56,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomHolderView" destination="Ldo-dr-iQH" id="HNS-SO-DiQ"/>
                         <outlet property="containerView" destination="N2f-7i-nrO" id="zpE-Wh-KYG"/>
-                        <outlet property="tabHolderView" destination="Ldo-dr-iQH" id="QN8-cV-4I5"/>
+                        <outlet property="tabHolderView" destination="Fir-NW-tzy" id="zHW-vQ-0FZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UmA-pf-U63" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -72,7 +85,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVX-J0-KqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884" y="634"/>
+            <point key="canvasLocation" x="2126" y="713"/>
         </scene>
     </scenes>
 </document>

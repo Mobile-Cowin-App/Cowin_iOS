@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnC-AP-sxn">
-                                <rect key="frame" x="0.0" y="104" width="414" height="648"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="772"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLu-xC-eqH">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="648"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="772"/>
                                         <connections>
                                             <segue destination="XHk-ot-CkA" kind="embed" id="hOw-gj-fkp"/>
                                         </connections>
@@ -46,10 +46,21 @@
                                             <constraint firstAttribute="width" constant="100" id="jXU-CV-HIC"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sT8-ub-uvd">
+                                        <rect key="frame" x="354" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Skip">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="skipActionTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="87C-lf-X1P"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="QWl-Zb-nMV" firstAttribute="leading" secondItem="jdq-Ya-i09" secondAttribute="leading" constant="10" id="6cA-iW-kjI"/>
+                                    <constraint firstItem="sT8-ub-uvd" firstAttribute="centerY" secondItem="jdq-Ya-i09" secondAttribute="centerY" id="B5y-8s-EKS"/>
+                                    <constraint firstAttribute="trailing" secondItem="sT8-ub-uvd" secondAttribute="trailing" constant="10" id="e2X-IZ-2K1"/>
                                     <constraint firstItem="QWl-Zb-nMV" firstAttribute="centerY" secondItem="jdq-Ya-i09" secondAttribute="centerY" id="rXg-WJ-XXH"/>
                                     <constraint firstAttribute="height" constant="30" id="vjW-Ss-ACp"/>
                                 </constraints>
@@ -59,9 +70,11 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lU9-gq-LMZ">
                                         <rect key="frame" x="15" y="15" width="30" height="30"/>
-                                        <state key="normal" title="-&gt;"/>
+                                        <state key="normal" title="-&gt;">
+                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                        </state>
                                         <connections>
-                                            <action selector="showLoginScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="peO-aD-rC2"/>
+                                            <action selector="showLoginScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wdv-l2-nZt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -77,19 +90,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="SnC-AP-sxn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2h8-jD-Qzi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SnC-AP-sxn" secondAttribute="trailing" id="4y6-Ry-a6P"/>
-                            <constraint firstItem="SnC-AP-sxn" firstAttribute="top" secondItem="jdq-Ya-i09" secondAttribute="bottom" constant="20" id="69v-Jt-kw9"/>
                             <constraint firstItem="jdq-Ya-i09" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="MZR-S9-Q9A"/>
                             <constraint firstItem="T3y-U2-zzO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NQM-vv-486"/>
                             <constraint firstItem="jdq-Ya-i09" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="PtQ-ds-SnM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jdq-Ya-i09" secondAttribute="trailing" constant="10" id="Zth-Vo-wpG"/>
-                            <constraint firstItem="T3y-U2-zzO" firstAttribute="top" secondItem="SnC-AP-sxn" secondAttribute="bottom" constant="30" id="gqo-cf-BUe"/>
+                            <constraint firstItem="T3y-U2-zzO" firstAttribute="top" secondItem="SnC-AP-sxn" secondAttribute="bottom" constant="10" id="gqo-cf-BUe"/>
                             <constraint firstItem="T3y-U2-zzO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="lce-O5-Y1e"/>
                             <constraint firstItem="SnC-AP-sxn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xE8-D6-pyi"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomHolderView" destination="T3y-U2-zzO" id="1b5-ku-bhx"/>
                         <outlet property="containerView" destination="uLu-xC-eqH" id="FOK-Kz-ZSk"/>
+                        <outlet property="nextButton" destination="lU9-gq-LMZ" id="4nL-Nf-8dd"/>
+                        <outlet property="nextButtonWidth" destination="6XS-C0-rI7" id="vJE-GO-Kdy"/>
+                        <outlet property="skipButton" destination="sT8-ub-uvd" id="GDC-UJ-tzU"/>
                         <outlet property="topPageControlHolderView" destination="QWl-Zb-nMV" id="vJT-Q0-1ef"/>
                     </connections>
                 </viewController>

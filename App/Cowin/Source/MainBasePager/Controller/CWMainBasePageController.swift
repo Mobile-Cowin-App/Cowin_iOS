@@ -123,7 +123,7 @@ extension CWMainBasePageController: UIScrollViewDelegate {
     }
 }
 
-private extension UIPageViewController {
+internal extension UIPageViewController {
 
     var scrollView: UIScrollView? {
 

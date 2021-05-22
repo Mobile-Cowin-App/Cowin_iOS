@@ -14,92 +14,113 @@ public protocol CWOnboardDelegate {
 }
 
 class CWOnboardPageViewController: UIPageViewController {
-    fileprivate var items: [UIViewController] = []
+    
     let pageControl = UIPageControl()
-
+    
     var onboardDelegate: CWOnboardDelegate? = nil
+    
+    let controllers = [createChildController( index: 0) ,
+                       createChildController(index: 1) ,
+                       createChildController(index: 2),
+                       createChildController(index: 3)]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSource = self
         
-        let pc = UIPageControl.appearance(whenContainedInInstancesOf: [CWOnboardPageViewController.self])
-        pc.currentPageIndicatorTintColor = .orange
-        pc.pageIndicatorTintColor = .gray
-        pc.isHidden = true
+        self.prepareDataSourceAndDelegate()
         
-        populateItems()
-        if let firstViewController = items.first {
+        self.prepareScrollView()
+        
+        self.preparePageControl()
+        
+        if let firstViewController = controllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
     }
     
     
-  
     
-    fileprivate func populateItems() {
-        items.append(contentsOf: [createCarouselItemControler( index: 0) ,
-                                  createCarouselItemControler(index: 1) ,
-                                  createCarouselItemControler(index: 2)])
-    }
-    
-    fileprivate func createCarouselItemControler(index: Int) -> UIViewController {
-        let controller = CWUtility.getController("OnBoard", "CWOnboardChildViewController", type: CWOnboardChildViewController.self)
-        controller.index = index
-       return controller
-    }
-
 }
 
 // MARK: - DataSource
-extension CWOnboardPageViewController: UIPageViewControllerDataSource {
-    func pageViewController(_: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = items.firstIndex(of: viewController) else {
-            return nil
-        }
+extension CWOnboardPageViewController: UIPageViewControllerDataSource  , UIPageViewControllerDelegate {
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let viewIndex = controllers.firstIndex(of: viewController) else { return nil }
         
-        let previousIndex = viewControllerIndex - 1
-        
-        guard previousIndex >= 0 else {
-            return items.last
-        }
-        
-        guard items.count > previousIndex else {
-            return nil
-        }
-        
-        return items[previousIndex]
+        if (viewIndex == 0) || (viewIndex == NSNotFound) { return nil }
+        let index = viewIndex - 1
+        return viewControllerAtIndex(index)
     }
     
-    func pageViewController(_: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = items.firstIndex(of: viewController) else {
-            return nil
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let viewIndex = controllers.firstIndex(of: viewController) else { return nil }
+        
+        let index = viewIndex + 1
+        if index == self.controllers.count { return nil }
+        return viewControllerAtIndex(index)
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        guard finished, let currentPageController = pageViewController.viewControllers?.last as? CWOnboardChildViewController , let index = self.controllers.firstIndex(of: currentPageController) else {
+            return
         }
         
-        let nextIndex = viewControllerIndex + 1
-        guard items.count != nextIndex else {
-            return items.first
-        }
         
-        guard items.count > nextIndex else {
-            return nil
-        }
-        
-        return items[nextIndex]
+        self.onboardDelegate?.didChangeController(at: index)
     }
     
     func presentationCount(for _: UIPageViewController) -> Int {
-        return items.count
+        return controllers.count
     }
     
     func presentationIndex(for _: UIPageViewController) -> Int {
         guard let firstViewController = viewControllers?.first,
-              let firstViewControllerIndex = items.firstIndex(of: firstViewController) else {
-                return 0
+              let firstViewControllerIndex = controllers.firstIndex(of: firstViewController) else {
+            return 0
         }
         
-        self.onboardDelegate?.didChangeController(at: firstViewControllerIndex)
+        
         return firstViewControllerIndex
     }
-     
+    
+}
+
+//MARK:- UTILS
+extension CWOnboardPageViewController {
+    
+    fileprivate func prepareDataSourceAndDelegate() {
+        dataSource = self
+        delegate = self
+    }
+    
+    fileprivate func prepareScrollView() {
+        self.scrollView?.isDirectionalLockEnabled = true
+        self.scrollView?.panGestureRecognizer.maximumNumberOfTouches = 1
+    }
+    
+    fileprivate func preparePageControl() {
+        var pc: UIPageControl = UIPageControl()
+        pc = UIPageControl.appearance(whenContainedInInstancesOf: [CWOnboardPageViewController.self])
+        pc.isHidden = true
+    }
+    
+    
+    fileprivate static func createChildController(index: Int) -> UIViewController {
+        let controller = CWUtility.getController("OnBoard", "CWOnboardChildViewController", type: CWOnboardChildViewController.self)
+        controller.index = index
+        return controller
+    }
+    
+    func viewControllerAtIndex(_ index: Int) -> UIViewController? {
+        // Create a new view controller and pass suitable data.
+        if self.controllers.isEmpty || (index >= self.controllers.count) {
+            return nil
+        }
+        return controllers[index]
+    }
+    
 }

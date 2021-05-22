@@ -11,7 +11,17 @@ import HelperKit
 
 class CWOnboardChildViewController: UIViewController {
     
-    var images = ["splash1" , "splash2" , "splash3"]
+    var images = ["splash3" , "splash3" , "splash3" , "splash3"]
+    var primaryContents = [CWStringConstant.onBoarding.registerPrimary.rawValue,
+                           CWStringConstant.onBoarding.locationPrimary.rawValue,
+                           CWStringConstant.onBoarding.confirmSlotPrimary.rawValue,
+                           CWStringConstant.onBoarding.faqPrimary.rawValue]
+    
+    var secondaryContents = [CWStringConstant.onBoarding.registerSecondary.rawValue,
+                           CWStringConstant.onBoarding.locationSecondary.rawValue,
+                           CWStringConstant.onBoarding.confirmSlotSecondary.rawValue,
+                           CWStringConstant.onBoarding.faqSecondary.rawValue]
+    
     var index: Int = .zero
     
     override func viewDidLoad() {
@@ -25,7 +35,7 @@ class CWOnboardChildViewController: UIViewController {
         self.view.addSubview(contentView)
         
         let image = UIImage(named: images[index])
-        contentView.setData(image: image, primaryString: "Primary", secondaryString: "Secondary")
+        contentView.setData(image: image, primaryString: primaryContents[index], secondaryString: secondaryContents[index])
         contentView.g_pinEdges()
     }
     

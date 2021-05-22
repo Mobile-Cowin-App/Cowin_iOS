@@ -16,7 +16,12 @@ class CWOnboardContentView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        contentImage.dropShadow()
+        
     }
+    
+    
     
     internal func setData(image: UIImage? , primaryString: String? , secondaryString: String?) {
         self.contentImage.image = image
@@ -24,3 +29,9 @@ class CWOnboardContentView: UIView {
         self.secondaryLabel.text = secondaryString
     }
 }
+extension UIView {
+
+        func dropShadow() {
+ 
+        }
+    }

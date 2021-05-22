@@ -3,17 +3,20 @@
 
 def cowinapp_inhouse_pods
   
-  #Development Pod
+  #Development Pods
     pod 'CWNetworkSDK', :path => "SDKS/"
-    pod 'Hero'
-    pod 'CHIPageControl' 
-    
     pod 'HelperKit', :git => 'https://github.com/MobileUtils/HelperKit-iOS'
+    
+end
 
+def cowinapp_thirdparty_pods
+    pod 'Hero'
+    pod 'CHIPageControl'
 end
 
 target 'Cowin' do
   use_frameworks!
   cowinapp_inhouse_pods
+  cowinapp_thirdparty_pods
 end
 

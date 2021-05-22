@@ -184,10 +184,4 @@ extension CWMainBasePageController: UIPageViewControllerDelegate {
 }
 
 
-private extension UIPageViewController {
 
-    var scrollView: UIScrollView? {
-
-        return view.subviews.filter { $0 is UIScrollView }.first as? UIScrollView
-    }
-}

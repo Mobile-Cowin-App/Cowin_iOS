@@ -51,3 +51,11 @@ extension UIView {
         layer.zPosition = 1
     }
 }
+
+internal extension UIPageViewController {
+
+    var scrollView: UIScrollView? {
+
+        return view.subviews.filter { $0 is UIScrollView }.first as? UIScrollView
+    }
+}

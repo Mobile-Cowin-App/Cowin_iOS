@@ -8,6 +8,8 @@ def cowinapp_inhouse_pods
     pod 'Hero'
     pod 'CHIPageControl' 
     
+    pod 'HelperKit', :git => 'https://github.com/MobileUtils/HelperKit-iOS'
+
 end
 
 target 'Cowin' do

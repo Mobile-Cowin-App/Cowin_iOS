@@ -18,13 +18,11 @@ class CWOnboardViewController: UIViewController {
 	var router: ICWOnboardRouter?
 
     @IBOutlet var containerView: UIView!
-    @IBOutlet var startButton: UIButton!
     
 	override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = .secondarySystemBackground
-        self.startButton.setTitle("Get Started", for: .normal)
     }
    
     @IBAction func showLoginScreen() {

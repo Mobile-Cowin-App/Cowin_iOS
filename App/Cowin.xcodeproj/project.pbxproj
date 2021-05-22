@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		199E8431646A3AF7AC9A76C1 /* Pods_Cowin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982918DFD9BA9E45C2872B80 /* Pods_Cowin.framework */; };
+		E3763AAE2659518700D25470 /* CWOnboardChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3763AAD2659518700D25470 /* CWOnboardChildViewController.swift */; };
 		E3BDB66A2657F68200DC74AE /* CWOnboardConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6622657F68200DC74AE /* CWOnboardConfiguration.swift */; };
 		E3BDB66B2657F68200DC74AE /* CWOnboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6632657F68200DC74AE /* CWOnboardPresenter.swift */; };
 		E3BDB66C2657F68200DC74AE /* CWOnboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDB6642657F68200DC74AE /* CWOnboardRouter.swift */; };
@@ -86,6 +87,7 @@
 		0156BB6C4EFC1473B20A4709 /* Pods-Cowin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowin.debug.xcconfig"; path = "Target Support Files/Pods-Cowin/Pods-Cowin.debug.xcconfig"; sourceTree = "<group>"; };
 		982918DFD9BA9E45C2872B80 /* Pods_Cowin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cowin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBAA42F9241AD97FF5ABFFB /* Pods-Cowin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowin.release.xcconfig"; path = "Target Support Files/Pods-Cowin/Pods-Cowin.release.xcconfig"; sourceTree = "<group>"; };
+		E3763AAD2659518700D25470 /* CWOnboardChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardChildViewController.swift; sourceTree = "<group>"; };
 		E3BDB6622657F68200DC74AE /* CWOnboardConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardConfiguration.swift; sourceTree = "<group>"; };
 		E3BDB6632657F68200DC74AE /* CWOnboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardPresenter.swift; sourceTree = "<group>"; };
 		E3BDB6642657F68200DC74AE /* CWOnboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardRouter.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			children = (
 				E3BDB6652657F68200DC74AE /* CWOnboardViewController.swift */,
 				E3EDA545265904E000E9943D /* CWOnboardPageViewController.swift */,
+				E3763AAD2659518700D25470 /* CWOnboardChildViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				E3BDB6762657F73D00DC74AE /* CWUtility.swift in Sources */,
 				E3EDA56426590F7C00E9943D /* CWHomeManager.swift in Sources */,
 				E3EDA55326590F4A00E9943D /* CWBaseTabViewModel.swift in Sources */,
+				E3763AAE2659518700D25470 /* CWOnboardChildViewController.swift in Sources */,
 				E3BDB66B2657F68200DC74AE /* CWOnboardPresenter.swift in Sources */,
 				E3EDA5942659100400E9943D /* CWProfileInteractor.swift in Sources */,
 				E3BDB6782657F77F00DC74AE /* AppDelegate+Extension.swift in Sources */,

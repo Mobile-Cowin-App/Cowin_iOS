@@ -10,14 +10,16 @@ import UIKit
 
 class CWOnboardPageViewController: UIPageViewController {
     fileprivate var items: [UIViewController] = []
-    
+    let pageControl = UIPageControl()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hero.isEnabled = true
-        self.hero.modalAnimationType = .selectBy(presenting: .fade, dismissing: .cover(direction: .left))
         dataSource = self
         
-        decoratePageControl()
+        let pc = UIPageControl.appearance(whenContainedInInstancesOf: [CWOnboardPageViewController.self])
+        pc.currentPageIndicatorTintColor = .orange
+        pc.pageIndicatorTintColor = .gray
+        pc.isHidden = true
         
         populateItems()
         if let firstViewController = items.first {
@@ -25,30 +27,19 @@ class CWOnboardPageViewController: UIPageViewController {
         }
     }
     
-    fileprivate func decoratePageControl() {
-        let pc = UIPageControl.appearance(whenContainedInInstancesOf: [CWOnboardPageViewController.self])
-        pc.currentPageIndicatorTintColor = .orange
-        pc.pageIndicatorTintColor = .gray
-    }
+    
+  
     
     fileprivate func populateItems() {
-        let text = ["🎖", "👑", "🥇"]
-        let backgroundColor:[UIColor] = [.blue, .red, .green]
-        
-        for (index, t) in text.enumerated() {
-            let c = createCarouselItemControler(with: t, with: backgroundColor[index])
-            items.append(c)
-        }
+        items.append(contentsOf: [createCarouselItemControler( index: 0) ,
+                                  createCarouselItemControler(index: 1) ,
+                                  createCarouselItemControler(index: 2)])
     }
     
-    fileprivate func createCarouselItemControler(with titleText: String?, with color: UIColor?) -> UIViewController {
-        let c = UIViewController()
-       
-        let contentView = CWOnboardContentView.fromNib()
-        contentView.backgroundColor = color
-        c.view.addSubview(contentView)
-        contentView.g_pinEdges()
-        return c
+    fileprivate func createCarouselItemControler(index: Int) -> UIViewController {
+        let controller = CWUtility.getController("Main", "CWOnboardChildViewController", type: CWOnboardChildViewController.self)
+        controller.index = index
+       return controller
     }
 }
 
@@ -101,4 +92,5 @@ extension CWOnboardPageViewController: UIPageViewControllerDataSource {
         
         return firstViewControllerIndex
     }
+     
 }

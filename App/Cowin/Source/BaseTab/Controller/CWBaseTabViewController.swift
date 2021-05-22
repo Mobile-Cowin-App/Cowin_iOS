@@ -27,6 +27,9 @@ extension CWBaseTabViewController {
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         guard let items = tabBar.items else {return}
         self.basedelegate?.didSelectedTabBar(at: items.firstIndex(of: item) ?? .zero)
+        if items.firstIndex(of: item) == 3 {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
 }

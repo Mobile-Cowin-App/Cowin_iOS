@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hyr-Dx-Lb3">
-                    <rect key="frame" x="20" y="0.0" width="374" height="100"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4LO-T7-p0H">
                         <size key="itemSize" width="128" height="128"/>
@@ -30,9 +30,9 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="hyr-Dx-Lb3" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="G1C-FQ-PL0"/>
-                <constraint firstItem="hyr-Dx-Lb3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="fuD-Pl-9rW"/>
+                <constraint firstItem="hyr-Dx-Lb3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fuD-Pl-9rW"/>
                 <constraint firstItem="hyr-Dx-Lb3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iT8-Dv-Rbl"/>
-                <constraint firstAttribute="trailing" secondItem="hyr-Dx-Lb3" secondAttribute="trailing" constant="20" id="k0Q-dY-jzg"/>
+                <constraint firstAttribute="trailing" secondItem="hyr-Dx-Lb3" secondAttribute="trailing" id="k0Q-dY-jzg"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

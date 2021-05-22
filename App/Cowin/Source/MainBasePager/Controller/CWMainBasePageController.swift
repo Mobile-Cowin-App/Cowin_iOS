@@ -12,11 +12,22 @@ class CWMainBasePageController: UIPageViewController {
     
     var controllers: [UIViewController] = []
     
+    lazy var pagingScrollDelegate: CWPagingViewScrollerDelegate? = nil
+    private var scrollingFromTapAction: Bool = false
+    private var scrollIndex: Int = 0
+    internal var currentIndex: Int? {
+        guard let viewController = viewControllers?.first else {
+            return nil
+        }
+        return controllers.map{ $0 }.firstIndex(of: viewController)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.dataSource = self
+        self.delegate = self
         
         self.controllers = [ self.preparHomeViewController(),
                      self.prepareStatsViewController(),
@@ -24,20 +35,31 @@ class CWMainBasePageController: UIPageViewController {
                      self.prepareProfileViewController() ]
         
         self.scrollView?.delegate = self
+        self.scrollView?.isScrollEnabled = true
+        self.scrollView?.showsHorizontalScrollIndicator = false
         self.scrollView?.isDirectionalLockEnabled = true
         self.scrollView?.panGestureRecognizer.maximumNumberOfTouches = 1
 
-        self.pushtoVC(index: 0, forwardNav: true, animate: false)
+        if #available(iOS 13.0, *) {
+            self.scrollView?.automaticallyAdjustsScrollIndicatorInsets = true
+        }
+
+        self.pushtoVC(index: 0, animate: false)
     }
     
-    func pushtoVC(index:Int, forwardNav: Bool, animate: Bool) {
+    func pushtoVC(index:Int, animate: Bool) {
         guard let viewControllers = [self.viewControllerAtIndex(index)] as? [UIViewController] else { return }
         
-        if forwardNav {
-            self.setViewControllers(viewControllers, direction: .forward, animated: animate, completion: {done in })
-        }
-        else {
-            self.setViewControllers(viewControllers, direction: .reverse, animated: animate, completion: {done in })
+        self.scrollingFromTapAction = true
+        setViewControllers(viewControllers,
+                           direction: (index > self.scrollIndex) ? .forward: .reverse ,
+                           animated: animate ) { [weak self] (finished) in
+                            guard let selfObject = self else { return }
+                            
+                            if let currentIndex = selfObject.currentIndex , currentIndex < selfObject.controllers.count {
+                                selfObject.scrollIndex = currentIndex
+                                selfObject.scrollingFromTapAction = false
+                            }
         }
     }
     
@@ -61,19 +83,19 @@ fileprivate extension CWMainBasePageController {
     
     func prepareStatsViewController() -> UIViewController {
         let controller = CWStatsConfiguration.setup()
-        controller.view.backgroundColor = .orange
+        controller.view.backgroundColor = .yellow
         return controller
     }
     
     func prepareBookingViewController() -> UIViewController {
         let controller = CWBookingConfiguration.setup()
-        controller.view.backgroundColor = .yellow
+        controller.view.backgroundColor = .orange
         return controller
     }
     
     func prepareProfileViewController() -> UIViewController {
         let controller = CWProfileConfiguration.setup()
-        controller.view.backgroundColor = .blue
+        controller.view.backgroundColor = .gray
         return controller
     }
 }
@@ -100,6 +122,29 @@ extension CWMainBasePageController: UIPageViewControllerDataSource {
 
 extension CWMainBasePageController: UIScrollViewDelegate {
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let defaultContentOffsetX = scrollView.frame.width
+        
+        if (self.scrollIndex == 0 && scrollView.contentOffset.x < defaultContentOffsetX) || ((self.scrollIndex == controllers.count - 1) && scrollView.contentOffset.x > defaultContentOffsetX) || self.scrollingFromTapAction { return }
+
+        guard scrollView.contentOffset.x != defaultContentOffsetX else { return }
+        
+        let offsetPercent = scrollView.contentOffset.x / scrollView.bounds.width
+        var percent = 1.0 - offsetPercent
+        let toItem = percent > 0 ? scrollIndex - 1 : scrollIndex + 1
+        percent = abs(percent)
+        
+        if percent > 1 {
+            percent = 1
+        }
+        
+        guard toItem > -1 && toItem < controllers.count else {
+            return
+        }
+        
+        self.pagingScrollDelegate?.didChange(scrollIndex, toItem, percent)
+    }
+    
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         // We've handled directionLock manually... It's for subcontrollers scrollable views..
         self.viewControllers?.forEach({ (controller) in
@@ -123,7 +168,23 @@ extension CWMainBasePageController: UIScrollViewDelegate {
     }
 }
 
-internal extension UIPageViewController {
+
+extension CWMainBasePageController: UIPageViewControllerDelegate {
+
+    public func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
+    }
+
+    public func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        if let currentIndex = currentIndex, completed {
+            scrollIndex = currentIndex
+            self.pagingScrollDelegate?.didFinish(self.scrollIndex)
+        }
+    }
+}
+
+
+private extension UIPageViewController {
 
     var scrollView: UIScrollView? {
 

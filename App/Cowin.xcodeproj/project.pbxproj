@@ -366,9 +366,9 @@
 		E3EDA54F26590EA200E9943D /* BaseTab */ = {
 			isa = PBXGroup;
 			children = (
-				E3EDA55026590ECD00E9943D /* CWBaseTabViewController.swift */,
-				E3EDA55226590F4A00E9943D /* CWBaseTabViewModel.swift */,
-				E3EDA5982659104300E9943D /* CWBaseTabViewConfiguration.swift */,
+				E3EDA5B02659131800E9943D /* ViewModel */,
+				E3EDA5AF2659131000E9943D /* Controller */,
+				E3EDA5AE2659130600E9943D /* Initializer */,
 			);
 			path = BaseTab;
 			sourceTree = "<group>";
@@ -519,6 +519,30 @@
 				E3EDA58F2659100400E9943D /* CWProfileManager.swift */,
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		E3EDA5AE2659130600E9943D /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA5982659104300E9943D /* CWBaseTabViewConfiguration.swift */,
+			);
+			path = Initializer;
+			sourceTree = "<group>";
+		};
+		E3EDA5AF2659131000E9943D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA55026590ECD00E9943D /* CWBaseTabViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3EDA5B02659131800E9943D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA55226590F4A00E9943D /* CWBaseTabViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

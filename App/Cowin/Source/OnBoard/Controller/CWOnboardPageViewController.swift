@@ -37,22 +37,12 @@ class CWOnboardPageViewController: UIPageViewController {
                                   createCarouselItemControler(index: 2)])
     }
     
-<<<<<<< HEAD
     fileprivate func createCarouselItemControler(index: Int) -> UIViewController {
         let controller = CWUtility.getController("Main", "CWOnboardChildViewController", type: CWOnboardChildViewController.self)
         controller.index = index
        return controller
-=======
-    fileprivate func createCarouselItemControler(with titleText: String?, with color: UIColor?) -> UIViewController {
-        let c = UIViewController()
-       
-        let contentView = CWOnboardContentView.loadFromXib()
-        contentView.backgroundColor = color
-        c.view.addSubview(contentView)
-        contentView.g_pinEdges()
-        return c
->>>>>>> 804fa42a7ab00c0d6f7de01693dc282cc1d86514
     }
+
 }
 
 // MARK: - DataSource

@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -84,10 +84,61 @@
             </objects>
             <point key="canvasLocation" x="1080" y="-14"/>
         </scene>
+        <!--Main Base Controller-->
+        <scene sceneID="CK3-PW-7aF">
+            <objects>
+                <viewController storyboardIdentifier="CWMainBaseController" id="FpB-4j-aBg" customClass="CWMainBaseController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KiM-ha-a1e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2f-7i-nrO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="743"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="gtD-IX-ZwJ" kind="embed" id="lJY-nf-MAV"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ldo-dr-iQH">
+                                <rect key="frame" x="0.0" y="787" width="414" height="75"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="OG6-5o-WS6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a16-YH-rzg"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a16-YH-rzg" firstAttribute="bottom" secondItem="Ldo-dr-iQH" secondAttribute="bottom" id="06O-ZI-Nef"/>
+                            <constraint firstItem="a16-YH-rzg" firstAttribute="trailing" secondItem="N2f-7i-nrO" secondAttribute="trailing" id="GNr-ed-FcE"/>
+                            <constraint firstItem="N2f-7i-nrO" firstAttribute="leading" secondItem="a16-YH-rzg" secondAttribute="leading" id="GeY-Er-bhF"/>
+                            <constraint firstItem="a16-YH-rzg" firstAttribute="trailing" secondItem="Ldo-dr-iQH" secondAttribute="trailing" id="hT2-Ya-D2T"/>
+                            <constraint firstItem="N2f-7i-nrO" firstAttribute="top" secondItem="a16-YH-rzg" secondAttribute="top" id="nlL-h1-itx"/>
+                            <constraint firstItem="Ldo-dr-iQH" firstAttribute="top" secondItem="N2f-7i-nrO" secondAttribute="bottom" id="nst-ta-FAU"/>
+                            <constraint firstItem="Ldo-dr-iQH" firstAttribute="leading" secondItem="a16-YH-rzg" secondAttribute="leading" id="wWC-kj-Xga"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="N2f-7i-nrO" id="zpE-Wh-KYG"/>
+                        <outlet property="tabHolderView" destination="Ldo-dr-iQH" id="QN8-cV-4I5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UmA-pf-U63" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="844"/>
+        </scene>
+        <!--Main Base Page Controller-->
+        <scene sceneID="wof-d0-2CU">
+            <objects>
+                <pageViewController storyboardIdentifier="CWMainBasePageController" autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="flipHorizontal" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="gtD-IX-ZwJ" customClass="CWMainBasePageController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eoh-3Q-i8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="836"/>
+        </scene>
         <!--Base Tab View Controller-->
         <scene sceneID="cAo-hY-XIC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XVX-J0-KqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="CWBaseTabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TlK-aP-f90" customClass="CWBaseTabViewController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WfZ-CJ-af3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -95,6 +146,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVX-J0-KqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1891" y="-40"/>
         </scene>

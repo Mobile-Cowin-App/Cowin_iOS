@@ -1,9 +1,11 @@
 PODS:
   - CWNetworkSDK (1.0.0)
+  - HelperKit (1.0.0)
   - Hero (1.6.1)
 
 DEPENDENCIES:
   - CWNetworkSDK (from `SDKS/`)
+  - HelperKit (from `https://github.com/MobileUtils/HelperKit-iOS`)
   - Hero
 
 SPEC REPOS:
@@ -13,11 +15,19 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   CWNetworkSDK:
     :path: SDKS/
+  HelperKit:
+    :git: https://github.com/MobileUtils/HelperKit-iOS
+
+CHECKOUT OPTIONS:
+  HelperKit:
+    :commit: 730cb4ee8f221ce4e16dfee46e8cee95b3b4d0d4
+    :git: https://github.com/MobileUtils/HelperKit-iOS
 
 SPEC CHECKSUMS:
   CWNetworkSDK: f5790d24f523b8b99587e11d75fb86a9b3b87d90
+  HelperKit: ec57ab3dbf3e1465bccf5b0fa74e1c630f02a637
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
 
-PODFILE CHECKSUM: c45fd18bfb9b6f672f8f47b3fca8521f15848e74
+PODFILE CHECKSUM: 71447a2c360ef9599c09f0a103fef87f66b5f499
 
 COCOAPODS: 1.10.1

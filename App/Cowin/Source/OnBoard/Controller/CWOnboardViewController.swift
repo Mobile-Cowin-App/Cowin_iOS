@@ -28,7 +28,7 @@ class CWOnboardViewController: UIViewController {
     }
    
     @IBAction func showLoginScreen() {
-        let controller = CWBaseTabViewConfiguration.setup()
+        let controller = CWMainBaseControllerConfiguration.setup()
         controller.hero.isEnabled = true
         controller.hero.modalAnimationType = .zoom
         controller.modalPresentationStyle = .fullScreen

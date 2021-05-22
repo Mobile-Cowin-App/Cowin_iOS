@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import HelperKit
 
 class CWOnboardPageViewController: UIPageViewController {
     fileprivate var items: [UIViewController] = []
@@ -44,7 +45,7 @@ class CWOnboardPageViewController: UIPageViewController {
     fileprivate func createCarouselItemControler(with titleText: String?, with color: UIColor?) -> UIViewController {
         let c = UIViewController()
        
-        let contentView = CWOnboardContentView.fromNib()
+        let contentView = CWOnboardContentView.loadFromXib()
         contentView.backgroundColor = color
         c.view.addSubview(contentView)
         contentView.g_pinEdges()

@@ -7,6 +7,8 @@ def cowinapp_inhouse_pods
     pod 'CWNetworkSDK', :path => "SDKS/"
     pod 'Hero'
     
+    pod 'HelperKit', :git => 'https://github.com/MobileUtils/HelperKit-iOS'
+
 end
 
 target 'Cowin' do

@@ -60,6 +60,10 @@ extension CWOnboardViewController: ICWOnboardViewController {
 }
 
 extension CWOnboardViewController: CWOnboardDelegate {
+    func didChangeController(at index: Int) {
+        
+    }
+    
     
     
 }

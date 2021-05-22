@@ -25,4 +25,12 @@ enum CWStringConstant {
         case getStart = "Get Started"
     }
     
+    
+    enum login: String {
+        case primaryContent = "Register or SignIn for Vaccination"
+        case secondaryContent = "An OTP will be sent to your mobile number for verification"
+        case getOTP = "Get OTP"
+        case done = "Done"
+    }
+    
 }

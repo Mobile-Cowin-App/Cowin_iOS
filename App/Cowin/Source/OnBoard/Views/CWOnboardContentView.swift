@@ -16,9 +16,11 @@ class CWOnboardContentView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+    
+        self.contentImage.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.systemBlue, radius: 12.0, opacity: 0.35)
         
-        contentImage.dropShadow()
         
+        self.contentImage.layer.masksToBounds = false
     }
     
     
@@ -29,9 +31,3 @@ class CWOnboardContentView: UIView {
         self.secondaryLabel.text = secondaryString
     }
 }
-extension UIView {
-
-        func dropShadow() {
- 
-        }
-    }

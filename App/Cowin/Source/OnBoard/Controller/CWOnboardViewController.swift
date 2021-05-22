@@ -102,14 +102,10 @@ extension CWOnboardViewController: ICWOnboardViewController {
 extension CWOnboardViewController: CWOnboardDelegate {
     
     func didChangeController(at index: Int) {
-        print(index)
         pageControl.set(progress: index, animated: true)
         
-        if index == 3 {
-            self.setTextFont()
-        } else {
-            self.setIconFont()
-        }
+        self.skipButton.setTitleColor(index % 2 != 0  ? .tertiaryLabel : .white, for: .normal)
+        index == 3 ? self.setTextFont() : self.setIconFont()
     }
     
 }

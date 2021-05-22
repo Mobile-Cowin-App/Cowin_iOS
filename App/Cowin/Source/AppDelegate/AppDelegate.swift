@@ -18,20 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.bootOnBoardScreen()
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
+ 
 
     
 }
@@ -39,7 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     
     fileprivate func bootOnBoardScreen() {
-        let controller = CWOnboardConfiguration.setup()
+        let controller = UINavigationController(rootViewController: CWOnboardConfiguration.setup())
+        controller.setNavigationBarHidden(true, animated: false)
+        self.window?.rootViewController = controller
+    }
+    
+    fileprivate func bootLoginScreen() {
+        let controller = OTPLoginConfiguration.setup()
         self.window?.rootViewController = controller
     }
 }

@@ -17,39 +17,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter OTP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G93-6x-xwz">
-                                <rect key="frame" x="20" y="64" width="374" height="34"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnC-AP-sxn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="717"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLu-xC-eqH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="717"/>
+                                        <connections>
+                                            <segue destination="XHk-ot-CkA" kind="embed" id="hOw-gj-fkp"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="3eM-OU-fEr"/>
+                                    <constraint firstItem="uLu-xC-eqH" firstAttribute="top" secondItem="SnC-AP-sxn" secondAttribute="top" id="AJL-KI-sXJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="uLu-xC-eqH" secondAttribute="bottom" id="ZQy-2z-Rla"/>
+                                    <constraint firstAttribute="trailing" secondItem="uLu-xC-eqH" secondAttribute="trailing" id="bgN-qb-2xP"/>
+                                    <constraint firstItem="uLu-xC-eqH" firstAttribute="leading" secondItem="SnC-AP-sxn" secondAttribute="leading" id="miU-IR-1Il"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnB-6I-dgU">
-                                <rect key="frame" x="179" y="438" width="56" height="30"/>
-                                <state key="normal" title="SUBMIT"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOx-Bl-08b">
+                                <rect key="frame" x="20" y="802" width="374" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.68137722499999998" blue="0.61363557300000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WdR-9k-Inx"/>
+                                </constraints>
+                                <state key="normal" title="LOGIN"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="otpTaped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Urt-1y-zaZ"/>
+                                    <action selector="showLoginScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="9jz-qB-5Rt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="G93-6x-xwz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="15B-N7-dhb"/>
-                            <constraint firstItem="EnB-6I-dgU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2Lg-2N-u9Y"/>
-                            <constraint firstItem="G93-6x-xwz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BJr-1V-RMM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G93-6x-xwz" secondAttribute="trailing" constant="20" id="CaI-Vk-sqj"/>
-                            <constraint firstItem="EnB-6I-dgU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wrG-Nn-8Ek"/>
+                            <constraint firstItem="rOx-Bl-08b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="04D-P5-jpy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SnC-AP-sxn" secondAttribute="trailing" id="4y6-Ry-a6P"/>
+                            <constraint firstItem="SnC-AP-sxn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="IpE-bx-buz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rOx-Bl-08b" secondAttribute="trailing" constant="20" id="aRc-Ro-S5m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rOx-Bl-08b" secondAttribute="bottom" constant="20" id="eRa-tT-hbG"/>
+                            <constraint firstItem="SnC-AP-sxn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="m6l-2d-3eN"/>
+                            <constraint firstItem="SnC-AP-sxn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xE8-D6-pyi"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="otpField" destination="G93-6x-xwz" id="o1m-qd-4hl"/>
+                        <outlet property="containerView" destination="uLu-xC-eqH" id="FOK-Kz-ZSk"/>
+                        <outlet property="startButton" destination="rOx-Bl-08b" id="iAJ-6T-GAL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="124"/>
+            <point key="canvasLocation" x="0.0" y="16.071428571428569"/>
+        </scene>
+        <!--Onboard Page View Controller-->
+        <scene sceneID="w6Z-ew-yrw">
+            <objects>
+                <pageViewController storyboardIdentifier="CWOnboardPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="XHk-ot-CkA" customClass="CWOnboardPageViewController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMw-jT-V8z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="-14"/>
+        </scene>
+        <!--Base Tab View Controller-->
+        <scene sceneID="cAo-hY-XIC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVX-J0-KqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="CWBaseTabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TlK-aP-f90" customClass="CWBaseTabViewController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WfZ-CJ-af3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="1891" y="-40"/>
         </scene>
     </scenes>
     <resources>

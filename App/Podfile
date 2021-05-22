@@ -5,7 +5,7 @@ def cowinapp_inhouse_pods
   
   #Development Pod
     pod 'CWNetworkSDK', :path => "SDKS/"
-    
+    pod 'Hero'
     
 end
 

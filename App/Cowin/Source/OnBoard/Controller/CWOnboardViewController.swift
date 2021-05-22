@@ -7,6 +7,7 @@
 
 import UIKit
 import CWNetworkSDK
+import Hero
 
 protocol ICWOnboardViewController: AnyObject {
 	var router: ICWOnboardRouter? { get set }
@@ -16,21 +17,22 @@ class CWOnboardViewController: UIViewController {
 	var interactor: ICWOnboardInteractor?
 	var router: ICWOnboardRouter?
 
-    
-    @IBOutlet var otpField: UITextField!
-    
-    var tranxID: String = .makeEmpty
+    @IBOutlet var containerView: UIView!
+    @IBOutlet var startButton: UIButton!
     
 	override func viewDidLoad() {
         super.viewDidLoad()
-		// do someting...
         
         self.view.backgroundColor = .secondarySystemBackground
-        
+        self.startButton.setTitle("Get Started", for: .normal)
     }
-    
-    @IBAction func otpTaped() {
-        self.validateOTP()
+   
+    @IBAction func showLoginScreen() {
+        let controller = CWBaseTabViewConfiguration.setup()
+        controller.hero.isEnabled = true
+        controller.hero.modalAnimationType = .zoom
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true, completion: nil)
     }
     
 }
@@ -41,25 +43,6 @@ extension CWOnboardViewController: ICWOnboardViewController {
 
 extension CWOnboardViewController {
     
-    fileprivate func prepareOTP() {
-        CWNetworkManager.requester.triggerGenerateOTP(mobile: "8883311311") { otpModel, errorDesc in
-            self.tranxID = otpModel?.txnID ?? .makeEmpty
-            print(self.tranxID)
-
-        }
-    }
-    
-    fileprivate func validateOTP() {
-        CWNetworkManager.requester.triggerValidateOTP(txnID: self.tranxID, otpValue: otpField.text ?? .makeEmpty) { otpModel, errorDesc in
-             
-        }
-    }
-    
-    fileprivate func reportAPI() {
-        CWNetworkManager.requester.triggerStatsReport(stateID: .makeEmpty, districtID: .makeEmpty, date: .makeEmpty) { statsModel, errorDesc in
-             
-        }
-    }
     
 }
 

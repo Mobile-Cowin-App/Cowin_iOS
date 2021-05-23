@@ -19,8 +19,6 @@ class CWLoginEmptyDataCell: UITableViewCell {
         self.loginButton.layer.cornerRadius = 20
         self.loginButton.setTitleColor(.white, for: .normal)
         self.loginButton.addShadow(offset: CGSize.init(width: 3, height: 3), color: CWStyle.Static.appTheme, radius: 20.0, opacity: 0.35)
-
-        
     }
     
     @IBAction func triggerLoginScreen() {

@@ -19,6 +19,7 @@ class CWMembersDataCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         self.selectionStyle = .none
+        [primaryLabel , secondaryLabel , teritaryLabel , proofType ].forEach({$0?.text = ""})
     }
 
     func setData(name: String , yob: String , proof: String , prooftype: String) {

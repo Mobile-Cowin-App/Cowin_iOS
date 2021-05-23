@@ -2,8 +2,7 @@
 //  CWOnboardContentView.swift
 //  Cowin
 //
-//  Created by Aravindhan Natarajan on 22/05/21.
-//
+
 
 import Foundation
 import UIKit
@@ -17,9 +16,7 @@ class CWOnboardContentView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
     
-        self.contentImage.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.systemBlue, radius: 12.0, opacity: 0.35)
-        
-        
+        self.contentImage.addShadow(offset: CGSize.init(width: 0, height: 3), color: CWStyle.Static.appTheme, radius: 12.0, opacity: 0.35)
         self.contentImage.layer.masksToBounds = false
     }
     

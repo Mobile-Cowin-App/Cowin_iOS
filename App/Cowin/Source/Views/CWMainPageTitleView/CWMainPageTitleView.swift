@@ -22,12 +22,14 @@ class CWMainPageTitleView: UIView {
     private func prepareStyles() {
         
         self.iconHolder.backgroundColor = .white
-        self.iconHolder.clipsToBounds = true
         self.iconHolder.layer.cornerRadius = 15.0
         
-        self.icon.textColor = CWStyle.Static.appTheme
-        
         self.title.applyTextAttributes(font: .heading, withColor: .primary)
+        self.icon.applyIconTextAttributes(fontSize: 14.0, withColor: .custom)
+        self.icon.textColor = CWStyle.Static.appTheme
+        self.icon.text = "\u{f0f3}"
+        
+        self.iconHolder.applyDropShadow()
     }
     
     func setValue(_ title: String) {

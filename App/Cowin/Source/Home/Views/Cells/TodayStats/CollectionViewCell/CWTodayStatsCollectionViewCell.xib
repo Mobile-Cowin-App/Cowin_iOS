@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="14" width="315" height="340"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ups-Nb-hCg">
-                                <rect key="frame" x="39.5" y="0.0" width="236" height="236.5"/>
+                                <rect key="frame" x="39.5" y="10" width="236" height="236.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJX-dS-FWo">
                                         <rect key="frame" x="0.0" y="108" width="236" height="20.5"/>
@@ -40,16 +40,16 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pfv-7S-CBr">
-                                <rect key="frame" x="0.0" y="246.5" width="315" height="93.5"/>
+                                <rect key="frame" x="0.0" y="260.5" width="315" height="79.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaO-cD-dKq">
-                                        <rect key="frame" x="137" y="0.0" width="41.5" height="46.5"/>
+                                        <rect key="frame" x="137" y="0.0" width="41.5" height="39.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VA9-xN-Dya">
-                                        <rect key="frame" x="137" y="46.5" width="41.5" height="47"/>
+                                        <rect key="frame" x="137" y="39.5" width="41.5" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -60,8 +60,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ups-Nb-hCg" firstAttribute="width" secondItem="fwk-Qx-uCz" secondAttribute="width" multiplier="0.75" id="3bl-hI-8gk"/>
-                            <constraint firstItem="pfv-7S-CBr" firstAttribute="top" secondItem="ups-Nb-hCg" secondAttribute="bottom" constant="10" id="4ys-9q-hnj"/>
-                            <constraint firstItem="ups-Nb-hCg" firstAttribute="top" secondItem="fwk-Qx-uCz" secondAttribute="top" id="Uxs-li-vsO"/>
+                            <constraint firstItem="pfv-7S-CBr" firstAttribute="top" secondItem="ups-Nb-hCg" secondAttribute="bottom" constant="14" id="4ys-9q-hnj"/>
+                            <constraint firstItem="ups-Nb-hCg" firstAttribute="top" secondItem="fwk-Qx-uCz" secondAttribute="top" constant="10" id="Uxs-li-vsO"/>
                             <constraint firstAttribute="trailing" secondItem="pfv-7S-CBr" secondAttribute="trailing" id="cBu-B4-zdG"/>
                             <constraint firstItem="pfv-7S-CBr" firstAttribute="leading" secondItem="fwk-Qx-uCz" secondAttribute="leading" id="fbd-X5-KFQ"/>
                             <constraint firstAttribute="bottom" secondItem="pfv-7S-CBr" secondAttribute="bottom" id="ldo-LS-was"/>

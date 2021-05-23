@@ -66,7 +66,7 @@ class CWMainBaseTabView: UIView {
         tabIndicator.clipsToBounds = true
         tabIndicator.layer.cornerRadius = 20.0
         tabIndicator.center = dividerHolderView.center
-        tabIndicator.backgroundColor = CWStyle.Static.appTheme?.withAlphaComponent(0.25)
+        tabIndicator.backgroundColor = CWStyle.Static.appTheme.withAlphaComponent(0.25)
         
         dividerHolderView.addSubview(tabIndicator)
         

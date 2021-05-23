@@ -19,9 +19,13 @@ struct CWStyle {
     
     struct Static {
         
-        static var appTheme: UIColor? {
-            UIColor(named: "CWTheme")
+        static var appTheme: UIColor {
+            return UIColor.systemBlue
         }
+        
+//        static var appTheme: UIColor? {
+//            UIColor(named: "CWTheme")
+//        }
         
         static let red                      = #colorLiteral(red: 0.7725490196, green: 0.2, blue: 0.2, alpha: 1)
         static let green                    = #colorLiteral(red: 0.003921568627, green: 0.6274509804, blue: 0.0862745098, alpha: 1)

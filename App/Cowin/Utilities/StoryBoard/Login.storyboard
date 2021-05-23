@@ -18,7 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xd-J6-P2x">
-                                <rect key="frame" x="305" y="10" width="60" height="30"/>
+                                <rect key="frame" x="325" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="OvR-9f-rOK"/>
+                                    <constraint firstAttribute="height" constant="40" id="qQN-IC-zZL"/>
+                                </constraints>
                                 <state key="normal" title="DISMISS">
                                     <color key="titleColor" systemColor="systemBlueColor"/>
                                 </state>
@@ -154,6 +158,7 @@
                     </view>
                     <connections>
                         <outlet property="contentHolderView" destination="cJh-mH-EBS" id="l6R-SC-nMh"/>
+                        <outlet property="dismissButton" destination="9xd-J6-P2x" id="LZ8-TL-v0s"/>
                         <outlet property="loginButtonHolderView" destination="1yf-Ix-Kbc" id="WWp-5X-Zld"/>
                         <outlet property="otpHolderView" destination="JG6-iR-eSU" id="BJB-ce-pfT"/>
                         <outlet property="otpfield" destination="g46-Up-VgM" id="TuP-b2-L47"/>

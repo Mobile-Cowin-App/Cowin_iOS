@@ -8,6 +8,9 @@ import UIKit
 import Hero
 import CWNetworkSDK
 
+public protocol OTPVerificationDelegate {
+    func verificationCompleted()
+}
 protocol IOTPLoginViewController: AnyObject {
     var router: IOTPLoginRouter? { get set }
     func triggerOTPResult(model: CWOTPRequestModel?)
@@ -25,8 +28,11 @@ class OTPLoginViewController: UIViewController {
     
     @IBOutlet var otpHolderView: UIView!
     @IBOutlet var otpfield: UITextField!
+    @IBOutlet var dismissButton: UIButton!
     
     var txnID: String = ""
+    
+    var delegate: OTPVerificationDelegate? = nil
     
     var activityLoader: UIActivityIndicatorView = UIActivityIndicatorView()
     
@@ -78,10 +84,17 @@ class OTPLoginViewController: UIViewController {
 extension OTPLoginViewController: IOTPLoginViewController {
     func triggerOTPResult(model: CWOTPRequestModel?) {
         self.txnID = model?.txnID ?? ""
+        CWUtility.authTocken = self.txnID
         self.stopLoader()
     }
     func triggerValidateOTPResult(model: CWOTPValidateModel?) {
-        self.navigateToHomeScreen(auth: model?.token ?? "")
+//        self.navigateToHomeScreen(auth: model?.token ?? "")
+        CWUtility.authTocken = "Bearer \(model?.token ?? "")"
+        self.delegate?.verificationCompleted()
+        DispatchQueue.main.async {
+            self.dismiss(animated: true, completion: nil)
+        }
+        
     }
 }
 

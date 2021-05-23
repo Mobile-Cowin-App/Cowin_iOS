@@ -92,7 +92,7 @@ fileprivate extension CWMainBasePageController {
     
     func prepareProfileViewController() -> UIViewController {
         let controller = CWProfileConfiguration.setup()
-        return controller
+        return controller.appendWithNavigation()
     }
 }
 

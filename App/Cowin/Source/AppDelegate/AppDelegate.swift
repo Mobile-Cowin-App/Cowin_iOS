@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  Cowin
 //
-//  Created by Aravindhan Natarajan on 21/05/21.
 //
 
 
@@ -15,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        self.bootOnBoardScreen()
+        self.initiateRootController()
         return true
     }
  
@@ -23,7 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 }
 
+//MARK:- Booting RootController
 extension AppDelegate {
+    
+    fileprivate func initiateRootController() {
+        if CWUtility.authTocken.isEmpty {
+            self.bootOnBoardScreen()
+        } else {
+            self.bootHomeScreen()
+        }
+    }
     
     fileprivate func bootOnBoardScreen() {
         let controller = UINavigationController(rootViewController: CWOnboardConfiguration.setup())
@@ -31,9 +39,11 @@ extension AppDelegate {
         self.window?.rootViewController = controller
     }
     
-    fileprivate func bootLoginScreen() {
-        let controller = OTPLoginConfiguration.setup()
+    fileprivate func bootHomeScreen() {
+        let controller = CWMainBaseControllerConfiguration.setup()
         self.window?.rootViewController = controller
     }
+    
+    
 }
 

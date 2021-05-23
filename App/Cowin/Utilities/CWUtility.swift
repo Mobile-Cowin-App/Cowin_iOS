@@ -2,7 +2,6 @@
 //  CWUtility.swift
 //  Cowin
 //
-//  Created by Aravindhan Natarajan on 21/05/21.
 //
 
 import Foundation
@@ -10,6 +9,16 @@ import UIKit
 import CommonCrypto
 
 internal struct CWUtility {
+    
+    static var authTocken: String{
+        set {
+            CWUserDefaultManager.saveAuthTocken(value: newValue)
+        }
+        get  {
+            return CWUserDefaultManager.getAuthToken() ?? ""
+        }
+    }
+    
     static func getController<T>(_ storyBoardName: String, _ identifier: String , type: T.Type) -> T {
             return UIStoryboard(name: storyBoardName, bundle: nil).instantiateViewController(withIdentifier: identifier) as! T
     }

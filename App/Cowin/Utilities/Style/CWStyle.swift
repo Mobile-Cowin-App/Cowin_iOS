@@ -150,6 +150,5 @@ extension UIView {
             textView.tintColor = textColor
             textView.font = font
         }
-
     }
 }

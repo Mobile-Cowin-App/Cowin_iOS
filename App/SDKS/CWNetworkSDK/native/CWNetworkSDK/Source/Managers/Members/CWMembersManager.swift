@@ -8,12 +8,23 @@
 import Foundation
 
 public struct CWAddMemberRequester {
-    var name: String
-    var idNumber: String
-    var idType: Int
-    var gender: Int
-    var birthYear: String
-    var auth: String
+   
+    public var name: String
+    public var idNumber: String
+    public var idType: Int
+    public var gender: Int
+    public var birthYear: String
+    public var auth: String
+    
+    public init(name: String, idNumber: String, idType: Int, gender: Int, birthYear: String, auth: String) {
+        self.name = name
+        self.idNumber = idNumber
+        self.idType = idType
+        self.gender = gender
+        self.birthYear = birthYear
+        self.auth = auth
+    }
+    
 }
 extension CWNetworkManager {
     

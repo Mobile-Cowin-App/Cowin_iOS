@@ -25,7 +25,7 @@ class CWHomePageTodayStatsCell: UITableViewCell {
     @IBOutlet var totalTitle: UILabel!
     @IBOutlet var totalCount: UILabel!
     
-    @IBOutlet var refresh: UILabel!
+    @IBOutlet var refresh: UIButton!
     @IBOutlet var collectionView: UICollectionView!
     
     private var datasource: [CWHomeTodayStatsData] = .defaultValue
@@ -44,7 +44,7 @@ class CWHomePageTodayStatsCell: UITableViewCell {
         
         self.title.applyTextAttributes(font: .primary(.bold), withColor: .primary)
         self.lastupdated.applyTextAttributes(font: .teritary(.regular), withColor: .teritary)
-        self.refresh.applyIconTextAttributes(fontSize: 10.0, withColor: .teritary)
+        self.refresh.applyIconTextAttributes(fontSize: 14.0, withColor: .teritary)
         
         self.totalTitle.applyTextAttributes(font: .primary(.bold), withColor: .primary)
         self.totalCount.applyTextAttributes(font: .primary(.semibold), withColor: .secondary)
@@ -63,7 +63,7 @@ class CWHomePageTodayStatsCell: UITableViewCell {
     private func prepareData() {
         
         self.title.text = Date().convert("EEEE, MMM d, yyyy")
-        self.refresh.text = "i"
+        self.refresh.setTitle("\u{f01e}", for: .normal)
         self.totalTitle.text = "Total Vaccination Doses"
     }
     
@@ -101,6 +101,10 @@ class CWHomePageTodayStatsCell: UITableViewCell {
 
         self.datasource.append(CWHomeTodayStatsData(totalVaccinated: model.total, gender: "Others", color: CWStyle.Static.blue, count: model.others))
 
+    }
+    
+    @IBAction func refreshclicked(_ sender: UIButton) {
+    
     }
 }
 

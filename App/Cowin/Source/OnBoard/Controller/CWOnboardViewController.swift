@@ -39,7 +39,7 @@ class CWOnboardViewController: UIViewController {
     }
     
     func updateLayerProperties() {
-        nextButton.layer.shadowColor = UIColor.systemBlue.cgColor
+        nextButton.layer.shadowColor = CWStyle.Static.appTheme.cgColor
         nextButton.layer.shadowOffset = CGSize(width: 0.2, height: 0.2)
         nextButton.layer.shadowOpacity = 1.0
         nextButton.layer.shadowRadius = 20.0
@@ -56,7 +56,7 @@ class CWOnboardViewController: UIViewController {
     
     fileprivate func setIconFont() {
         self.prepareShrinkAnimation()
-        self.nextButton.setTitleColor(.systemBlue, for: .normal)
+        self.nextButton.setTitleColor(CWStyle.Static.appTheme, for: .normal)
         self.nextButton.setTitle("", for: .normal)
         self.nextButton.titleLabel?.font = UIFont.getIconFont(with: 20)
         self.nextButton.setTitle(CWFonts.next, for: .normal)
@@ -64,7 +64,7 @@ class CWOnboardViewController: UIViewController {
     
     fileprivate func setTextFont() {
         self.performExpandAnimation()
-        self.nextButton.setTitleColor(.systemBlue, for: .normal)
+        self.nextButton.setTitleColor(CWStyle.Static.appTheme, for: .normal)
         self.nextButton.setTitle("", for: .normal)
         self.nextButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         self.nextButton.setTitle(CWStringConstant.onBoarding.getStart.rawValue, for: .normal)
@@ -115,8 +115,8 @@ extension CWOnboardViewController {
         self.topPageControlHolderView.backgroundColor = .clear
         pageControl.numberOfPages = 4
         pageControl.radius = 4
-        pageControl.tintColor = .systemBlue
-        pageControl.currentPageTintColor = .systemBlue
+        pageControl.tintColor = CWStyle.Static.appTheme
+        pageControl.currentPageTintColor = CWStyle.Static.appTheme
         pageControl.padding = 6
         self.topPageControlHolderView.addSubview(pageControl)
         pageControl.g_pinEdges()

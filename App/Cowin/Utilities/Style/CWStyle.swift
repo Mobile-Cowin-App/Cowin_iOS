@@ -13,14 +13,14 @@ struct CWStyle {
     struct Background {
         
         static var primary: UIColor? {
-            UIColor(named: "CWPrimaryBG")
+            return UIColor.white
         }
     }
     
     struct Static {
         
-        static var appTheme: UIColor? {
-            UIColor(named: "CWTheme")
+        static var appTheme: UIColor {
+            return UIColor.systemBlue
         }
     }
 }

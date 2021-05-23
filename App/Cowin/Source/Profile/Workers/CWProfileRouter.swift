@@ -8,6 +8,8 @@ import UIKit
 
 protocol ICWProfileRouter: AnyObject {
 	// do someting...
+    
+    func navigateToAddMemberScreen()
 }
 
 class CWProfileRouter: ICWProfileRouter {	
@@ -16,4 +18,12 @@ class CWProfileRouter: ICWProfileRouter {
 	init(view: CWProfileViewController?) {
 		self.view = view
 	}
+    
+    func navigateToAddMemberScreen() {
+        let controller = CWAddMemberConfiguration.setup()
+        controller.modalTransitionStyle = .flipHorizontal
+        controller.modalPresentationStyle = .overFullScreen
+        self.view?.present(controller, animated: true, completion: nil)
+    }
+    
 }

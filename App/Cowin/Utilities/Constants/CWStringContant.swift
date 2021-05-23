@@ -33,4 +33,8 @@ enum CWStringConstant {
         case done = "Done"
     }
     
+    
+    enum UserDefault: String {
+        case authkey = "auth-tocken"
+    }
 }

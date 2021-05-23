@@ -89,14 +89,12 @@ fileprivate extension CWMainBasePageController {
     
     func prepareBookingViewController() -> UIViewController {
         let controller = CWBookingConfiguration.setup()
-        controller.view.backgroundColor = .orange
         return controller
     }
     
     func prepareProfileViewController() -> UIViewController {
         let controller = CWProfileConfiguration.setup()
-        controller.view.backgroundColor = .gray
-        return controller
+        return controller.appendWithNavigation()
     }
 }
 

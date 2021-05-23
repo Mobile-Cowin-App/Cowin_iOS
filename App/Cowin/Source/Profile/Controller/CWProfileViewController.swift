@@ -29,7 +29,7 @@ class CWProfileViewController: UIViewController {
         
         prepareNavigationBar()
         prepareTableViewCell()
-        
+        verificationCompleted()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -82,7 +82,7 @@ extension CWProfileViewController: UITableViewDataSource , UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if CWUtility.authTocken.isEmpty || self.listmodel?.beneficiaries.count ?? 1 == 1{
+        if CWUtility.authTocken.isEmpty || self.listmodel == nil{
             return self.prepareLoginEmptyDataCell(tableView, cellForRowAt: indexPath)
         } else {
             return self.prepareMemberDataCell(tableView, cellForRowAt: indexPath)
@@ -91,6 +91,7 @@ extension CWProfileViewController: UITableViewDataSource , UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if self.listmodel == nil {return 500}
         return CWUtility.authTocken.isEmpty ? 500 : UITableView.automaticDimension
     }
 }

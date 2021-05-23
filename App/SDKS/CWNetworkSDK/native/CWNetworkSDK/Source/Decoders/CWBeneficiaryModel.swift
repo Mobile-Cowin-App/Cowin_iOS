@@ -42,7 +42,7 @@ public struct TypeElement: Codable {
 
 // MARK: - CWBeneficiaryListModel
 public struct CWBeneficiaryListModel: Codable {
-    public let beneficiaries: [BeneficiaryDetail]
+    public var beneficiaries: [BeneficiaryDetail]
 
     public init(beneficiaries: [BeneficiaryDetail]) {
         self.beneficiaries = beneficiaries

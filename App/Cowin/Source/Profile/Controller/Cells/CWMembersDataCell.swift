@@ -15,9 +15,11 @@ class CWMembersDataCell: UITableViewCell {
     @IBOutlet var proofType: UILabel!
     @IBOutlet var removeImageview: UIImageView!
     
+    var removeTappedCB: (() -> ())? = nil
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
         self.selectionStyle = .none
         [primaryLabel , secondaryLabel , teritaryLabel , proofType ].forEach({$0?.text = ""})
     }
@@ -27,6 +29,10 @@ class CWMembersDataCell: UITableViewCell {
         self.secondaryLabel.text = yob
         self.teritaryLabel.text = proof
         self.proofType.text = prooftype
+    }
+    
+    @IBAction func removeAction() {
+        self.removeTappedCB?()
     }
     
 }

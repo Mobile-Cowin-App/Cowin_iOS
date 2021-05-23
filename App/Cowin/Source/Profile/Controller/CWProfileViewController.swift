@@ -116,7 +116,20 @@ extension CWProfileViewController {
         cell.backgroundColor = .white
         if let model = self.listmodel?.beneficiaries[indexPath.section] {
             cell.setData(name: model.name, yob: model.birthYear, proof: model.photoIDNumber , prooftype: model.photoIDType)
+            
+            cell.removeTappedCB = {
+                self.interactor?.triggerRemoveMember(memberID: model.beneficiaryReferenceID, onCompletion: { isCompleted in
+                    self.listmodel?.beneficiaries.remove(at: indexPath.section)
+                    self.listview.performBatchUpdates {
+                        self.listview.reloadData()
+                    } completion: { _ in
+                        
+                    }
+                })
+            }
         }
+        
+        
         
         return cell
     }

@@ -22,6 +22,18 @@
 		E3685409265A3AC2008335A1 /* CWMembersDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685407265A3AC2008335A1 /* CWMembersDataCell.swift */; };
 		E368540A265A3AC2008335A1 /* CWMembersDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3685408265A3AC2008335A1 /* CWMembersDataCell.xib */; };
 		E368540D265A43B9008335A1 /* CWUserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368540C265A43B9008335A1 /* CWUserDefaultManager.swift */; };
+		E3685417265A4ACC008335A1 /* CWAddMemberConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368540F265A4ACC008335A1 /* CWAddMemberConfiguration.swift */; };
+		E3685418265A4ACC008335A1 /* CWAddMemberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685410265A4ACC008335A1 /* CWAddMemberPresenter.swift */; };
+		E3685419265A4ACC008335A1 /* CWAddMemberRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685411265A4ACC008335A1 /* CWAddMemberRouter.swift */; };
+		E368541A265A4ACC008335A1 /* CWAddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685412265A4ACC008335A1 /* CWAddMemberViewController.swift */; };
+		E368541B265A4ACC008335A1 /* CWAddMemberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685413265A4ACC008335A1 /* CWAddMemberInteractor.swift */; };
+		E368541E265A4ACC008335A1 /* CWAddMemberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685416265A4ACC008335A1 /* CWAddMemberManager.swift */; };
+		E3685425265A4E97008335A1 /* CWAddMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685423265A4E97008335A1 /* CWAddMemberCell.swift */; };
+		E3685426265A4E97008335A1 /* CWAddMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3685424265A4E97008335A1 /* CWAddMemberCell.xib */; };
+		E3685429265A57FF008335A1 /* CWSubmitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685427265A57FF008335A1 /* CWSubmitCell.swift */; };
+		E368542A265A57FF008335A1 /* CWSubmitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3685428265A57FF008335A1 /* CWSubmitCell.xib */; };
+		E368542D265A5AFA008335A1 /* CWGenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368542B265A5AFA008335A1 /* CWGenderCell.swift */; };
+		E368542E265A5AFA008335A1 /* CWGenderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E368542C265A5AFA008335A1 /* CWGenderCell.xib */; };
 		E3763AAE2659518700D25470 /* CWOnboardChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3763AAD2659518700D25470 /* CWOnboardChildViewController.swift */; };
 		E3763AB02659654A00D25470 /* OnBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3763AAF2659654A00D25470 /* OnBoard.storyboard */; };
 		E3763AB3265976F800D25470 /* CWStringContant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3763AB2265976F800D25470 /* CWStringContant.swift */; };
@@ -118,6 +130,18 @@
 		E3685407265A3AC2008335A1 /* CWMembersDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMembersDataCell.swift; sourceTree = "<group>"; };
 		E3685408265A3AC2008335A1 /* CWMembersDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWMembersDataCell.xib; sourceTree = "<group>"; };
 		E368540C265A43B9008335A1 /* CWUserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWUserDefaultManager.swift; sourceTree = "<group>"; };
+		E368540F265A4ACC008335A1 /* CWAddMemberConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWAddMemberConfiguration.swift; sourceTree = "<group>"; };
+		E3685410265A4ACC008335A1 /* CWAddMemberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWAddMemberPresenter.swift; sourceTree = "<group>"; };
+		E3685411265A4ACC008335A1 /* CWAddMemberRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWAddMemberRouter.swift; sourceTree = "<group>"; };
+		E3685412265A4ACC008335A1 /* CWAddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWAddMemberViewController.swift; sourceTree = "<group>"; };
+		E3685413265A4ACC008335A1 /* CWAddMemberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWAddMemberInteractor.swift; sourceTree = "<group>"; };
+		E3685416265A4ACC008335A1 /* CWAddMemberManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWAddMemberManager.swift; sourceTree = "<group>"; };
+		E3685423265A4E97008335A1 /* CWAddMemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWAddMemberCell.swift; sourceTree = "<group>"; };
+		E3685424265A4E97008335A1 /* CWAddMemberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWAddMemberCell.xib; sourceTree = "<group>"; };
+		E3685427265A57FF008335A1 /* CWSubmitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWSubmitCell.swift; sourceTree = "<group>"; };
+		E3685428265A57FF008335A1 /* CWSubmitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWSubmitCell.xib; sourceTree = "<group>"; };
+		E368542B265A5AFA008335A1 /* CWGenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWGenderCell.swift; sourceTree = "<group>"; };
+		E368542C265A5AFA008335A1 /* CWGenderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWGenderCell.xib; sourceTree = "<group>"; };
 		E3763AAD2659518700D25470 /* CWOnboardChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardChildViewController.swift; sourceTree = "<group>"; };
 		E3763AAF2659654A00D25470 /* OnBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoard.storyboard; sourceTree = "<group>"; };
 		E3763AB2265976F800D25470 /* CWStringContant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStringContant.swift; sourceTree = "<group>"; };
@@ -339,6 +363,57 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		E368540E265A4ABE008335A1 /* AddMember */ = {
+			isa = PBXGroup;
+			children = (
+				E3685421265A4ADA008335A1 /* Workers */,
+				E3685420265A4AD3008335A1 /* Initializer */,
+				E368541F265A4ACE008335A1 /* Controller */,
+			);
+			path = AddMember;
+			sourceTree = "<group>";
+		};
+		E368541F265A4ACE008335A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3685422265A4E88008335A1 /* AddMemberCell */,
+				E3685412265A4ACC008335A1 /* CWAddMemberViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3685420265A4AD3008335A1 /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				E368540F265A4ACC008335A1 /* CWAddMemberConfiguration.swift */,
+			);
+			path = Initializer;
+			sourceTree = "<group>";
+		};
+		E3685421265A4ADA008335A1 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				E3685410265A4ACC008335A1 /* CWAddMemberPresenter.swift */,
+				E3685411265A4ACC008335A1 /* CWAddMemberRouter.swift */,
+				E3685413265A4ACC008335A1 /* CWAddMemberInteractor.swift */,
+				E3685416265A4ACC008335A1 /* CWAddMemberManager.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		E3685422265A4E88008335A1 /* AddMemberCell */ = {
+			isa = PBXGroup;
+			children = (
+				E3685423265A4E97008335A1 /* CWAddMemberCell.swift */,
+				E3685424265A4E97008335A1 /* CWAddMemberCell.xib */,
+				E3685427265A57FF008335A1 /* CWSubmitCell.swift */,
+				E3685428265A57FF008335A1 /* CWSubmitCell.xib */,
+				E368542B265A5AFA008335A1 /* CWGenderCell.swift */,
+				E368542C265A5AFA008335A1 /* CWGenderCell.xib */,
+			);
+			path = AddMemberCell;
+			sourceTree = "<group>";
+		};
 		E3763AB1265976EA00D25470 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,6 +492,7 @@
 		E3E6B14B2657F54E00CB39CC /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E368540E265A4ABE008335A1 /* AddMember */,
 				6E1D5F9A26593EB500F9EDD0 /* Views */,
 				6E1D5F952659322500F9EDD0 /* MainPage */,
 				E3EDA58726590FF400E9943D /* Profile */,
@@ -808,8 +884,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E368542E265A5AFA008335A1 /* CWGenderCell.xib in Resources */,
 				E3EDA5442658EA7900E9943D /* Login.storyboard in Resources */,
 				E3EDA59B265910E500E9943D /* Home.storyboard in Resources */,
+				E368542A265A57FF008335A1 /* CWSubmitCell.xib in Resources */,
 				6E703EC526596DB100CAFDD1 /* CWMainBaseTabViewCell.xib in Resources */,
 				E3685406265A2333008335A1 /* CWLoginEmptyDataCell.xib in Resources */,
 				E3763AB02659654A00D25470 /* OnBoard.storyboard in Resources */,
@@ -823,6 +901,7 @@
 				6E1D5F9D26593EDE00F9EDD0 /* CWMainBaseTabView.xib in Resources */,
 				E368540A265A3AC2008335A1 /* CWMembersDataCell.xib in Resources */,
 				E3E6B11F265784C000CB39CC /* Main.storyboard in Resources */,
+				E3685426265A4E97008335A1 /* CWAddMemberCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,11 +970,15 @@
 			files = (
 				E3EDA56F26590FAC00E9943D /* CWStatsPresenter.swift in Sources */,
 				E3BDB66E2657F68200DC74AE /* CWOnboardInteractor.swift in Sources */,
+				E368541E265A4ACC008335A1 /* CWAddMemberManager.swift in Sources */,
 				E3EDA58026590FD500E9943D /* CWBookingPresenter.swift in Sources */,
 				E3EDA56E26590FAC00E9943D /* CWStatsConfiguration.swift in Sources */,
 				E3EDA55F26590F7C00E9943D /* CWHomeRouter.swift in Sources */,
 				E3EDA5392658E88500E9943D /* OTPLoginPresenter.swift in Sources */,
+				E368542D265A5AFA008335A1 /* CWGenderCell.swift in Sources */,
 				E3EDA5912659100400E9943D /* CWProfilePresenter.swift in Sources */,
+				E3685417265A4ACC008335A1 /* CWAddMemberConfiguration.swift in Sources */,
+				E368541B265A4ACC008335A1 /* CWAddMemberInteractor.swift in Sources */,
 				E3EDA56126590F7C00E9943D /* CWHomeInteractor.swift in Sources */,
 				E3BDB66C2657F68200DC74AE /* CWOnboardRouter.swift in Sources */,
 				E3EDA55D26590F7C00E9943D /* CWHomeConfiguration.swift in Sources */,
@@ -907,6 +990,7 @@
 				E3EDA546265904E000E9943D /* CWOnboardPageViewController.swift in Sources */,
 				E3EDA54D2659083200E9943D /* CWViewUtils.swift in Sources */,
 				E3EDA5902659100400E9943D /* CWProfileConfiguration.swift in Sources */,
+				E3685429265A57FF008335A1 /* CWSubmitCell.swift in Sources */,
 				E3EDA57026590FAC00E9943D /* CWStatsRouter.swift in Sources */,
 				E3BDB6712657F68200DC74AE /* CWOnboardManager.swift in Sources */,
 				E3EDA58626590FD500E9943D /* CWBookingManager.swift in Sources */,
@@ -915,11 +999,13 @@
 				E3EDA55E26590F7C00E9943D /* CWHomePresenter.swift in Sources */,
 				E3EDA5972659100400E9943D /* CWProfileManager.swift in Sources */,
 				6E1D5ED42659213200F9EDD0 /* CWBaseTabViewConfiguration.swift in Sources */,
+				E3685425265A4E97008335A1 /* CWAddMemberCell.swift in Sources */,
 				E3BDB6762657F73D00DC74AE /* CWUtility.swift in Sources */,
 				6E1D5ED126591B3D00F9EDD0 /* CWMainBasePageController.swift in Sources */,
 				E3EDA56426590F7C00E9943D /* CWHomeManager.swift in Sources */,
 				6E1D5F942659316000F9EDD0 /* CWStyle.swift in Sources */,
 				E3EDA55326590F4A00E9943D /* CWBaseTabViewModel.swift in Sources */,
+				E3685419265A4ACC008335A1 /* CWAddMemberRouter.swift in Sources */,
 				E3763AAE2659518700D25470 /* CWOnboardChildViewController.swift in Sources */,
 				E3BDB66B2657F68200DC74AE /* CWOnboardPresenter.swift in Sources */,
 				E3EDA5942659100400E9943D /* CWProfileInteractor.swift in Sources */,
@@ -932,6 +1018,7 @@
 				E3EDA57F26590FD500E9943D /* CWBookingConfiguration.swift in Sources */,
 				E3E6B122265784C000CB39CC /* Cowin.xcdatamodeld in Sources */,
 				E3763AB3265976F800D25470 /* CWStringContant.swift in Sources */,
+				E3685418265A4ACC008335A1 /* CWAddMemberPresenter.swift in Sources */,
 				E3EDA56026590F7C00E9943D /* CWHomeViewController.swift in Sources */,
 				E3EDA549265907A400E9943D /* CWOnboardContentView.swift in Sources */,
 				E3BDB66D2657F68200DC74AE /* CWOnboardViewController.swift in Sources */,
@@ -946,6 +1033,7 @@
 				6E1D5ED92659243C00F9EDD0 /* CWMainBaseControllerConfiguration.swift in Sources */,
 				E3EDA5932659100400E9943D /* CWProfileViewController.swift in Sources */,
 				E3763ABA265979A900D25470 /* CWFonts.swift in Sources */,
+				E368541A265A4ACC008335A1 /* CWAddMemberViewController.swift in Sources */,
 				E3EDA58226590FD500E9943D /* CWBookingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

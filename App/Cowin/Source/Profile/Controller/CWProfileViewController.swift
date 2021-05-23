@@ -60,6 +60,10 @@ class CWProfileViewController: UIViewController {
         self.listview.showsVerticalScrollIndicator = false
         self.registerCell()
     }
+    
+    @IBAction func addMemberAction() {
+        self.router?.navigateToAddMemberScreen()
+    }
 }
 
 extension CWProfileViewController: ICWProfileViewController {

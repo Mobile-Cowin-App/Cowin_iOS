@@ -5,9 +5,10 @@
 
 
 import UIKit
+import CWNetworkSDK
 
 protocol ICWProfilePresenter: AnyObject {
-	// do someting...
+    func benificiaryModel(model: CWBeneficiaryListModel?)
 }
 
 class CWProfilePresenter: ICWProfilePresenter {	
@@ -16,4 +17,10 @@ class CWProfilePresenter: ICWProfilePresenter {
 	init(view: ICWProfileViewController?) {
 		self.view = view
 	}
+    
+    func benificiaryModel(model: CWBeneficiaryListModel?) {
+        DispatchQueue.main.async {
+            self.view?.benificiaryModel(model: model)
+        }
+    }
 }

@@ -10,6 +10,9 @@ import UIKit
 import CommonCrypto
 
 internal struct CWUtility {
+    
+    static var authTocken: String = ""
+    
     static func getController<T>(_ storyBoardName: String, _ identifier: String , type: T.Type) -> T {
             return UIStoryboard(name: storyBoardName, bundle: nil).instantiateViewController(withIdentifier: identifier) as! T
     }

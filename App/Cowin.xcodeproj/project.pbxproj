@@ -17,6 +17,10 @@
 		6E1D5F9F26593FBC00F9EDD0 /* CWMainBaseTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D5F9E26593FBC00F9EDD0 /* CWMainBaseTabView.swift */; };
 		6E703EC426596DB100CAFDD1 /* CWMainBaseTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E703EC226596DB100CAFDD1 /* CWMainBaseTabViewCell.swift */; };
 		6E703EC526596DB100CAFDD1 /* CWMainBaseTabViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */; };
+		E3685405265A2333008335A1 /* CWLoginEmptyDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685403265A2333008335A1 /* CWLoginEmptyDataCell.swift */; };
+		E3685406265A2333008335A1 /* CWLoginEmptyDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3685404265A2333008335A1 /* CWLoginEmptyDataCell.xib */; };
+		E3685409265A3AC2008335A1 /* CWMembersDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685407265A3AC2008335A1 /* CWMembersDataCell.swift */; };
+		E368540A265A3AC2008335A1 /* CWMembersDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3685408265A3AC2008335A1 /* CWMembersDataCell.xib */; };
 		E3763AAE2659518700D25470 /* CWOnboardChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3763AAD2659518700D25470 /* CWOnboardChildViewController.swift */; };
 		E3763AB02659654A00D25470 /* OnBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3763AAF2659654A00D25470 /* OnBoard.storyboard */; };
 		E3763AB3265976F800D25470 /* CWStringContant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3763AB2265976F800D25470 /* CWStringContant.swift */; };
@@ -108,6 +112,10 @@
 		6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWMainBaseTabViewCell.xib; sourceTree = "<group>"; };
 		982918DFD9BA9E45C2872B80 /* Pods_Cowin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cowin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBAA42F9241AD97FF5ABFFB /* Pods-Cowin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowin.release.xcconfig"; path = "Target Support Files/Pods-Cowin/Pods-Cowin.release.xcconfig"; sourceTree = "<group>"; };
+		E3685403265A2333008335A1 /* CWLoginEmptyDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWLoginEmptyDataCell.swift; sourceTree = "<group>"; };
+		E3685404265A2333008335A1 /* CWLoginEmptyDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWLoginEmptyDataCell.xib; sourceTree = "<group>"; };
+		E3685407265A3AC2008335A1 /* CWMembersDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMembersDataCell.swift; sourceTree = "<group>"; };
+		E3685408265A3AC2008335A1 /* CWMembersDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWMembersDataCell.xib; sourceTree = "<group>"; };
 		E3763AAD2659518700D25470 /* CWOnboardChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardChildViewController.swift; sourceTree = "<group>"; };
 		E3763AAF2659654A00D25470 /* OnBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoard.storyboard; sourceTree = "<group>"; };
 		E3763AB2265976F800D25470 /* CWStringContant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStringContant.swift; sourceTree = "<group>"; };
@@ -310,6 +318,24 @@
 			path = OTPLogin;
 			sourceTree = "<group>";
 		};
+		E3685402265A230B008335A1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E3685403265A2333008335A1 /* CWLoginEmptyDataCell.swift */,
+				E3685404265A2333008335A1 /* CWLoginEmptyDataCell.xib */,
+				E3685407265A3AC2008335A1 /* CWMembersDataCell.swift */,
+				E3685408265A3AC2008335A1 /* CWMembersDataCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E368540B265A42CB008335A1 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 		E3763AB1265976EA00D25470 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +432,7 @@
 		E3E6B14C2657F56000CB39CC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E368540B265A42CB008335A1 /* UserDefaults */,
 				E3763AB82659795E00D25470 /* Fonts */,
 				E3763AB1265976EA00D25470 /* Constants */,
 				6E1D5F922659314800F9EDD0 /* Style */,
@@ -632,6 +659,7 @@
 		E3EDA5AB2659127D00E9943D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E3685402265A230B008335A1 /* Cells */,
 				E3EDA58B2659100400E9943D /* CWProfileViewController.swift */,
 			);
 			path = Controller;
@@ -780,6 +808,7 @@
 				E3EDA5442658EA7900E9943D /* Login.storyboard in Resources */,
 				E3EDA59B265910E500E9943D /* Home.storyboard in Resources */,
 				6E703EC526596DB100CAFDD1 /* CWMainBaseTabViewCell.xib in Resources */,
+				E3685406265A2333008335A1 /* CWLoginEmptyDataCell.xib in Resources */,
 				E3763AB02659654A00D25470 /* OnBoard.storyboard in Resources */,
 				E3763AC0265980A700D25470 /* icomoon.ttf in Resources */,
 				E3EDA59F2659114600E9943D /* Booking.storyboard in Resources */,
@@ -789,6 +818,7 @@
 				E3EDA59D2659111100E9943D /* Stats.storyboard in Resources */,
 				E3EDA54B265907AA00E9943D /* CWOnboardContentView.xib in Resources */,
 				6E1D5F9D26593EDE00F9EDD0 /* CWMainBaseTabView.xib in Resources */,
+				E368540A265A3AC2008335A1 /* CWMembersDataCell.xib in Resources */,
 				E3E6B11F265784C000CB39CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -889,6 +919,7 @@
 				E3763AAE2659518700D25470 /* CWOnboardChildViewController.swift in Sources */,
 				E3BDB66B2657F68200DC74AE /* CWOnboardPresenter.swift in Sources */,
 				E3EDA5942659100400E9943D /* CWProfileInteractor.swift in Sources */,
+				E3685405265A2333008335A1 /* CWLoginEmptyDataCell.swift in Sources */,
 				E3BDB6782657F77F00DC74AE /* AppDelegate+Extension.swift in Sources */,
 				E3EDA53C2658E88500E9943D /* OTPLoginInteractor.swift in Sources */,
 				6E1D5ED7265923D700F9EDD0 /* CWMainBaseController.swift in Sources */,
@@ -902,6 +933,7 @@
 				E3BDB66D2657F68200DC74AE /* CWOnboardViewController.swift in Sources */,
 				E3EDA5922659100400E9943D /* CWProfileRouter.swift in Sources */,
 				E3EDA58326590FD500E9943D /* CWBookingInteractor.swift in Sources */,
+				E3685409265A3AC2008335A1 /* CWMembersDataCell.swift in Sources */,
 				E3EDA53A2658E88500E9943D /* OTPLoginRouter.swift in Sources */,
 				E3EDA57226590FAC00E9943D /* CWStatsInteractor.swift in Sources */,
 				6E1D5F9F26593FBC00F9EDD0 /* CWMainBaseTabView.swift in Sources */,

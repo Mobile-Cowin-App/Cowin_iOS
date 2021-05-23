@@ -59,9 +59,24 @@ extension OTPLoginViewController {
         
         self.contentHolderView.addShadow(offset: CGSize.init(width: 3, height: 3), color: UIColor.black, radius: 12.0, opacity: 0.35)
         
+        self.dismissButton.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black.withAlphaComponent(0.5), radius: 2.0, opacity: 0.35)
+
+        
         self.addDoneButtonOnKeyboard()
         
         self.otpHolderView.isHidden = true
-        self.otpHolderView.backgroundColor = .systemBlue
+        self.otpHolderView.backgroundColor = CWStyle.Static.appTheme
+        
+        self.dismissButton.layer.cornerRadius = self.dismissButton.frame.height / 2
+        self.dismissButton.backgroundColor = .white
+        self.dismissButton.titleLabel?.font = UIFont.getIconFont(with: 14)
+        self.dismissButton.setTitle(CWFonts.close, for: .normal)
+        
+        self.phonenumberfield.layer.borderColor = UIColor.white.cgColor
+        self.phonenumberfield.layer.borderWidth = 2
+        
+        self.otpfield.layer.borderColor = UIColor.white.cgColor
+        self.otpfield.layer.borderWidth = 2
+        
     }
 }

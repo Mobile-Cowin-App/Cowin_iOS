@@ -2,7 +2,7 @@
 //  CWGenderCell.swift
 //  Cowin
 //
-//  Created by Aravindhan Natarajan on 23/05/21.
+
 //
 
 import UIKit

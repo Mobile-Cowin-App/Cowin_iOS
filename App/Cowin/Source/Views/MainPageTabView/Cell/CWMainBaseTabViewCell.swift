@@ -2,7 +2,7 @@
 //  CWMainBaseTabViewCell.swift
 //  Cowin
 //
-//  Created by basheer-zutk107 on 22/05/21.
+//  Created by Basheer Ahamed.S on 22/05/21.
 //
 
 import UIKit
@@ -15,6 +15,16 @@ class CWMainBaseTabViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        self.icon.text = "i"
+        self.prepareStyles()
+    }
+    
+    private func prepareStyles() {
+        
+        self.icon.applyIconTextAttributes(fontSize: 20.0, withColor: .secondary)
+    }
+    
+    func setData(with model: CWHomeBottomTabData) {
+        
+        self.icon.text = model.icon
     }
 }

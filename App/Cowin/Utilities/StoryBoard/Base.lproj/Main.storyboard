@@ -18,7 +18,6 @@
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2f-7i-nrO">
                                 <rect key="frame" x="0.0" y="44" width="414" height="758"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="gtD-IX-ZwJ" kind="embed" id="lJY-nf-MAV"/>
                                 </connections>
@@ -34,7 +33,6 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Fir-NW-tzy" firstAttribute="top" secondItem="Ldo-dr-iQH" secondAttribute="top" id="PLA-oh-5jI"/>
                                     <constraint firstAttribute="trailing" secondItem="Fir-NW-tzy" secondAttribute="trailing" constant="20" id="v5m-rn-nTd"/>
@@ -43,7 +41,6 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a16-YH-rzg"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Ldo-dr-iQH" secondAttribute="bottom" id="06O-ZI-Nef"/>
                             <constraint firstItem="Fir-NW-tzy" firstAttribute="bottom" secondItem="a16-YH-rzg" secondAttribute="bottom" id="5Da-Wo-sJT"/>

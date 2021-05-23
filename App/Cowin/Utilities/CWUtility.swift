@@ -33,3 +33,10 @@ public extension String {
         return ""
     }
 }
+
+extension UIView {
+    
+    func applyDropShadow() {
+        self.applyShadow(shadowColor: UIColor.black.withAlphaComponent(0.075), shadowRadius: 6.0, shadowOpacity: 1.0)//, shadowOffset : CGSize(width: 0, height: 5))
+    }
+}

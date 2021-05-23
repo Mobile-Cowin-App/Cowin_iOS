@@ -17,6 +17,17 @@
 		6E1D5F9F26593FBC00F9EDD0 /* CWMainBaseTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D5F9E26593FBC00F9EDD0 /* CWMainBaseTabView.swift */; };
 		6E703EC426596DB100CAFDD1 /* CWMainBaseTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E703EC226596DB100CAFDD1 /* CWMainBaseTabViewCell.swift */; };
 		6E703EC526596DB100CAFDD1 /* CWMainBaseTabViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */; };
+		6ECA7BC1265A378900A0BDFA /* CWHomePageTodayStatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA7BBF265A378900A0BDFA /* CWHomePageTodayStatsCell.swift */; };
+		6ECA7BC2265A378900A0BDFA /* CWHomePageTodayStatsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECA7BC0265A378900A0BDFA /* CWHomePageTodayStatsCell.xib */; };
+		6ECA7BC6265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA7BC4265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift */; };
+		6ECA7BC7265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECA7BC5265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.xib */; };
+		6ECA7BCB265AC0A900A0BDFA /* CWHomePageVaccinatedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA7BC9265AC0A900A0BDFA /* CWHomePageVaccinatedCell.swift */; };
+		6ECA7BCC265AC0A900A0BDFA /* CWHomePageVaccinatedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECA7BCA265AC0A900A0BDFA /* CWHomePageVaccinatedCell.xib */; };
+		6ECA7BD4265ACBD000A0BDFA /* CWHomePageBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA7BD2265ACBD000A0BDFA /* CWHomePageBannerCell.swift */; };
+		6ECA7BD5265ACBD000A0BDFA /* CWHomePageBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECA7BD3265ACBD000A0BDFA /* CWHomePageBannerCell.xib */; };
+		6ECEB319265A180800FE1BF0 /* CWMainPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECEB318265A180800FE1BF0 /* CWMainPageTitleView.swift */; };
+		6ECEB31B265A182100FE1BF0 /* CWMainPageTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECEB31A265A182100FE1BF0 /* CWMainPageTitleView.xib */; };
+		6ECEB31D265A1A9C00FE1BF0 /* CWColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECEB31C265A1A9C00FE1BF0 /* CWColors.swift */; };
 		E3763AAE2659518700D25470 /* CWOnboardChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3763AAD2659518700D25470 /* CWOnboardChildViewController.swift */; };
 		E3763AB02659654A00D25470 /* OnBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3763AAF2659654A00D25470 /* OnBoard.storyboard */; };
 		E3763AB3265976F800D25470 /* CWStringContant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3763AB2265976F800D25470 /* CWStringContant.swift */; };
@@ -106,6 +117,17 @@
 		6E1D5F9E26593FBC00F9EDD0 /* CWMainBaseTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainBaseTabView.swift; sourceTree = "<group>"; };
 		6E703EC226596DB100CAFDD1 /* CWMainBaseTabViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainBaseTabViewCell.swift; sourceTree = "<group>"; };
 		6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWMainBaseTabViewCell.xib; sourceTree = "<group>"; };
+		6ECA7BBF265A378900A0BDFA /* CWHomePageTodayStatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomePageTodayStatsCell.swift; sourceTree = "<group>"; };
+		6ECA7BC0265A378900A0BDFA /* CWHomePageTodayStatsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomePageTodayStatsCell.xib; sourceTree = "<group>"; };
+		6ECA7BC4265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWTodayStatsCollectionViewCell.swift; sourceTree = "<group>"; };
+		6ECA7BC5265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWTodayStatsCollectionViewCell.xib; sourceTree = "<group>"; };
+		6ECA7BC9265AC0A900A0BDFA /* CWHomePageVaccinatedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomePageVaccinatedCell.swift; sourceTree = "<group>"; };
+		6ECA7BCA265AC0A900A0BDFA /* CWHomePageVaccinatedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomePageVaccinatedCell.xib; sourceTree = "<group>"; };
+		6ECA7BD2265ACBD000A0BDFA /* CWHomePageBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomePageBannerCell.swift; sourceTree = "<group>"; };
+		6ECA7BD3265ACBD000A0BDFA /* CWHomePageBannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomePageBannerCell.xib; sourceTree = "<group>"; };
+		6ECEB318265A180800FE1BF0 /* CWMainPageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainPageTitleView.swift; sourceTree = "<group>"; };
+		6ECEB31A265A182100FE1BF0 /* CWMainPageTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWMainPageTitleView.xib; sourceTree = "<group>"; };
+		6ECEB31C265A1A9C00FE1BF0 /* CWColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWColors.swift; sourceTree = "<group>"; };
 		982918DFD9BA9E45C2872B80 /* Pods_Cowin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cowin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBAA42F9241AD97FF5ABFFB /* Pods-Cowin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowin.release.xcconfig"; path = "Target Support Files/Pods-Cowin/Pods-Cowin.release.xcconfig"; sourceTree = "<group>"; };
 		E3763AAD2659518700D25470 /* CWOnboardChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWOnboardChildViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				6E1D5F932659316000F9EDD0 /* CWStyle.swift */,
+				6ECEB31C265A1A9C00FE1BF0 /* CWColors.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -268,6 +291,7 @@
 		6E1D5F9A26593EB500F9EDD0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6ECEB317265A17E700FE1BF0 /* CWMainPageTitleView */,
 				6E1D5F9B26593EBA00F9EDD0 /* MainPageTabView */,
 			);
 			path = Views;
@@ -290,6 +314,70 @@
 				6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		6ECA7BBC265A375800A0BDFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6ECA7BBD265A376300A0BDFA /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6ECA7BBD265A376300A0BDFA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6ECA7BCD265ACB3D00A0BDFA /* Banner */,
+				6ECA7BC8265AC07A00A0BDFA /* VaccinatedStatus */,
+				6ECA7BBE265A376E00A0BDFA /* TodayStats */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6ECA7BBE265A376E00A0BDFA /* TodayStats */ = {
+			isa = PBXGroup;
+			children = (
+				6ECA7BC3265A3B9800A0BDFA /* CollectionViewCell */,
+				6ECA7BBF265A378900A0BDFA /* CWHomePageTodayStatsCell.swift */,
+				6ECA7BC0265A378900A0BDFA /* CWHomePageTodayStatsCell.xib */,
+			);
+			path = TodayStats;
+			sourceTree = "<group>";
+		};
+		6ECA7BC3265A3B9800A0BDFA /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6ECA7BC4265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift */,
+				6ECA7BC5265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		6ECA7BC8265AC07A00A0BDFA /* VaccinatedStatus */ = {
+			isa = PBXGroup;
+			children = (
+				6ECA7BC9265AC0A900A0BDFA /* CWHomePageVaccinatedCell.swift */,
+				6ECA7BCA265AC0A900A0BDFA /* CWHomePageVaccinatedCell.xib */,
+			);
+			path = VaccinatedStatus;
+			sourceTree = "<group>";
+		};
+		6ECA7BCD265ACB3D00A0BDFA /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				6ECA7BD2265ACBD000A0BDFA /* CWHomePageBannerCell.swift */,
+				6ECA7BD3265ACBD000A0BDFA /* CWHomePageBannerCell.xib */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		6ECEB317265A17E700FE1BF0 /* CWMainPageTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				6ECEB318265A180800FE1BF0 /* CWMainPageTitleView.swift */,
+				6ECEB31A265A182100FE1BF0 /* CWMainPageTitleView.xib */,
+			);
+			path = CWMainPageTitleView;
 			sourceTree = "<group>";
 		};
 		BB05A0EE201931F076CEF3B3 /* Frameworks */ = {
@@ -511,6 +599,7 @@
 		E3EDA55426590F6800E9943D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6ECA7BBC265A375800A0BDFA /* Views */,
 				E3EDA5A42659123F00E9943D /* Workers */,
 				E3EDA5A32659123900E9943D /* Initializer */,
 				E3EDA5A22659123300E9943D /* Controller */,
@@ -781,15 +870,20 @@
 				E3EDA59B265910E500E9943D /* Home.storyboard in Resources */,
 				6E703EC526596DB100CAFDD1 /* CWMainBaseTabViewCell.xib in Resources */,
 				E3763AB02659654A00D25470 /* OnBoard.storyboard in Resources */,
+				6ECA7BC7265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.xib in Resources */,
 				E3763AC0265980A700D25470 /* icomoon.ttf in Resources */,
+				6ECA7BCC265AC0A900A0BDFA /* CWHomePageVaccinatedCell.xib in Resources */,
 				E3EDA59F2659114600E9943D /* Booking.storyboard in Resources */,
 				E3E6B127265784C300CB39CC /* LaunchScreen.storyboard in Resources */,
 				E3EDA5A12659116F00E9943D /* Profile.storyboard in Resources */,
 				E3E6B124265784C200CB39CC /* Assets.xcassets in Resources */,
+				6ECEB31B265A182100FE1BF0 /* CWMainPageTitleView.xib in Resources */,
 				E3EDA59D2659111100E9943D /* Stats.storyboard in Resources */,
 				E3EDA54B265907AA00E9943D /* CWOnboardContentView.xib in Resources */,
 				6E1D5F9D26593EDE00F9EDD0 /* CWMainBaseTabView.xib in Resources */,
 				E3E6B11F265784C000CB39CC /* Main.storyboard in Resources */,
+				6ECA7BC2265A378900A0BDFA /* CWHomePageTodayStatsCell.xib in Resources */,
+				6ECA7BD5265ACBD000A0BDFA /* CWHomePageBannerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,7 +951,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3EDA56F26590FAC00E9943D /* CWStatsPresenter.swift in Sources */,
+				6ECA7BC6265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift in Sources */,
 				E3BDB66E2657F68200DC74AE /* CWOnboardInteractor.swift in Sources */,
+				6ECA7BCB265AC0A900A0BDFA /* CWHomePageVaccinatedCell.swift in Sources */,
 				E3EDA58026590FD500E9943D /* CWBookingPresenter.swift in Sources */,
 				E3EDA56E26590FAC00E9943D /* CWStatsConfiguration.swift in Sources */,
 				E3EDA55F26590F7C00E9943D /* CWHomeRouter.swift in Sources */,
@@ -865,6 +961,7 @@
 				E3EDA5912659100400E9943D /* CWProfilePresenter.swift in Sources */,
 				E3EDA56126590F7C00E9943D /* CWHomeInteractor.swift in Sources */,
 				E3BDB66C2657F68200DC74AE /* CWOnboardRouter.swift in Sources */,
+				6ECEB31D265A1A9C00FE1BF0 /* CWColors.swift in Sources */,
 				E3EDA55D26590F7C00E9943D /* CWHomeConfiguration.swift in Sources */,
 				E3EDA53B2658E88500E9943D /* OTPLoginViewController.swift in Sources */,
 				E3EDA58126590FD500E9943D /* CWBookingRouter.swift in Sources */,
@@ -884,7 +981,9 @@
 				E3BDB6762657F73D00DC74AE /* CWUtility.swift in Sources */,
 				6E1D5ED126591B3D00F9EDD0 /* CWMainBasePageController.swift in Sources */,
 				E3EDA56426590F7C00E9943D /* CWHomeManager.swift in Sources */,
+				6ECA7BC1265A378900A0BDFA /* CWHomePageTodayStatsCell.swift in Sources */,
 				6E1D5F942659316000F9EDD0 /* CWStyle.swift in Sources */,
+				6ECEB319265A180800FE1BF0 /* CWMainPageTitleView.swift in Sources */,
 				E3EDA55326590F4A00E9943D /* CWBaseTabViewModel.swift in Sources */,
 				E3763AAE2659518700D25470 /* CWOnboardChildViewController.swift in Sources */,
 				E3BDB66B2657F68200DC74AE /* CWOnboardPresenter.swift in Sources */,
@@ -895,6 +994,7 @@
 				E3EDA57526590FAC00E9943D /* CWStatsManager.swift in Sources */,
 				E3EDA53F2658E88500E9943D /* OTPLoginManager.swift in Sources */,
 				E3EDA57F26590FD500E9943D /* CWBookingConfiguration.swift in Sources */,
+				6ECA7BD4265ACBD000A0BDFA /* CWHomePageBannerCell.swift in Sources */,
 				E3E6B122265784C000CB39CC /* Cowin.xcdatamodeld in Sources */,
 				E3763AB3265976F800D25470 /* CWStringContant.swift in Sources */,
 				E3EDA56026590F7C00E9943D /* CWHomeViewController.swift in Sources */,

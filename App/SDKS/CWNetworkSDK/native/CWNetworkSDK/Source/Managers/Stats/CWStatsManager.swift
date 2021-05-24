@@ -16,4 +16,18 @@ extension CWNetworkManager {
         }
     }
     
+    public func triggerFeedsList(onCompletion result:((CWFeedsModel? , String?) -> ())? = nil) {
+        
+        let urlParams = ["q": "vaccination" ,
+                         "from": Date.getCurrentDate() ,
+                         "to": Date.getCurrentDate() ,
+                         "sortBy": "popularity" ,
+                         "apiKey": CWURLConstants.feedsAPIKit]
+        
+        statsrouter.request(.getFeeds(params: urlParams)) { data, response, error in
+            let networkModel = CWNetworkUtilities.getResponseModel(data: data, error: error, response: response, type: CWFeedsModel.self)
+            result?(networkModel.model , networkModel.error)
+        }
+    }
+    
 }

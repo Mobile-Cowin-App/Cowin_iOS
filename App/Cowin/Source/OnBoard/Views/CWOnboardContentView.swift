@@ -17,8 +17,6 @@ class CWOnboardContentView: UIView {
         super.awakeFromNib()
     
         self.contentImage.addShadow(offset: CGSize.init(width: 0, height: 3), color: CWStyle.Static.appTheme, radius: 12.0, opacity: 0.35)
-        
-        
         self.contentImage.layer.masksToBounds = false
     }
     

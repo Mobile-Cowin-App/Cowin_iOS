@@ -7,6 +7,13 @@
 
 import UIKit
 
+struct CWHomeBottomTabData {
+        
+    var icon: String = .defaultValue
+    var text: String = .defaultValue
+    var isSelected: Bool = .defaultValue
+}
+
 class CWMainBaseTabView: UIView {
 
     @IBOutlet var collectionView: UICollectionView!
@@ -14,9 +21,17 @@ class CWMainBaseTabView: UIView {
     
     var selectedIndex: ((Int) -> ())?
     
+    var datasource: [CWHomeBottomTabData] = .defaultValue
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.prepareCollectionView()
+        self.generateDataSource()
+    }
+    
+    private func prepareCollectionView() {
+
         self.collectionView.register(UINib(nibName: identifier, bundle: nil), forCellWithReuseIdentifier: identifier)
         
         self.collectionView.delegate = self
@@ -24,7 +39,16 @@ class CWMainBaseTabView: UIView {
         
         self.collectionView.isScrollEnabled = true
         self.collectionView.showsHorizontalScrollIndicator = false
+    }
     
+    private func generateDataSource() {
+        let icons = ["\u{e900}", "\u{e920}", "\u{e99c}", "\u{f2bd}"]
+        let titles = ["Home", "Book", "Stats", "Profile"]
+
+        self.datasource = zip(icons, titles).map({ (icon, title) in
+            return CWHomeBottomTabData(icon: icon, text: title, isSelected: false)
+        })
+        
         DispatchQueue.main.async {
             
             self.collectionView.reloadData()
@@ -84,11 +108,12 @@ class CWMainBaseTabView: UIView {
 extension CWMainBaseTabView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return self.datasource.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CWMainBaseTabViewCell
+        cell.setData(with: self.datasource[indexPath.item])
         return cell
     }
     

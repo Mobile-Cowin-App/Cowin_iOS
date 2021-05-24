@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HelperKit
 
 class CWLoginEmptyDataCell: UITableViewCell {
 

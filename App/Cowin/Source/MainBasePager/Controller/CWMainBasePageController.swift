@@ -77,13 +77,11 @@ fileprivate extension CWMainBasePageController {
     
     func preparHomeViewController() -> UIViewController {
         let controller = CWHomeConfiguration.setup()
-        controller.view.backgroundColor = .red
         return controller
     }
     
     func prepareStatsViewController() -> UIViewController {
         let controller = CWStatsConfiguration.setup()
-        controller.view.backgroundColor = .yellow
         return controller
     }
     

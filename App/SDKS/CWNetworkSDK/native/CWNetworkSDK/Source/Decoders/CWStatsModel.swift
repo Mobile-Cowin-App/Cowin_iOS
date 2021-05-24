@@ -148,13 +148,51 @@ public struct TimeWiseTodayRegReport: Codable {
 public struct TopBlock: Codable {
     public let sites, sessions: Sessions
     public let registration: Registration
-    public let vaccination: [String: Int]
+    public let vaccination: Vaccination
 
-    public init(sites: Sessions, sessions: Sessions, registration: Registration, vaccination: [String: Int]) {
+    public init(sites: Sessions, sessions: Sessions, registration: Registration, vaccination: Vaccination) {
         self.sites = sites
         self.sessions = sessions
         self.registration = registration
         self.vaccination = vaccination
+    }
+}
+
+// MARK: - Vaccination
+public struct Vaccination: Codable {
+    public let total, male, female, others, covishield, covaxin, sputnik, today, tot_dose_1, tot_dose_2, total_doses, aefi, today_dose_one, today_dose_two, today_male, today_female, today_others, today_aefi: Double?
+
+    enum CodingKeys: String, CodingKey {
+        case total, male, female, others, covishield, covaxin, sputnik, today, tot_dose_1, tot_dose_2, total_doses, aefi, today_dose_one, today_dose_two, today_male, today_female, today_others, today_aefi
+    }
+    
+//    public func encode(to encoder: Encoder) throws {
+//        var container = encoder.container(keyedBy: CodingKeys.self)
+//        try container.encode(total, forKey: .total)
+//        try container.encode(male, forKey: .male)
+//        try container.encode(female, forKey: .female)
+//    }
+    
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        total = try values.decodeIfPresent(Double.self, forKey: .total)
+        male   = try values.decodeIfPresent(Double.self, forKey: .male)
+        female      = try values.decodeIfPresent(Double.self, forKey: .female)
+        others      = try values.decodeIfPresent(Double.self, forKey: .others)
+        covishield      = try values.decodeIfPresent(Double.self, forKey: .covishield)
+        covaxin      = try values.decodeIfPresent(Double.self, forKey: .covaxin)
+        sputnik      = try values.decodeIfPresent(Double.self, forKey: .sputnik)
+        today      = try values.decodeIfPresent(Double.self, forKey: .today)
+        tot_dose_1      = try values.decodeIfPresent(Double.self, forKey: .tot_dose_1)
+        tot_dose_2      = try values.decodeIfPresent(Double.self, forKey: .tot_dose_2)
+        total_doses      = try values.decodeIfPresent(Double.self, forKey: .total_doses)
+        aefi      = try values.decodeIfPresent(Double.self, forKey: .aefi)
+        today_dose_one      = try values.decodeIfPresent(Double.self, forKey: .today_dose_one)
+        today_dose_two      = try values.decodeIfPresent(Double.self, forKey: .today_dose_two)
+        today_male      = try values.decodeIfPresent(Double.self, forKey: .today_male)
+        today_female      = try values.decodeIfPresent(Double.self, forKey: .today_female)
+        today_others      = try values.decodeIfPresent(Double.self, forKey: .today_others)
+        today_aefi      = try values.decodeIfPresent(Double.self, forKey: .today_aefi)
     }
 }
 

@@ -40,7 +40,7 @@ class CWHomePageTodayStatsCell: UITableViewCell {
     }
     
     private func prepareStyles() {
-        self.backgroundColor = CWStyle.Background.primary
+        self.backgroundColor = CWStyle.Background.secondary
         
         self.title.applyTextAttributes(font: .primary(.bold), withColor: .primary)
         self.lastupdated.applyTextAttributes(font: .teritary(.regular), withColor: .teritary)
@@ -49,11 +49,11 @@ class CWHomePageTodayStatsCell: UITableViewCell {
         self.totalTitle.applyTextAttributes(font: .primary(.bold), withColor: .primary)
         self.totalCount.applyTextAttributes(font: .primary(.semibold), withColor: .secondary)
 
-        self.totalHolderView.backgroundColor = .white
-        self.totalHolderView.layer.cornerRadius = 5.0
+        self.totalHolderView.backgroundColor = CWStyle.Background.primary
+        self.totalHolderView.applyHomeCellBorderRadius()
                 
-        self.collectionView.backgroundColor = .white
-        self.collectionView.layer.cornerRadius = 5.0
+        self.collectionView.backgroundColor = CWStyle.Background.primary
+        self.collectionView.applyHomeCellBorderRadius()
         
         [self.collectionView, self.totalHolderView].forEach({
             $0?.applyDropShadow()
@@ -91,6 +91,8 @@ class CWHomePageTodayStatsCell: UITableViewCell {
         self.totalCount.text = (model.total?.toInt())?.toString()
         
         self.generateDataSource(with: model)
+        
+        self.collectionView.reloadData()
     }
     
     private func generateDataSource(with model: CWHomeTodayVaccinationStats) {

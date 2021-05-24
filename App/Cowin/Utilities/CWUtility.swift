@@ -48,4 +48,20 @@ extension UIView {
     func applyDropShadow() {
         self.applyShadow(shadowColor: UIColor.black.withAlphaComponent(0.075), shadowRadius: 6.0, shadowOpacity: 1.0)//, shadowOffset : CGSize(width: 0, height: 5))
     }
+    
+    func applyHomeBottomViewBorderRadius() {
+        self.layer.cornerRadius = 15.0
+        self.clipsToBounds = true
+        self.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+    }
+    
+    func applyHomeTopViewBorderRadius() {
+        self.layer.cornerRadius = 15.0
+        self.clipsToBounds = true
+        self.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+    }
+    
+    func applyHomeCellBorderRadius() {
+        self.layer.cornerRadius = 10.0
+    }
 }

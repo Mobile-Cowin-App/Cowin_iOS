@@ -17,33 +17,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuW-c5-gBs">
-                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oE-lU-JkW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLd-Pb-QmC">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Zhv-ct-96i"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="HSe-AL-Udk"/>
+                                    <constraint firstItem="fLd-Pb-QmC" firstAttribute="leading" secondItem="1oE-lU-JkW" secondAttribute="leading" id="Mie-rs-NbD"/>
+                                    <constraint firstAttribute="trailing" secondItem="fLd-Pb-QmC" secondAttribute="trailing" id="liu-EC-00w"/>
+                                    <constraint firstAttribute="bottom" secondItem="fLd-Pb-QmC" secondAttribute="bottom" id="r8X-jr-wAj"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="axv-8L-uDF">
-                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="axv-8L-uDF">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VuW-c5-gBs" secondAttribute="trailing" id="4jn-mm-Icp"/>
-                            <constraint firstItem="axv-8L-uDF" firstAttribute="top" secondItem="VuW-c5-gBs" secondAttribute="bottom" id="G1e-w2-FjC"/>
-                            <constraint firstItem="VuW-c5-gBs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="RSR-qX-NuR"/>
+                            <constraint firstItem="1oE-lU-JkW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="4rf-1T-tFr"/>
+                            <constraint firstItem="axv-8L-uDF" firstAttribute="top" secondItem="1oE-lU-JkW" secondAttribute="bottom" id="ERA-cf-ugd"/>
+                            <constraint firstItem="1oE-lU-JkW" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Mp3-nc-2bc"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="axv-8L-uDF" secondAttribute="bottom" id="VdK-5b-aTp"/>
                             <constraint firstItem="axv-8L-uDF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fIc-mg-EaK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="fLd-Pb-QmC" secondAttribute="top" id="fh6-uH-hlj"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="axv-8L-uDF" secondAttribute="trailing" id="gQ4-f3-2F1"/>
-                            <constraint firstItem="VuW-c5-gBs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uBC-xH-UFn"/>
+                            <constraint firstItem="1oE-lU-JkW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="kLP-JE-QSh"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="axv-8L-uDF" id="VcV-KO-t95"/>
-                        <outlet property="titleHolderView" destination="VuW-c5-gBs" id="8ow-pY-9hz"/>
+                        <outlet property="titleHolderView" destination="fLd-Pb-QmC" id="gTZ-IP-ZI3"/>
+                        <outlet property="topHolderView" destination="1oE-lU-JkW" id="oE0-un-qHt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

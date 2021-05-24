@@ -21,7 +21,7 @@ class CWMainPageTitleView: UIView {
     
     private func prepareStyles() {
         
-        self.iconHolder.backgroundColor = .white
+        self.iconHolder.backgroundColor = CWStyle.Background.primary
         self.iconHolder.layer.cornerRadius = 15.0
         
         self.title.applyTextAttributes(font: .heading, withColor: .primary)

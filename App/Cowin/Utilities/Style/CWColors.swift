@@ -12,8 +12,30 @@ struct CWStyle {
     
     struct Background {
         
-        static var primary: UIColor? {
-            UIColor(named: "CWPrimaryBG")
+        static var primary: UIColor {
+            UIColor(named: "CWPrimaryBG") ?? .defaultValue
+        }
+        
+        static var secondary: UIColor {
+            UIColor(named: "CWSecondaryBG") ?? .defaultValue
+        }
+    }
+    
+    struct Text {
+        
+        static var primary: UIColor {
+            UIColor(named: "CWPrimaryText") ?? .defaultValue
+        }
+        
+        static var secondary: UIColor {
+            UIColor(named: "CWSecondaryText") ?? .defaultValue
+        }
+    }
+    
+    struct Border {
+        
+        static var primary: UIColor {
+            UIColor(named: "CWPrimaryBorder") ?? .defaultValue
         }
     }
     
@@ -22,10 +44,6 @@ struct CWStyle {
         static var appTheme: UIColor {
             return UIColor.systemBlue
         }
-        
-//        static var appTheme: UIColor? {
-//            UIColor(named: "CWTheme")
-//        }
         
         static let red                      = #colorLiteral(red: 0.7725490196, green: 0.2, blue: 0.2, alpha: 1)
         static let green                    = #colorLiteral(red: 0.003921568627, green: 0.6274509804, blue: 0.0862745098, alpha: 1)

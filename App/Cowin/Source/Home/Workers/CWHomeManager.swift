@@ -19,12 +19,12 @@ class CWHomeManager: ICWHomeManager {
     func generateDataSource(with model: CWStatsModel) -> [CWHomePageDataSource] {
         var dataSource = [CWHomePageDataSource]()
         
+        dataSource.append(CWHomePageDataSource.Banner(["banner0", "banner1", "banner2"]))
+        
         dataSource.append(CWHomePageDataSource.TodayStatsModel(model))
         
         let vaccinatedStatus = CWVaccinatedStatus(vaccinated: true, vaccinatedTime: Date().convert("EEEE, MMM d, yyyy"))
         dataSource.append(CWHomePageDataSource.VaccinatedStatus(vaccinatedStatus))
-        
-        dataSource.append(CWHomePageDataSource.Banner(["https://www.freepik.com/free-vector/hand-drawn-covid-19-vaccine-banner-template_13831289.htm#page=1&query=vaccine&position=4"]))
         
         return dataSource
     }

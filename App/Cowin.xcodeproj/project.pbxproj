@@ -25,6 +25,8 @@
 		6ECA7BCC265AC0A900A0BDFA /* CWHomePageVaccinatedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECA7BCA265AC0A900A0BDFA /* CWHomePageVaccinatedCell.xib */; };
 		6ECA7BD4265ACBD000A0BDFA /* CWHomePageBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA7BD2265ACBD000A0BDFA /* CWHomePageBannerCell.swift */; };
 		6ECA7BD5265ACBD000A0BDFA /* CWHomePageBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECA7BD3265ACBD000A0BDFA /* CWHomePageBannerCell.xib */; };
+		6ECB902A265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB9028265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.swift */; };
+		6ECB902B265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECB9029265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.xib */; };
 		6ECEB319265A180800FE1BF0 /* CWMainPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECEB318265A180800FE1BF0 /* CWMainPageTitleView.swift */; };
 		6ECEB31B265A182100FE1BF0 /* CWMainPageTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECEB31A265A182100FE1BF0 /* CWMainPageTitleView.xib */; };
 		6ECEB31D265A1A9C00FE1BF0 /* CWColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECEB31C265A1A9C00FE1BF0 /* CWColors.swift */; };
@@ -142,6 +144,8 @@
 		6ECA7BCA265AC0A900A0BDFA /* CWHomePageVaccinatedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomePageVaccinatedCell.xib; sourceTree = "<group>"; };
 		6ECA7BD2265ACBD000A0BDFA /* CWHomePageBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomePageBannerCell.swift; sourceTree = "<group>"; };
 		6ECA7BD3265ACBD000A0BDFA /* CWHomePageBannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomePageBannerCell.xib; sourceTree = "<group>"; };
+		6ECB9028265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomeBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		6ECB9029265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomeBannerCollectionViewCell.xib; sourceTree = "<group>"; };
 		6ECEB318265A180800FE1BF0 /* CWMainPageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainPageTitleView.swift; sourceTree = "<group>"; };
 		6ECEB31A265A182100FE1BF0 /* CWMainPageTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWMainPageTitleView.xib; sourceTree = "<group>"; };
 		6ECEB31C265A1A9C00FE1BF0 /* CWColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWColors.swift; sourceTree = "<group>"; };
@@ -401,6 +405,8 @@
 			children = (
 				6ECA7BD2265ACBD000A0BDFA /* CWHomePageBannerCell.swift */,
 				6ECA7BD3265ACBD000A0BDFA /* CWHomePageBannerCell.xib */,
+				6ECB9028265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.swift */,
+				6ECB9029265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.xib */,
 			);
 			path = Banner;
 			sourceTree = "<group>";
@@ -990,6 +996,7 @@
 				6ECEB31B265A182100FE1BF0 /* CWMainPageTitleView.xib in Resources */,
 				E3EDA59D2659111100E9943D /* Stats.storyboard in Resources */,
 				E3EDA54B265907AA00E9943D /* CWOnboardContentView.xib in Resources */,
+				6ECB902B265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.xib in Resources */,
 				6E1D5F9D26593EDE00F9EDD0 /* CWMainBaseTabView.xib in Resources */,
 				E368540A265A3AC2008335A1 /* CWMembersDataCell.xib in Resources */,
 				E3E6B11F265784C000CB39CC /* Main.storyboard in Resources */,
@@ -1081,6 +1088,7 @@
 				E3EDA55D26590F7C00E9943D /* CWHomeConfiguration.swift in Sources */,
 				E368540D265A43B9008335A1 /* CWUserDefaultManager.swift in Sources */,
 				E3EDA53B2658E88500E9943D /* OTPLoginViewController.swift in Sources */,
+				6ECB902A265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.swift in Sources */,
 				E3EDA58126590FD500E9943D /* CWBookingRouter.swift in Sources */,
 				E3EDA55126590ECD00E9943D /* CWBaseTabViewController.swift in Sources */,
 				E3EDA5382658E88500E9943D /* OTPLoginConfiguration.swift in Sources */,
@@ -1310,7 +1318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 54HSWPSU32;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Cowin/Utilities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

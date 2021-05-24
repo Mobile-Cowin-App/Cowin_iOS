@@ -31,8 +31,8 @@ class CWHomePageVaccinatedCell: UITableViewCell {
     private func prepareStyles() {
         self.backgroundColor = .clear
         
-        self.holderview.backgroundColor = .white
-        self.holderview.layer.cornerRadius = 5.0
+        self.holderview.backgroundColor = CWStyle.Background.primary
+        self.holderview.applyHomeCellBorderRadius()
         self.holderview.applyDropShadow()
 
         self.title.applyTextAttributes(font: .teritary(.semibold), withColor: .secondary)

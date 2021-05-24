@@ -28,6 +28,7 @@ class CWMainBasePageController: UIPageViewController {
         // Do any additional setup after loading the view.
         self.dataSource = self
         self.delegate = self
+        self.view.backgroundColor = .clear
         
         self.controllers = [ self.preparHomeViewController(),
                      self.prepareStatsViewController(),

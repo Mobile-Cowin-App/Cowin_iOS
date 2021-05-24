@@ -18,19 +18,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="359" height="193"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3I8-9n-QkG">
+                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="3I8-9n-QkG">
                         <rect key="frame" x="14" y="10" width="331" height="173"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M78-mZ-tmr">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qG4-PE-ukh">
                                 <rect key="frame" x="0.0" y="0.0" width="331" height="173"/>
-                            </imageView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o79-G9-RVh">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="M78-mZ-tmr" firstAttribute="leading" secondItem="3I8-9n-QkG" secondAttribute="leading" id="Tfd-xl-JaB"/>
-                            <constraint firstAttribute="trailing" secondItem="M78-mZ-tmr" secondAttribute="trailing" id="b25-35-Oed"/>
-                            <constraint firstItem="M78-mZ-tmr" firstAttribute="top" secondItem="3I8-9n-QkG" secondAttribute="top" id="xG1-yB-TnL"/>
-                            <constraint firstAttribute="bottom" secondItem="M78-mZ-tmr" secondAttribute="bottom" id="yKf-H9-hli"/>
+                            <constraint firstAttribute="bottom" secondItem="qG4-PE-ukh" secondAttribute="bottom" id="aUV-OL-nIt"/>
+                            <constraint firstItem="qG4-PE-ukh" firstAttribute="top" secondItem="3I8-9n-QkG" secondAttribute="top" id="kxq-d2-Q19"/>
+                            <constraint firstItem="qG4-PE-ukh" firstAttribute="leading" secondItem="3I8-9n-QkG" secondAttribute="leading" id="n5a-Ox-Rmz"/>
+                            <constraint firstAttribute="trailing" secondItem="qG4-PE-ukh" secondAttribute="trailing" id="uyU-uE-GRk"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -43,8 +50,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="collectionView" destination="qG4-PE-ukh" id="wwY-GG-E5G"/>
                 <outlet property="holderview" destination="3I8-9n-QkG" id="Er0-Pw-kSa"/>
-                <outlet property="imageview" destination="M78-mZ-tmr" id="uB5-lR-8n4"/>
             </connections>
             <point key="canvasLocation" x="92.028985507246389" y="128.23660714285714"/>
         </tableViewCell>

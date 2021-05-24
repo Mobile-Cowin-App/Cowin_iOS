@@ -77,10 +77,10 @@ enum CWTextColorStyles {
     var color: UIColor? {
         switch self {
         case .primary:
-            return #colorLiteral(red: 0.06666666667, green: 0.06666666667, blue: 0.06666666667, alpha: 1)
+            return CWStyle.Text.primary
             
         case .secondary:
-            return #colorLiteral(red: 0.1960784314, green: 0.2235294118, blue: 0.2549019608, alpha: 1)
+            return CWStyle.Text.secondary
             
         case .teritary:
             return #colorLiteral(red: 0.3882352941, green: 0.4352941176, blue: 0.4941176471, alpha: 1)

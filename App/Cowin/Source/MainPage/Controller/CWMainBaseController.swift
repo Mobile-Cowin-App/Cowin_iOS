@@ -36,20 +36,17 @@ class CWMainBaseController: UIViewController {
     
     func prepareTheme() {
         
-        self.view.backgroundColor = CWStyle.Background.primary
+        self.view.backgroundColor = CWStyle.Background.secondary
         self.view.clipsToBounds = true
         self.view.layer.masksToBounds = true
         
-        self.bottomHolderView.backgroundColor = UIColor.white
-        self.bottomHolderView.layer.cornerRadius = 15.0
-        self.bottomHolderView.clipsToBounds = true
-        self.bottomHolderView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        self.bottomHolderView.layer.masksToBounds = true
+        self.bottomHolderView.backgroundColor = CWStyle.Background.primary
+        self.bottomHolderView.applyHomeBottomViewBorderRadius()
     }
     
     func prepareViews() {
         let tabview: CWMainBaseTabView = CWMainBaseTabView.loadFromXib()
-        
+        tabview.backgroundColor = .clear
         tabview.selectedIndex = { (index) in
             self.pagecontroller.pushtoVC(index: index, animate: true)
         }

@@ -18,6 +18,7 @@ class CWHomeViewController: UIViewController {
 	var interactor: ICWHomeInteractor?
 	var router: ICWHomeRouter?
     
+    @IBOutlet var topHolderView: UIView!
     @IBOutlet var titleHolderView: UIView!
     @IBOutlet var tableView: UITableView!
     
@@ -44,8 +45,11 @@ class CWHomeViewController: UIViewController {
     
     private func prepareStyles() {
         
-        self.view.backgroundColor = CWStyle.Background.primary
+        self.view.backgroundColor = .clear
         self.tableView.backgroundColor = .clear
+        
+        self.topHolderView.backgroundColor = CWStyle.Background.primary
+        self.topHolderView.applyHomeTopViewBorderRadius()
     }
     
     private func registerXib() {
@@ -117,7 +121,7 @@ extension CWHomeViewController: UITableViewDelegate, UITableViewDataSource {
             return 120
             
         case .Banner( _):
-            return 120
+            return 200
             
         default:
             break

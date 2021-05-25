@@ -11,7 +11,8 @@ struct CWURLConstants {
     
     static let baseURL = "https://cdn-api.co-vin.in"
     static let secretID = "U2FsdGVkX19KER6gzXM/3CTLEb7et+r/yL236bYGJQX1J/dsQTXutTz4vFAXvq3pdnOLAN9/gB95x8IqnIaQgw=="
-    
+    static let feedsBaseURL = "https://newsapi.org"
+    static let feedsAPIKit = "e9e57bab28be42218f8005d62ef08077"
     
     enum Service: String {
         case getOTP = "/api/v2/auth/generateMobileOTP"
@@ -29,6 +30,7 @@ struct CWURLConstants {
         case scheduleAppointment = "/api/v2/appointment/schedule"
         case cancelAppointment = "/api/v2/appointment/cancel"
         case getCaptcha = "/api/v2/auth/getRecaptcha"
+        case getFeeds = "/v2/everything"
     }
     
 }

@@ -23,7 +23,7 @@ PODS:
 DEPENDENCIES:
   - CHIPageControl
   - CWNetworkSDK (from `SDKS/`)
-  - HelperKit (from `/Users/basheer-zutk107/HelperKit-iOS/`)
+  - HelperKit (from `https://github.com/MobileUtils/HelperKit-iOS`)
   - Hero
 
 SPEC REPOS:
@@ -35,7 +35,12 @@ EXTERNAL SOURCES:
   CWNetworkSDK:
     :path: SDKS/
   HelperKit:
-    :path: "/Users/basheer-zutk107/HelperKit-iOS/"
+    :git: https://github.com/MobileUtils/HelperKit-iOS
+
+CHECKOUT OPTIONS:
+  HelperKit:
+    :commit: a4aab71c736c06e879da462a8014272f0de1de66
+    :git: https://github.com/MobileUtils/HelperKit-iOS
 
 SPEC CHECKSUMS:
   CHIPageControl: a787bf7205c9b7e7fbfc412be36c5e8636b68f86
@@ -43,6 +48,6 @@ SPEC CHECKSUMS:
   HelperKit: c17a7070edea2ce89f40abc9fc71602797103f3f
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
 
-PODFILE CHECKSUM: e46fe17e9215495009a6ebd8baec3512ee5297b4
+PODFILE CHECKSUM: ac239e522cb926c20a2811de1a4b6a1d1f44d1d3
 
 COCOAPODS: 1.10.1

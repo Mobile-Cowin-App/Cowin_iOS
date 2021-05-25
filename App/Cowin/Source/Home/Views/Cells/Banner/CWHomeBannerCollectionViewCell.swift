@@ -2,7 +2,7 @@
 //  CWHomeBannerCollectionViewCell.swift
 //  Cowin
 //
-//  Created by basheer-zutk107 on 24/05/21.
+//  Created by Basheer Ahamed.S on 24/05/21.
 //
 
 import UIKit

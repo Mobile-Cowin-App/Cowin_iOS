@@ -18,13 +18,6 @@ class CWTodayStatsCollectionViewCell: UICollectionViewCell {
     private let animativelayer = CAShapeLayer()
     private let baselayer = CAShapeLayer()
     
-    private var frompercent: CGFloat = 0
-    private var percentvalue: CGFloat = 0.0 {
-        didSet {
-            frompercent = oldValue.isNaN ? 0 : oldValue
-        }
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -43,7 +36,7 @@ class CWTodayStatsCollectionViewCell: UICollectionViewCell {
     func setData(with model: CWHomeTodayStatsData) {
         
         self.title.text = model.gender
-        self.count.text = (model.count?.toInt())?.toString()
+        self.count.text = (model.count?.toInt())?.convertDelimiterFormat()
         
         let percent = model.count.safelyUnwrap / model.totalVaccinated.safelyUnwrap
         self.percentage.text = "\(round(percent * 100).toInt()) %"
@@ -68,8 +61,6 @@ extension CWTodayStatsCollectionViewCell {
     }
 
     private func animateLayer(value: CGFloat) {
-        self.percentvalue = value
-        
-        self.layerView.animateAppleHealth(for: self.animativelayer, fromValue: self.frompercent, toValue: self.percentvalue)
+        self.layerView.animateAppleHealth(for: self.animativelayer, fromValue: 0, toValue: value)
     }
 }

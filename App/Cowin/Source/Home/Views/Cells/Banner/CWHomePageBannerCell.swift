@@ -31,8 +31,6 @@ class CWHomePageBannerCell: UITableViewCell {
         self.backgroundColor = .clear
         
         self.holderview.backgroundColor = CWStyle.Background.primary
-        self.holderview.clipsToBounds = true
-        self.holderview.applyHomeCellBorderRadius()
     }
     
     func prepareCollectionView() {

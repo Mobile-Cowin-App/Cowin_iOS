@@ -32,7 +32,7 @@ class CWHomeViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        self.interactor?.fetchStats()
+        self.interactor?.fetchStats(for: CWUtility.today)
     }
     
     private func prepareViews() {
@@ -93,6 +93,11 @@ extension CWHomeViewController: UITableViewDelegate, UITableViewDataSource {
         case .TodayStatsModel(let model):
             let cell = tableView.dequeueReusableCell(withIdentifier: "CWHomePageTodayStatsCell", for: indexPath) as! CWHomePageTodayStatsCell
             cell.setData(with: model)
+            
+            cell.refreshTapped = {[weak self] in
+                self?.interactor?.fetchStats(for: CWUtility.today)
+            }
+            
             return cell
             
         case .VaccinatedStatus(let model):

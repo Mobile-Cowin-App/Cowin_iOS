@@ -12,7 +12,7 @@ protocol ICWHomeInteractor: AnyObject {
 	var parameters: [String: Any]? { get set }
     var datasource: [CWHomePageDataSource] { get set }
 
-    func fetchStats()
+    func fetchStats(for date: String)
 }
 
 class CWHomeInteractor: ICWHomeInteractor {
@@ -27,9 +27,9 @@ class CWHomeInteractor: ICWHomeInteractor {
         self.datasource = .defaultValue
     }
     
-    func fetchStats() {
+    func fetchStats(for date: String) {
         
-        CWNetworkManager.requester.triggerStatsReport(stateID: .defaultValue, districtID: .defaultValue, date: Date().convert("yyyy-MM-dd")) { (model, error) in
+        CWNetworkManager.requester.triggerStatsReport(stateID: .defaultValue, districtID: .defaultValue, date: date) { (model, error) in
             guard let statsModel = model, let worker = self.manager else { return }
             
             self.datasource = worker.generateDataSource(with: statsModel)

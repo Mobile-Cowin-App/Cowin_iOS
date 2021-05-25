@@ -17,6 +17,7 @@
 		6E1D5F9F26593FBC00F9EDD0 /* CWMainBaseTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D5F9E26593FBC00F9EDD0 /* CWMainBaseTabView.swift */; };
 		6E703EC426596DB100CAFDD1 /* CWMainBaseTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E703EC226596DB100CAFDD1 /* CWMainBaseTabViewCell.swift */; };
 		6E703EC526596DB100CAFDD1 /* CWMainBaseTabViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */; };
+		6EAD506E265D334D00426ED3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD5070265D334D00426ED3 /* Localizable.strings */; };
 		6ECA7BC1265A378900A0BDFA /* CWHomePageTodayStatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA7BBF265A378900A0BDFA /* CWHomePageTodayStatsCell.swift */; };
 		6ECA7BC2265A378900A0BDFA /* CWHomePageTodayStatsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECA7BC0265A378900A0BDFA /* CWHomePageTodayStatsCell.xib */; };
 		6ECA7BC6265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA7BC4265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift */; };
@@ -136,6 +137,7 @@
 		6E1D5F9E26593FBC00F9EDD0 /* CWMainBaseTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainBaseTabView.swift; sourceTree = "<group>"; };
 		6E703EC226596DB100CAFDD1 /* CWMainBaseTabViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainBaseTabViewCell.swift; sourceTree = "<group>"; };
 		6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWMainBaseTabViewCell.xib; sourceTree = "<group>"; };
+		6EAD506F265D334D00426ED3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6ECA7BBF265A378900A0BDFA /* CWHomePageTodayStatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomePageTodayStatsCell.swift; sourceTree = "<group>"; };
 		6ECA7BC0265A378900A0BDFA /* CWHomePageTodayStatsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomePageTodayStatsCell.xib; sourceTree = "<group>"; };
 		6ECA7BC4265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWTodayStatsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -352,6 +354,14 @@
 				6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		6EAD506B265D261F00426ED3 /* LocalizeFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD5070265D334D00426ED3 /* Localizable.strings */,
+			);
+			path = LocalizeFiles;
 			sourceTree = "<group>";
 		};
 		6ECA7BBC265A375800A0BDFA /* Views */ = {
@@ -605,6 +615,7 @@
 		E3E6B14C2657F56000CB39CC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6EAD506B265D261F00426ED3 /* LocalizeFiles */,
 				E368540B265A42CB008335A1 /* UserDefaults */,
 				E3763AB82659795E00D25470 /* Fonts */,
 				E3763AB1265976EA00D25470 /* Constants */,
@@ -989,6 +1000,7 @@
 				6ECA7BC7265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.xib in Resources */,
 				E3763AC0265980A700D25470 /* icomoon.ttf in Resources */,
 				6ECA7BCC265AC0A900A0BDFA /* CWHomePageVaccinatedCell.xib in Resources */,
+				6EAD506E265D334D00426ED3 /* Localizable.strings in Resources */,
 				E3EDA59F2659114600E9943D /* Booking.storyboard in Resources */,
 				E3E6B127265784C300CB39CC /* LaunchScreen.storyboard in Resources */,
 				E3EDA5A12659116F00E9943D /* Profile.storyboard in Resources */,
@@ -1176,6 +1188,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6EAD5070265D334D00426ED3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EAD506F265D334D00426ED3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		E3E6B11D265784C000CB39CC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

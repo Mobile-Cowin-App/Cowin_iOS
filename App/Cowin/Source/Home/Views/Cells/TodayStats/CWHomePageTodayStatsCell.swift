@@ -30,6 +30,8 @@ class CWHomePageTodayStatsCell: UITableViewCell {
     
     private var datasource: [CWHomeTodayStatsData] = .defaultValue
     
+    var refreshTapped: (() -> ())?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -64,7 +66,7 @@ class CWHomePageTodayStatsCell: UITableViewCell {
         
         self.title.text = Date().convert("EEEE, MMM d, yyyy")
         self.refresh.setTitle("\u{f01e}", for: .normal)
-        self.totalTitle.text = "Total Vaccination Doses"
+        self.totalTitle.text = "Total Vaccination Doses, by Today"
     }
     
     func prepareCollectionView() {
@@ -88,7 +90,7 @@ class CWHomePageTodayStatsCell: UITableViewCell {
         
         self.lastupdated.text = "Last updated, few mins ago"
         
-        self.totalCount.text = (model.total?.toInt())?.toString()
+        self.totalCount.text = (model.total?.toInt().convertDelimiterFormat())
         
         self.generateDataSource(with: model)
         
@@ -106,7 +108,7 @@ class CWHomePageTodayStatsCell: UITableViewCell {
     }
     
     @IBAction func refreshclicked(_ sender: UIButton) {
-    
+        self.refreshTapped?()
     }
 }
 

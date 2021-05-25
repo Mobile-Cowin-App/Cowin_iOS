@@ -5,3 +5,8 @@
   Created by Basheer Ahamed.S on 25/05/21.
   
 */
+
+"localize.unknown"    =   "Unknown";
+"localize.seemore"    =   "See more";
+
+"title.news"    =   "Breaking news about Covid-19";

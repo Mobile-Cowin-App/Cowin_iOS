@@ -24,7 +24,7 @@ internal struct CWUtility {
     }
         
     static var today: String {
-        return Date().convert(CWApiCallParams.dateFormat)
+        return "2021-05-25"//Date().convert(CWApiCallParams.dateFormat)
     }
 }
 
@@ -36,6 +36,10 @@ struct CWApiCallParams {
 }
 
 extension String {
+    
+    var localized: String {
+        return NSLocalizedString(self, comment: "")
+    }
     
     var sha256: String {
         let data = Data(utf8)

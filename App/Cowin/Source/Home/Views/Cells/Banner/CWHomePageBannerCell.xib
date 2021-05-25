@@ -19,10 +19,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="3I8-9n-QkG">
-                        <rect key="frame" x="14" y="10" width="331" height="173"/>
+                        <rect key="frame" x="0.0" y="0.0" width="359" height="193"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qG4-PE-ukh">
-                                <rect key="frame" x="0.0" y="0.0" width="331" height="173"/>
+                                <rect key="frame" x="0.0" y="0.0" width="359" height="193"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o79-G9-RVh">
                                     <size key="itemSize" width="128" height="128"/>
@@ -42,10 +42,10 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="3I8-9n-QkG" secondAttribute="bottom" constant="10" id="6nR-b3-vvo"/>
-                    <constraint firstItem="3I8-9n-QkG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="OdL-hu-vy0"/>
-                    <constraint firstItem="3I8-9n-QkG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="bEx-dJ-Ucf"/>
-                    <constraint firstAttribute="trailing" secondItem="3I8-9n-QkG" secondAttribute="trailing" constant="14" id="nRb-X9-vWI"/>
+                    <constraint firstAttribute="bottom" secondItem="3I8-9n-QkG" secondAttribute="bottom" id="6nR-b3-vvo"/>
+                    <constraint firstItem="3I8-9n-QkG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="OdL-hu-vy0"/>
+                    <constraint firstItem="3I8-9n-QkG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bEx-dJ-Ucf"/>
+                    <constraint firstAttribute="trailing" secondItem="3I8-9n-QkG" secondAttribute="trailing" id="nRb-X9-vWI"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

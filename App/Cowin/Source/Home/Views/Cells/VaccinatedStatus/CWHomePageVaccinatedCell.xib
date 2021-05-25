@@ -19,10 +19,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQI-wF-JO1">
-                        <rect key="frame" x="14" y="10" width="342" height="97"/>
+                        <rect key="frame" x="14" y="14" width="342" height="89"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YB1-wh-exz">
-                                <rect key="frame" x="14" y="14" width="314" height="69"/>
+                                <rect key="frame" x="14" y="10" width="314" height="69"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Covid 19 vaccine status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ow3-BZ-gSJ">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="34.5"/>
@@ -65,17 +65,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="YB1-wh-exz" secondAttribute="trailing" constant="14" id="C04-wy-yc5"/>
-                            <constraint firstAttribute="bottom" secondItem="YB1-wh-exz" secondAttribute="bottom" constant="14" id="PSP-Dk-uOk"/>
+                            <constraint firstAttribute="bottom" secondItem="YB1-wh-exz" secondAttribute="bottom" constant="10" id="PSP-Dk-uOk"/>
                             <constraint firstItem="YB1-wh-exz" firstAttribute="leading" secondItem="EQI-wF-JO1" secondAttribute="leading" constant="14" id="PTH-fM-XBd"/>
-                            <constraint firstItem="YB1-wh-exz" firstAttribute="top" secondItem="EQI-wF-JO1" secondAttribute="top" constant="14" id="hcX-ln-ypN"/>
+                            <constraint firstItem="YB1-wh-exz" firstAttribute="top" secondItem="EQI-wF-JO1" secondAttribute="top" constant="10" id="hcX-ln-ypN"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="EQI-wF-JO1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="3sT-jm-LQt"/>
                     <constraint firstAttribute="trailing" secondItem="EQI-wF-JO1" secondAttribute="trailing" constant="14" id="4Tg-bp-SwH"/>
-                    <constraint firstItem="EQI-wF-JO1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Peo-qG-TRd"/>
-                    <constraint firstAttribute="bottom" secondItem="EQI-wF-JO1" secondAttribute="bottom" constant="10" id="gel-Ua-78M"/>
+                    <constraint firstItem="EQI-wF-JO1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="Peo-qG-TRd"/>
+                    <constraint firstAttribute="bottom" secondItem="EQI-wF-JO1" secondAttribute="bottom" constant="14" id="gel-Ua-78M"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -30,7 +30,7 @@ class CWHomePageBannerCell: UITableViewCell {
     private func prepareStyles() {
         self.backgroundColor = .clear
         
-        self.holderview.backgroundColor = CWStyle.Background.primary
+        self.holderview.backgroundColor = .clear
     }
     
     func prepareCollectionView() {
@@ -70,7 +70,11 @@ extension CWHomePageBannerCell: UICollectionViewDelegate, UICollectionViewDataSo
         return CGSize(width: (collectionView.frame.width - 30.0), height: collectionView.frame.height)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 8.0, bottom: 0, right: 8.0)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return 0.0
     }
 }

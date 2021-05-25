@@ -10,13 +10,13 @@ import CWNetworkSDK
 
 protocol ICWHomeManager: AnyObject {
 	// do someting...
-    func generateDataSource(with model: CWStatsModel) -> [CWHomePageDataSource]
+    func generateDataSource(with model: CWStatsModel, newsModel: CWFeedsModel?) -> [CWHomePageDataSource]
 }
 
 class CWHomeManager: ICWHomeManager {
 	// do someting...
     
-    func generateDataSource(with model: CWStatsModel) -> [CWHomePageDataSource] {
+    func generateDataSource(with model: CWStatsModel, newsModel: CWFeedsModel?) -> [CWHomePageDataSource] {
         var dataSource = [CWHomePageDataSource]()
         
         dataSource.append(CWHomePageDataSource.Banner(["banner0", "banner1", "banner2"]))
@@ -25,6 +25,8 @@ class CWHomeManager: ICWHomeManager {
         
         let vaccinatedStatus = CWVaccinatedStatus(vaccinated: true, vaccinatedTime: Date().convert("EEEE, MMM d, yyyy"))
         dataSource.append(CWHomePageDataSource.VaccinatedStatus(vaccinatedStatus))
+        
+        dataSource.append(CWHomePageDataSource.News(newsModel))
         
         return dataSource
     }
@@ -35,6 +37,7 @@ enum CWHomePageDataSource {
     case TodayStatsModel(CWHomeTodayVaccinationStats)
     case VaccinatedStatus(CWVaccinatedStatus)
     case Banner([String])
+    case News(CWFeedsModel?)
 }
 
 

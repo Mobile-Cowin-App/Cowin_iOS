@@ -8,13 +8,23 @@
 import UIKit
 
 class CWHomeBannerCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet var holderView: UIView!
+    @IBOutlet var imageview: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        self.prepareStyles()
     }
-
-    @IBOutlet var imageview: UIImageView!
+    
+    private func prepareStyles() {
+        
+        self.holderView.backgroundColor = CWStyle.Background.primary
+        self.holderView.applyHomeCellBorderRadius()
+//        self.holderView.applyDropShadow()
+    }
     
     func setData(with url: String) {
         

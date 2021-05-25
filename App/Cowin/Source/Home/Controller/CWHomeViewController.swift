@@ -54,7 +54,7 @@ class CWHomeViewController: UIViewController {
     
     private func registerXib() {
         
-        ["CWHomePageTodayStatsCell", "CWHomePageVaccinatedCell", "CWHomePageBannerCell"].forEach({
+        ["CWHomePageTodayStatsCell", "CWHomePageVaccinatedCell", "CWHomePageBannerCell", "CWHomePageNewsCell"].forEach({
             self.tableView.register(UINib(nibName: $0, bundle: nil), forCellReuseIdentifier: $0)
         })
     }
@@ -110,6 +110,12 @@ extension CWHomeViewController: UITableViewDelegate, UITableViewDataSource {
             cell.setData(with: model)
             return cell
             
+        case .News(let model):
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CWHomePageNewsCell", for: indexPath) as! CWHomePageNewsCell
+            cell.setData(with: model)
+            return cell
+
+            
         default:
             break
         }
@@ -127,6 +133,9 @@ extension CWHomeViewController: UITableViewDelegate, UITableViewDataSource {
             
         case .Banner( _):
             return 200
+            
+        case .News( _):
+            return 350
             
         default:
             break

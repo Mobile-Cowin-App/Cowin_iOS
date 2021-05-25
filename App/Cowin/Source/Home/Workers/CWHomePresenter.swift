@@ -9,7 +9,7 @@ import UIKit
 protocol ICWHomePresenter: AnyObject {
 	// do someting...
     func success()
-    func failure()
+    func failure(with error: String?)
 }
 
 class CWHomePresenter: ICWHomePresenter {	
@@ -26,7 +26,7 @@ class CWHomePresenter: ICWHomePresenter {
         }
     }
     
-    func failure() {
+    func failure(with error: String?) {
         DispatchQueue.main.async {
         
         }

@@ -15,15 +15,15 @@
 		6E1D5F942659316000F9EDD0 /* CWStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D5F932659316000F9EDD0 /* CWStyle.swift */; };
 		6E1D5F9D26593EDE00F9EDD0 /* CWMainBaseTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D5F9C26593EDE00F9EDD0 /* CWMainBaseTabView.xib */; };
 		6E1D5F9F26593FBC00F9EDD0 /* CWMainBaseTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D5F9E26593FBC00F9EDD0 /* CWMainBaseTabView.swift */; };
+		6E311FB0265D4A7700DC14F1 /* CWHomePageNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E311FAE265D4A7700DC14F1 /* CWHomePageNewsCell.swift */; };
+		6E311FB1265D4A7700DC14F1 /* CWHomePageNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E311FAF265D4A7700DC14F1 /* CWHomePageNewsCell.xib */; };
+		6E311FB5265D503600DC14F1 /* CWHomeNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E311FB3265D503600DC14F1 /* CWHomeNewsCollectionViewCell.swift */; };
+		6E311FB6265D503600DC14F1 /* CWHomeNewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E311FB4265D503600DC14F1 /* CWHomeNewsCollectionViewCell.xib */; };
+		6E311FBA265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E311FB8265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.swift */; };
+		6E311FBB265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E311FB9265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.xib */; };
 		6E703EC426596DB100CAFDD1 /* CWMainBaseTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E703EC226596DB100CAFDD1 /* CWMainBaseTabViewCell.swift */; };
 		6E703EC526596DB100CAFDD1 /* CWMainBaseTabViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */; };
 		6EAD506E265D334D00426ED3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD5070265D334D00426ED3 /* Localizable.strings */; };
-		E34502D6265A82F800EFA6BE /* CWSearchSlotConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502CE265A82F800EFA6BE /* CWSearchSlotConfiguration.swift */; };
-		E34502D7265A82F800EFA6BE /* CWSearchSlotPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502CF265A82F800EFA6BE /* CWSearchSlotPresenter.swift */; };
-		E34502D8265A82F800EFA6BE /* CWSearchSlotRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502D0265A82F800EFA6BE /* CWSearchSlotRouter.swift */; };
-		E34502D9265A82F800EFA6BE /* CWSearchSlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502D1265A82F800EFA6BE /* CWSearchSlotViewController.swift */; };
-		E34502DA265A82F800EFA6BE /* CWSearchSlotInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502D2265A82F800EFA6BE /* CWSearchSlotInteractor.swift */; };
-		E34502DD265A82F800EFA6BE /* CWSearchSlotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502D5265A82F800EFA6BE /* CWSearchSlotManager.swift */; };
 		6ECA7BC1265A378900A0BDFA /* CWHomePageTodayStatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA7BBF265A378900A0BDFA /* CWHomePageTodayStatsCell.swift */; };
 		6ECA7BC2265A378900A0BDFA /* CWHomePageTodayStatsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECA7BC0265A378900A0BDFA /* CWHomePageTodayStatsCell.xib */; };
 		6ECA7BC6265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA7BC4265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift */; };
@@ -37,6 +37,12 @@
 		6ECEB319265A180800FE1BF0 /* CWMainPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECEB318265A180800FE1BF0 /* CWMainPageTitleView.swift */; };
 		6ECEB31B265A182100FE1BF0 /* CWMainPageTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECEB31A265A182100FE1BF0 /* CWMainPageTitleView.xib */; };
 		6ECEB31D265A1A9C00FE1BF0 /* CWColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECEB31C265A1A9C00FE1BF0 /* CWColors.swift */; };
+		E34502D6265A82F800EFA6BE /* CWSearchSlotConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502CE265A82F800EFA6BE /* CWSearchSlotConfiguration.swift */; };
+		E34502D7265A82F800EFA6BE /* CWSearchSlotPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502CF265A82F800EFA6BE /* CWSearchSlotPresenter.swift */; };
+		E34502D8265A82F800EFA6BE /* CWSearchSlotRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502D0265A82F800EFA6BE /* CWSearchSlotRouter.swift */; };
+		E34502D9265A82F800EFA6BE /* CWSearchSlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502D1265A82F800EFA6BE /* CWSearchSlotViewController.swift */; };
+		E34502DA265A82F800EFA6BE /* CWSearchSlotInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502D2265A82F800EFA6BE /* CWSearchSlotInteractor.swift */; };
+		E34502DD265A82F800EFA6BE /* CWSearchSlotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34502D5265A82F800EFA6BE /* CWSearchSlotManager.swift */; };
 		E3685405265A2333008335A1 /* CWLoginEmptyDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685403265A2333008335A1 /* CWLoginEmptyDataCell.swift */; };
 		E3685406265A2333008335A1 /* CWLoginEmptyDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3685404265A2333008335A1 /* CWLoginEmptyDataCell.xib */; };
 		E3685409265A3AC2008335A1 /* CWMembersDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3685407265A3AC2008335A1 /* CWMembersDataCell.swift */; };
@@ -141,6 +147,12 @@
 		6E1D5F932659316000F9EDD0 /* CWStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStyle.swift; sourceTree = "<group>"; };
 		6E1D5F9C26593EDE00F9EDD0 /* CWMainBaseTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWMainBaseTabView.xib; sourceTree = "<group>"; };
 		6E1D5F9E26593FBC00F9EDD0 /* CWMainBaseTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainBaseTabView.swift; sourceTree = "<group>"; };
+		6E311FAE265D4A7700DC14F1 /* CWHomePageNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomePageNewsCell.swift; sourceTree = "<group>"; };
+		6E311FAF265D4A7700DC14F1 /* CWHomePageNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomePageNewsCell.xib; sourceTree = "<group>"; };
+		6E311FB3265D503600DC14F1 /* CWHomeNewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomeNewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		6E311FB4265D503600DC14F1 /* CWHomeNewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomeNewsCollectionViewCell.xib; sourceTree = "<group>"; };
+		6E311FB8265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomePageNewsSeeMoreView.swift; sourceTree = "<group>"; };
+		6E311FB9265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomePageNewsSeeMoreView.xib; sourceTree = "<group>"; };
 		6E703EC226596DB100CAFDD1 /* CWMainBaseTabViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainBaseTabViewCell.swift; sourceTree = "<group>"; };
 		6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWMainBaseTabViewCell.xib; sourceTree = "<group>"; };
 		6EAD506F265D334D00426ED3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -359,6 +371,44 @@
 			path = MainPageTabView;
 			sourceTree = "<group>";
 		};
+		6E311FA8265D498100DC14F1 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6ECB9028265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.swift */,
+				6ECB9029265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		6E311FA9265D499200DC14F1 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				6E311FB7265D7DEA00DC14F1 /* FooterView */,
+				6E311FB2265D4FF700DC14F1 /* CollectionViewCell */,
+				6E311FAE265D4A7700DC14F1 /* CWHomePageNewsCell.swift */,
+				6E311FAF265D4A7700DC14F1 /* CWHomePageNewsCell.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		6E311FB2265D4FF700DC14F1 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6E311FB3265D503600DC14F1 /* CWHomeNewsCollectionViewCell.swift */,
+				6E311FB4265D503600DC14F1 /* CWHomeNewsCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		6E311FB7265D7DEA00DC14F1 /* FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				6E311FB8265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.swift */,
+				6E311FB9265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.xib */,
+			);
+			path = FooterView;
+			sourceTree = "<group>";
+		};
 		6E703EC126596D9600CAFDD1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +437,7 @@
 		6ECA7BBD265A376300A0BDFA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				6E311FA9265D499200DC14F1 /* News */,
 				6ECA7BCD265ACB3D00A0BDFA /* Banner */,
 				6ECA7BC8265AC07A00A0BDFA /* VaccinatedStatus */,
 				6ECA7BBE265A376E00A0BDFA /* TodayStats */,
@@ -425,10 +476,9 @@
 		6ECA7BCD265ACB3D00A0BDFA /* Banner */ = {
 			isa = PBXGroup;
 			children = (
+				6E311FA8265D498100DC14F1 /* CollectionViewCell */,
 				6ECA7BD2265ACBD000A0BDFA /* CWHomePageBannerCell.swift */,
 				6ECA7BD3265ACBD000A0BDFA /* CWHomePageBannerCell.xib */,
-				6ECB9028265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.swift */,
-				6ECB9029265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.xib */,
 			);
 			path = Banner;
 			sourceTree = "<group>";
@@ -1042,12 +1092,14 @@
 			files = (
 				E368542E265A5AFA008335A1 /* CWGenderCell.xib in Resources */,
 				E3EDA5442658EA7900E9943D /* Login.storyboard in Resources */,
+				6E311FB1265D4A7700DC14F1 /* CWHomePageNewsCell.xib in Resources */,
 				E3EDA59B265910E500E9943D /* Home.storyboard in Resources */,
 				E368542A265A57FF008335A1 /* CWSubmitCell.xib in Resources */,
 				6E703EC526596DB100CAFDD1 /* CWMainBaseTabViewCell.xib in Resources */,
 				E3685406265A2333008335A1 /* CWLoginEmptyDataCell.xib in Resources */,
 				E3763AB02659654A00D25470 /* OnBoard.storyboard in Resources */,
 				6ECA7BC7265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.xib in Resources */,
+				6E311FBB265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.xib in Resources */,
 				E3763AC0265980A700D25470 /* icomoon.ttf in Resources */,
 				6ECA7BCC265AC0A900A0BDFA /* CWHomePageVaccinatedCell.xib in Resources */,
 				6EAD506E265D334D00426ED3 /* Localizable.strings in Resources */,
@@ -1065,6 +1117,7 @@
 				6ECA7BC2265A378900A0BDFA /* CWHomePageTodayStatsCell.xib in Resources */,
 				6ECA7BD5265ACBD000A0BDFA /* CWHomePageBannerCell.xib in Resources */,
 				E3685426265A4E97008335A1 /* CWAddMemberCell.xib in Resources */,
+				6E311FB6265D503600DC14F1 /* CWHomeNewsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1133,6 +1186,7 @@
 			files = (
 				E3EDA56F26590FAC00E9943D /* CWStatsPresenter.swift in Sources */,
 				E34502D9265A82F800EFA6BE /* CWSearchSlotViewController.swift in Sources */,
+				6E311FB5265D503600DC14F1 /* CWHomeNewsCollectionViewCell.swift in Sources */,
 				6ECA7BC6265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift in Sources */,
 				E3BDB66E2657F68200DC74AE /* CWOnboardInteractor.swift in Sources */,
 				6ECA7BCB265AC0A900A0BDFA /* CWHomePageVaccinatedCell.swift in Sources */,
@@ -1144,8 +1198,10 @@
 				E368542D265A5AFA008335A1 /* CWGenderCell.swift in Sources */,
 				E3EDA5912659100400E9943D /* CWProfilePresenter.swift in Sources */,
 				E3685417265A4ACC008335A1 /* CWAddMemberConfiguration.swift in Sources */,
+				6E311FB0265D4A7700DC14F1 /* CWHomePageNewsCell.swift in Sources */,
 				E368541B265A4ACC008335A1 /* CWAddMemberInteractor.swift in Sources */,
 				E34502DA265A82F800EFA6BE /* CWSearchSlotInteractor.swift in Sources */,
+				6E311FBA265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.swift in Sources */,
 				E3EDA56126590F7C00E9943D /* CWHomeInteractor.swift in Sources */,
 				E3BDB66C2657F68200DC74AE /* CWOnboardRouter.swift in Sources */,
 				6ECEB31D265A1A9C00FE1BF0 /* CWColors.swift in Sources */,

@@ -21,6 +21,16 @@
 		6E311FB6265D503600DC14F1 /* CWHomeNewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E311FB4265D503600DC14F1 /* CWHomeNewsCollectionViewCell.xib */; };
 		6E311FBA265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E311FB8265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.swift */; };
 		6E311FBB265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E311FB9265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.xib */; };
+		6E4C2A36265EB1D100E1081E /* CWNewsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C2A35265EB1D100E1081E /* CWNewsConfiguration.swift */; };
+		6E4C2A38265EB28400E1081E /* CWNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C2A37265EB28400E1081E /* CWNewsViewController.swift */; };
+		6E4C2A3A265EB40D00E1081E /* CWNewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C2A39265EB40D00E1081E /* CWNewsPresenter.swift */; };
+		6E4C2A3C265EB4DC00E1081E /* CWNewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C2A3B265EB4DC00E1081E /* CWNewsRouter.swift */; };
+		6E4C2A3E265EB4F700E1081E /* CWNewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C2A3D265EB4F700E1081E /* CWNewsInteractor.swift */; };
+		6E4C2A40265EB50600E1081E /* CWNewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C2A3F265EB50600E1081E /* CWNewsManager.swift */; };
+		6E4C2A44265EB8C900E1081E /* CWNewsListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C2A42265EB8C900E1081E /* CWNewsListViewCell.swift */; };
+		6E4C2A45265EB8C900E1081E /* CWNewsListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C2A43265EB8C900E1081E /* CWNewsListViewCell.xib */; };
+		6E4C2A48265ED12A00E1081E /* CWTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C2A47265ED12A00E1081E /* CWTopNavigationView.swift */; };
+		6E4C2A4A265ED15500E1081E /* CWTopNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C2A49265ED15500E1081E /* CWTopNavigationView.xib */; };
 		6E703EC426596DB100CAFDD1 /* CWMainBaseTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E703EC226596DB100CAFDD1 /* CWMainBaseTabViewCell.swift */; };
 		6E703EC526596DB100CAFDD1 /* CWMainBaseTabViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */; };
 		6EAD506E265D334D00426ED3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD5070265D334D00426ED3 /* Localizable.strings */; };
@@ -153,6 +163,16 @@
 		6E311FB4265D503600DC14F1 /* CWHomeNewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomeNewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		6E311FB8265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWHomePageNewsSeeMoreView.swift; sourceTree = "<group>"; };
 		6E311FB9265D7EF900DC14F1 /* CWHomePageNewsSeeMoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWHomePageNewsSeeMoreView.xib; sourceTree = "<group>"; };
+		6E4C2A35265EB1D100E1081E /* CWNewsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWNewsConfiguration.swift; sourceTree = "<group>"; };
+		6E4C2A37265EB28400E1081E /* CWNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWNewsViewController.swift; sourceTree = "<group>"; };
+		6E4C2A39265EB40D00E1081E /* CWNewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWNewsPresenter.swift; sourceTree = "<group>"; };
+		6E4C2A3B265EB4DC00E1081E /* CWNewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWNewsRouter.swift; sourceTree = "<group>"; };
+		6E4C2A3D265EB4F700E1081E /* CWNewsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWNewsInteractor.swift; sourceTree = "<group>"; };
+		6E4C2A3F265EB50600E1081E /* CWNewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWNewsManager.swift; sourceTree = "<group>"; };
+		6E4C2A42265EB8C900E1081E /* CWNewsListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWNewsListViewCell.swift; sourceTree = "<group>"; };
+		6E4C2A43265EB8C900E1081E /* CWNewsListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWNewsListViewCell.xib; sourceTree = "<group>"; };
+		6E4C2A47265ED12A00E1081E /* CWTopNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWTopNavigationView.swift; sourceTree = "<group>"; };
+		6E4C2A49265ED15500E1081E /* CWTopNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWTopNavigationView.xib; sourceTree = "<group>"; };
 		6E703EC226596DB100CAFDD1 /* CWMainBaseTabViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainBaseTabViewCell.swift; sourceTree = "<group>"; };
 		6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWMainBaseTabViewCell.xib; sourceTree = "<group>"; };
 		6EAD506F265D334D00426ED3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -355,7 +375,8 @@
 		6E1D5F9A26593EB500F9EDD0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6ECEB317265A17E700FE1BF0 /* CWMainPageTitleView */,
+				6E4C2A46265ED10300E1081E /* TopNavigationView */,
+				6ECEB317265A17E700FE1BF0 /* MainPageTitleView */,
 				6E1D5F9B26593EBA00F9EDD0 /* MainPageTabView */,
 			);
 			path = Views;
@@ -409,6 +430,70 @@
 			path = FooterView;
 			sourceTree = "<group>";
 		};
+		6E4C2A30265EB19700E1081E /* News */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C2A34265EB1AD00E1081E /* Controller */,
+				6E4C2A33265EB1A800E1081E /* Initializer */,
+				6E4C2A32265EB1A400E1081E /* Workers */,
+				6E4C2A31265EB1A000E1081E /* Views */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		6E4C2A31265EB1A000E1081E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C2A41265EB89F00E1081E /* NewsList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E4C2A32265EB1A400E1081E /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C2A39265EB40D00E1081E /* CWNewsPresenter.swift */,
+				6E4C2A3B265EB4DC00E1081E /* CWNewsRouter.swift */,
+				6E4C2A3D265EB4F700E1081E /* CWNewsInteractor.swift */,
+				6E4C2A3F265EB50600E1081E /* CWNewsManager.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		6E4C2A33265EB1A800E1081E /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C2A35265EB1D100E1081E /* CWNewsConfiguration.swift */,
+			);
+			path = Initializer;
+			sourceTree = "<group>";
+		};
+		6E4C2A34265EB1AD00E1081E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C2A37265EB28400E1081E /* CWNewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6E4C2A41265EB89F00E1081E /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C2A42265EB8C900E1081E /* CWNewsListViewCell.swift */,
+				6E4C2A43265EB8C900E1081E /* CWNewsListViewCell.xib */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		6E4C2A46265ED10300E1081E /* TopNavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C2A47265ED12A00E1081E /* CWTopNavigationView.swift */,
+				6E4C2A49265ED15500E1081E /* CWTopNavigationView.xib */,
+			);
+			path = TopNavigationView;
+			sourceTree = "<group>";
+		};
 		6E703EC126596D9600CAFDD1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,20 +514,12 @@
 		6ECA7BBC265A375800A0BDFA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6ECA7BBD265A376300A0BDFA /* Cells */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		6ECA7BBD265A376300A0BDFA /* Cells */ = {
-			isa = PBXGroup;
-			children = (
 				6E311FA9265D499200DC14F1 /* News */,
 				6ECA7BCD265ACB3D00A0BDFA /* Banner */,
 				6ECA7BC8265AC07A00A0BDFA /* VaccinatedStatus */,
 				6ECA7BBE265A376E00A0BDFA /* TodayStats */,
 			);
-			path = Cells;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		6ECA7BBE265A376E00A0BDFA /* TodayStats */ = {
@@ -483,13 +560,13 @@
 			path = Banner;
 			sourceTree = "<group>";
 		};
-		6ECEB317265A17E700FE1BF0 /* CWMainPageTitleView */ = {
+		6ECEB317265A17E700FE1BF0 /* MainPageTitleView */ = {
 			isa = PBXGroup;
 			children = (
 				6ECEB318265A180800FE1BF0 /* CWMainPageTitleView.swift */,
 				6ECEB31A265A182100FE1BF0 /* CWMainPageTitleView.xib */,
 			);
-			path = CWMainPageTitleView;
+			path = MainPageTitleView;
 			sourceTree = "<group>";
 		};
 		BB05A0EE201931F076CEF3B3 /* Frameworks */ = {
@@ -695,6 +772,7 @@
 		E3E6B14B2657F54E00CB39CC /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				6E4C2A30265EB19700E1081E /* News */,
 				E34502CD265A82E800EFA6BE /* SearchSlot */,
 				E368540E265A4ABE008335A1 /* AddMember */,
 				6E1D5F9A26593EB500F9EDD0 /* Views */,
@@ -1094,6 +1172,7 @@
 				E3EDA5442658EA7900E9943D /* Login.storyboard in Resources */,
 				6E311FB1265D4A7700DC14F1 /* CWHomePageNewsCell.xib in Resources */,
 				E3EDA59B265910E500E9943D /* Home.storyboard in Resources */,
+				6E4C2A45265EB8C900E1081E /* CWNewsListViewCell.xib in Resources */,
 				E368542A265A57FF008335A1 /* CWSubmitCell.xib in Resources */,
 				6E703EC526596DB100CAFDD1 /* CWMainBaseTabViewCell.xib in Resources */,
 				E3685406265A2333008335A1 /* CWLoginEmptyDataCell.xib in Resources */,
@@ -1111,6 +1190,7 @@
 				E3EDA59D2659111100E9943D /* Stats.storyboard in Resources */,
 				E3EDA54B265907AA00E9943D /* CWOnboardContentView.xib in Resources */,
 				6ECB902B265C148F00C7EA53 /* CWHomeBannerCollectionViewCell.xib in Resources */,
+				6E4C2A4A265ED15500E1081E /* CWTopNavigationView.xib in Resources */,
 				6E1D5F9D26593EDE00F9EDD0 /* CWMainBaseTabView.xib in Resources */,
 				E368540A265A3AC2008335A1 /* CWMembersDataCell.xib in Resources */,
 				E3E6B11F265784C000CB39CC /* Main.storyboard in Resources */,
@@ -1189,8 +1269,10 @@
 				6E311FB5265D503600DC14F1 /* CWHomeNewsCollectionViewCell.swift in Sources */,
 				6ECA7BC6265A3C2D00A0BDFA /* CWTodayStatsCollectionViewCell.swift in Sources */,
 				E3BDB66E2657F68200DC74AE /* CWOnboardInteractor.swift in Sources */,
+				6E4C2A3A265EB40D00E1081E /* CWNewsPresenter.swift in Sources */,
 				6ECA7BCB265AC0A900A0BDFA /* CWHomePageVaccinatedCell.swift in Sources */,
 				E368541E265A4ACC008335A1 /* CWAddMemberManager.swift in Sources */,
+				6E4C2A48265ED12A00E1081E /* CWTopNavigationView.swift in Sources */,
 				E3EDA58026590FD500E9943D /* CWBookingPresenter.swift in Sources */,
 				E3EDA56E26590FAC00E9943D /* CWStatsConfiguration.swift in Sources */,
 				E3EDA55F26590F7C00E9943D /* CWHomeRouter.swift in Sources */,
@@ -1242,26 +1324,32 @@
 				E3BDB6782657F77F00DC74AE /* AppDelegate+Extension.swift in Sources */,
 				E3EDA53C2658E88500E9943D /* OTPLoginInteractor.swift in Sources */,
 				6E1D5ED7265923D700F9EDD0 /* CWMainBaseController.swift in Sources */,
+				6E4C2A38265EB28400E1081E /* CWNewsViewController.swift in Sources */,
 				E3EDA57526590FAC00E9943D /* CWStatsManager.swift in Sources */,
 				E3EDA53F2658E88500E9943D /* OTPLoginManager.swift in Sources */,
 				E3EDA57F26590FD500E9943D /* CWBookingConfiguration.swift in Sources */,
 				E34502DD265A82F800EFA6BE /* CWSearchSlotManager.swift in Sources */,
 				6ECA7BD4265ACBD000A0BDFA /* CWHomePageBannerCell.swift in Sources */,
 				E3E6B122265784C000CB39CC /* Cowin.xcdatamodeld in Sources */,
+				6E4C2A40265EB50600E1081E /* CWNewsManager.swift in Sources */,
 				E3763AB3265976F800D25470 /* CWStringContant.swift in Sources */,
+				6E4C2A3E265EB4F700E1081E /* CWNewsInteractor.swift in Sources */,
 				E3685418265A4ACC008335A1 /* CWAddMemberPresenter.swift in Sources */,
 				E3EDA56026590F7C00E9943D /* CWHomeViewController.swift in Sources */,
 				E34502D6265A82F800EFA6BE /* CWSearchSlotConfiguration.swift in Sources */,
 				E3EDA549265907A400E9943D /* CWOnboardContentView.swift in Sources */,
 				E3BDB66D2657F68200DC74AE /* CWOnboardViewController.swift in Sources */,
 				E3EDA5922659100400E9943D /* CWProfileRouter.swift in Sources */,
+				6E4C2A36265EB1D100E1081E /* CWNewsConfiguration.swift in Sources */,
 				E3EDA58326590FD500E9943D /* CWBookingInteractor.swift in Sources */,
 				E3685409265A3AC2008335A1 /* CWMembersDataCell.swift in Sources */,
 				E3EDA53A2658E88500E9943D /* OTPLoginRouter.swift in Sources */,
 				E3EDA57226590FAC00E9943D /* CWStatsInteractor.swift in Sources */,
 				6E1D5F9F26593FBC00F9EDD0 /* CWMainBaseTabView.swift in Sources */,
+				6E4C2A44265EB8C900E1081E /* CWNewsListViewCell.swift in Sources */,
 				E3EDA57126590FAC00E9943D /* CWStatsViewController.swift in Sources */,
 				E3BDB66A2657F68200DC74AE /* CWOnboardConfiguration.swift in Sources */,
+				6E4C2A3C265EB4DC00E1081E /* CWNewsRouter.swift in Sources */,
 				6E1D5ED92659243C00F9EDD0 /* CWMainBaseControllerConfiguration.swift in Sources */,
 				E3EDA5932659100400E9943D /* CWProfileViewController.swift in Sources */,
 				E3763ABA265979A900D25470 /* CWFonts.swift in Sources */,

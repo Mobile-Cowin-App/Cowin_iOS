@@ -19,12 +19,11 @@ class CWHomeInteractor: ICWHomeInteractor {
     var presenter: ICWHomePresenter?
     var manager: ICWHomeManager?
     var parameters: [String: Any]?
-    var datasource: [CWHomePageDataSource]
+    var datasource: [CWHomePageDataSource] = .defaultValue
     
     init(presenter: ICWHomePresenter, manager: ICWHomeManager) {
     	self.presenter = presenter
     	self.manager = manager
-        self.datasource = .defaultValue
     }
     
     func fetchStats(for date: String) {

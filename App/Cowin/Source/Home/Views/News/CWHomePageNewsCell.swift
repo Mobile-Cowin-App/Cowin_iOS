@@ -13,6 +13,13 @@ class CWHomePageNewsCell: UITableViewCell {
     @IBOutlet var holderview: UIView!
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var title: UILabel!
+        
+    var router: ICWHomeRouter?
+    lazy var tapGesture: UITapGestureRecognizer = {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(gestureAction(_:)))
+        gesture.numberOfTapsRequired = 1
+        return gesture
+    }()
     
     private let limit = 5
     private var datasource: [Article] = .defaultValue
@@ -29,7 +36,7 @@ class CWHomePageNewsCell: UITableViewCell {
         self.backgroundColor = .clear
         
         self.title.applyTextAttributes(font: .primary(.heavy), withColor: .primary)
-        self.title.text = "title.news".localized
+        self.title.text = "title.breakingNews".localized
     }
     
     func prepareCollectionView() {
@@ -83,17 +90,26 @@ extension CWHomePageNewsCell: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         return self.datasource.count > self.limit ? CGSize(width: (collectionView.frame.width / 2.5), height: collectionView.frame.height): .zero
     }
-
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
 
         case UICollectionView.elementKindSectionFooter:
             let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CWHomePageNewsSeeMoreView", for: indexPath) as! CWHomePageNewsSeeMoreView
+            
+            footerView.isUserInteractionEnabled = true
+            footerView.addGestureRecognizer(tapGesture)
+            tapGesture.removeTarget(self, action: #selector(gestureAction(_:)))
+            tapGesture.addTarget(self, action: #selector(gestureAction(_:)))
+            
             return footerView
 
         default:
             return UICollectionReusableView(frame: CGRect.zero)
         }
+    }
+    
+    @objc func gestureAction(_ gesture: UITapGestureRecognizer) {
+        self.router?.navigateNewsList()
     }
 }

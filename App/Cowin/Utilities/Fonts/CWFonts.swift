@@ -16,12 +16,22 @@ extension UIFont {
 struct CWFonts {
     static let write = "\u{e901}"
     static let next = "\u{f054}"
-    static let close = "\u{f00d}"
     
+    static var close: String {
+        return "\u{f00d}"
+    }
+    
+    static var notification: String {
+        return "\u{f0f3}"
+    }
     
     struct chevronRightArrow {
         
         static var icon: String {
+            return "\u{f105}"
+        }
+        
+        static var withThickness: String {
             return "\u{f054}"
         }
         
@@ -33,6 +43,10 @@ struct CWFonts {
     struct rightArrow {
         
         static var icon: String {
+            return "\u{ea3c}"
+        }
+        
+        static var withThickness: String {
             return "\u{f061}"
         }
         
@@ -42,6 +56,40 @@ struct CWFonts {
         
         static var withFilled: String {
             return "\u{f0a9}"
+        }
+    }
+    
+    struct chevronLeftArrow {
+        
+        static var icon: String {
+            return "\u{f104}"
+        }
+        
+        static var withThickness: String {
+            return "\u{f053}"
+        }
+        
+        static var withFilled: String {
+            return "\u{f137}"
+        }
+    }
+    
+    struct leftArrow {
+        
+        static var icon: String {
+            return "\u{ea40}"
+        }
+        
+        static var withThickness: String {
+            return "\u{f060}"
+        }
+        
+        static var withStroke: String {
+            return "\u{f190}"
+        }
+        
+        static var withFilled: String {
+            return "\u{f0a8}"
         }
     }
 }

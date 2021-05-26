@@ -9,4 +9,6 @@
 "localize.unknown"    =   "Unknown";
 "localize.seemore"    =   "See more";
 
-"title.news"    =   "Breaking news about Covid-19";
+"title.home"            =   "Home";
+"title.news"            =   "News";
+"title.breakingNews"    =   "Breaking news about Vaccination";

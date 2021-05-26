@@ -18,37 +18,37 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4N1-z4-scE">
-                            <rect key="frame" x="14" y="0.0" width="356" height="200"/>
+                            <rect key="frame" x="14" y="0.0" width="346" height="200"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9T6-tQ-VdE">
-                            <rect key="frame" x="370" y="0.0" width="30" height="200"/>
+                            <rect key="frame" x="360" y="0.0" width="40" height="200"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Nz-6N-FFl">
-                                    <rect key="frame" x="0.0" y="85" width="30" height="30"/>
+                                    <rect key="frame" x="0.0" y="80" width="40" height="40"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WN7-i3-yjS">
-                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyf-IV-vHJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <connections>
+                                                <action selector="icontapped" destination="iN0-l3-epB" eventType="touchUpInside" id="QB7-Y5-0oP"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="WN7-i3-yjS" secondAttribute="trailing" id="GfW-Sl-SIn"/>
+                                        <constraint firstAttribute="trailing" secondItem="Yyf-IV-vHJ" secondAttribute="trailing" id="1he-xY-Eti"/>
+                                        <constraint firstItem="Yyf-IV-vHJ" firstAttribute="leading" secondItem="7Nz-6N-FFl" secondAttribute="leading" id="2YC-3x-KOo"/>
                                         <constraint firstAttribute="width" secondItem="7Nz-6N-FFl" secondAttribute="height" multiplier="1:1" id="JMT-p1-nSX"/>
-                                        <constraint firstAttribute="bottom" secondItem="WN7-i3-yjS" secondAttribute="bottom" id="YI5-Qo-U0P"/>
-                                        <constraint firstItem="WN7-i3-yjS" firstAttribute="top" secondItem="7Nz-6N-FFl" secondAttribute="top" id="gyN-Ux-60x"/>
-                                        <constraint firstItem="WN7-i3-yjS" firstAttribute="leading" secondItem="7Nz-6N-FFl" secondAttribute="leading" id="riN-Al-aTW"/>
+                                        <constraint firstItem="Yyf-IV-vHJ" firstAttribute="top" secondItem="7Nz-6N-FFl" secondAttribute="top" id="oXB-Rz-TeP"/>
+                                        <constraint firstAttribute="bottom" secondItem="Yyf-IV-vHJ" secondAttribute="bottom" id="rdq-e6-UpW"/>
                                     </constraints>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="30" id="DbL-lf-d2F"/>
+                                <constraint firstAttribute="width" constant="40" id="DbL-lf-d2F"/>
                                 <constraint firstAttribute="trailing" secondItem="7Nz-6N-FFl" secondAttribute="trailing" id="SrU-5h-qR7"/>
                                 <constraint firstItem="7Nz-6N-FFl" firstAttribute="width" secondItem="9T6-tQ-VdE" secondAttribute="width" id="mYZ-9c-0pM"/>
                                 <constraint firstItem="7Nz-6N-FFl" firstAttribute="centerY" secondItem="9T6-tQ-VdE" secondAttribute="centerY" id="wEn-6g-hza"/>
@@ -77,7 +77,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="icon" destination="WN7-i3-yjS" id="Ox7-EI-I1H"/>
+                <outlet property="icon" destination="Yyf-IV-vHJ" id="8aX-4U-uV6"/>
                 <outlet property="iconHolder" destination="7Nz-6N-FFl" id="AbU-FL-N1n"/>
                 <outlet property="title" destination="4N1-z4-scE" id="OEe-ah-Jpa"/>
             </connections>

@@ -11,7 +11,9 @@ class CWMainPageTitleView: UIView {
 
     @IBOutlet var title: UILabel!
     @IBOutlet var iconHolder: UIView!
-    @IBOutlet var icon: UILabel!
+    @IBOutlet var icon: UIButton!
+    
+    var iconClicked: (() -> ())? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,17 +24,21 @@ class CWMainPageTitleView: UIView {
     private func prepareStyles() {
         
         self.iconHolder.backgroundColor = CWStyle.Background.primary
-        self.iconHolder.layer.cornerRadius = 15.0
+        self.iconHolder.layer.cornerRadius = 20.0
         
         self.title.applyTextAttributes(font: .heading, withColor: .primary)
-        self.icon.applyIconTextAttributes(fontSize: 14.0, withColor: .custom)
-        self.icon.textColor = CWStyle.Static.appTheme
-        self.icon.text = "\u{f0f3}"
+        self.icon.applyIconTextAttributes(fontSize: 14.0, withColor: .appTheme)
         
         self.iconHolder.applyDropShadow()
     }
     
-    func setValue(_ title: String) {
+    func setValue(title: String, icon: String) {
         self.title.text = title
+        self.icon.setTitle(icon, for: .normal)
+    }
+    
+    @IBAction private func icontapped() -> Void {
+        
+        self.iconClicked?()
     }
 }

@@ -37,7 +37,7 @@ class CWHomeViewController: UIViewController {
     
     private func prepareViews() {
         let headerview: CWMainPageTitleView = .loadFromXib()
-        headerview.setValue("Home")
+        headerview.setValue(title: "title.home".localized, icon: CWFonts.notification)
         
         self.titleHolderView.addSubview(headerview)
         headerview.g_pinEdges()
@@ -58,6 +58,10 @@ class CWHomeViewController: UIViewController {
             self.tableView.register(UINib(nibName: $0, bundle: nil), forCellReuseIdentifier: $0)
         })
     }
+}
+
+extension CWHomeViewController: ICWHomeViewController {
+	// do someting...
     
     func success() {
         self.tableView.reloadData()
@@ -66,10 +70,6 @@ class CWHomeViewController: UIViewController {
     func failure() {
         
     }
-}
-
-extension CWHomeViewController: ICWHomeViewController {
-	// do someting...
 }
 
 extension CWHomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -112,6 +112,7 @@ extension CWHomeViewController: UITableViewDelegate, UITableViewDataSource {
             
         case .News(let model):
             let cell = tableView.dequeueReusableCell(withIdentifier: "CWHomePageNewsCell", for: indexPath) as! CWHomePageNewsCell
+            cell.router = self.router
             cell.setData(with: model)
             return cell
 
@@ -135,7 +136,7 @@ extension CWHomeViewController: UITableViewDelegate, UITableViewDataSource {
             return 200
             
         case .News( _):
-            return 350
+            return 340
             
         default:
             break
@@ -143,8 +144,4 @@ extension CWHomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         return .defaultValue
     }
-}
-
-extension CWHomeViewController {
-	// do someting...
 }

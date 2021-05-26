@@ -24,7 +24,7 @@ internal struct CWUtility {
     }
         
     static var today: String {
-        return "2021-05-25"//Date().convert(CWApiCallParams.dateFormat)
+        return "2021-05-26"//Date().convert(CWApiCallParams.dateFormat)
     }
 }
 
@@ -79,3 +79,31 @@ extension UIView {
         self.layer.cornerRadius = 10.0
     }
 }
+
+extension CALayer {
+
+    func addBorder(edge: UIRectEdge, color: UIColor, thickness: CGFloat) {
+
+        let border = CALayer()
+
+        switch edge {
+        case UIRectEdge.top:
+            border.frame = CGRect(x: 0, y: 0, width: frame.width, height: thickness)
+
+        case UIRectEdge.bottom:
+            border.frame = CGRect(x: 0, y: frame.height - thickness, width: frame.width, height: thickness)
+
+        case UIRectEdge.left:
+            border.frame = CGRect(x: 0, y: 0, width: thickness, height: frame.height)
+
+        case UIRectEdge.right:
+            border.frame = CGRect(x: frame.width - thickness, y: 0, width: thickness, height: frame.height)
+
+        default: break
+        }
+
+        border.backgroundColor = color.cgColor
+        addSublayer(border)
+    }
+}
+

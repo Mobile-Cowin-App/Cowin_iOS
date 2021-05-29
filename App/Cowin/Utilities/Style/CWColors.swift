@@ -30,6 +30,10 @@ struct CWStyle {
         static var secondary: UIColor {
             UIColor(named: "CWSecondaryText") ?? .defaultValue
         }
+        
+        static var tertiary: UIColor {
+            UIColor(named: "CWTertiaryText") ?? .defaultValue
+        }
     }
     
     struct Border {

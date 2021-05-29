@@ -3,46 +3,128 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Booking View Controller-->
-        <scene sceneID="s0d-6b-0kx">
-            <objects>
-                <viewController storyboardIdentifier="CWBookingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CWBookingViewController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="139" y="119"/>
-        </scene>
         <!--Search Slot View Controller-->
-        <scene sceneID="291-dI-ZtI">
+        <scene sceneID="IN6-1O-YGV">
             <objects>
-                <viewController storyboardIdentifier="CWSearchSlotViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d5Y-SN-fve" customClass="CWSearchSlotViewController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qGb-mT-Jwt">
+                <viewController storyboardIdentifier="CWSearchSlotViewController" id="Qpj-pI-peg" customClass="CWSearchSlotViewController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aEY-RJ-rfc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Jrz-Rm-caq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npB-fR-tAG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUR-cw-Z2J">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="lkq-eG-R9F"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="CWPrimaryBG"/>
+                                <constraints>
+                                    <constraint firstItem="ZUR-cw-Z2J" firstAttribute="leading" secondItem="npB-fR-tAG" secondAttribute="leading" id="1Fe-S0-pJe"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZUR-cw-Z2J" secondAttribute="bottom" id="8XL-bQ-O7x"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZUR-cw-Z2J" secondAttribute="trailing" id="hdE-qY-jiB"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="JC3-tZ-FOk">
+                                <rect key="frame" x="0.0" y="104" width="414" height="792"/>
+                                <color key="backgroundColor" name="CWSecondaryBG"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uwm-rb-jKg"/>
+                        <color key="backgroundColor" name="CWSecondaryBG"/>
+                        <constraints>
+                            <constraint firstItem="npB-fR-tAG" firstAttribute="leading" secondItem="Uwm-rb-jKg" secondAttribute="leading" id="1ud-Ip-sql"/>
+                            <constraint firstItem="JC3-tZ-FOk" firstAttribute="leading" secondItem="Uwm-rb-jKg" secondAttribute="leading" id="C20-wh-tIS"/>
+                            <constraint firstItem="JC3-tZ-FOk" firstAttribute="bottom" secondItem="aEY-RJ-rfc" secondAttribute="bottom" id="TNE-ib-NCV"/>
+                            <constraint firstItem="JC3-tZ-FOk" firstAttribute="trailing" secondItem="Uwm-rb-jKg" secondAttribute="trailing" id="Wqq-26-7cs"/>
+                            <constraint firstItem="JC3-tZ-FOk" firstAttribute="top" secondItem="npB-fR-tAG" secondAttribute="bottom" id="b9g-yo-STR"/>
+                            <constraint firstItem="npB-fR-tAG" firstAttribute="top" secondItem="aEY-RJ-rfc" secondAttribute="top" id="bT7-3v-tvS"/>
+                            <constraint firstItem="Uwm-rb-jKg" firstAttribute="top" secondItem="ZUR-cw-Z2J" secondAttribute="top" id="mB5-XD-Eur"/>
+                            <constraint firstItem="npB-fR-tAG" firstAttribute="trailing" secondItem="Uwm-rb-jKg" secondAttribute="trailing" id="uag-7n-yI1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="JC3-tZ-FOk" id="RNs-Bo-l9c"/>
+                        <outlet property="titleHolderView" destination="ZUR-cw-Z2J" id="keY-hK-CPn"/>
+                        <outlet property="topHolderView" destination="npB-fR-tAG" id="8eI-pp-GNK"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s2n-Oy-KQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7c-h3-a7Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915" y="114"/>
+            <point key="canvasLocation" x="215.94202898550725" y="99.776785714285708"/>
+        </scene>
+        <!--Booking View Controller-->
+        <scene sceneID="E6h-HP-823">
+            <objects>
+                <viewController storyboardIdentifier="CWBookingViewController" id="Npt-vS-lGw" customClass="CWBookingViewController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O1x-mP-6xH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIc-ce-Vnh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VJ-i6-xui">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="cEN-Ic-E0a"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="CWPrimaryBG"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9VJ-i6-xui" secondAttribute="trailing" id="1zL-ja-Rrc"/>
+                                    <constraint firstAttribute="bottom" secondItem="9VJ-i6-xui" secondAttribute="bottom" id="Goh-k3-3b8"/>
+                                    <constraint firstItem="9VJ-i6-xui" firstAttribute="leading" secondItem="XIc-ce-Vnh" secondAttribute="leading" id="vE4-Ur-0rU"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kmo-ff-7bs">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BeD-Qg-Wsw"/>
+                        <color key="backgroundColor" name="CWSecondaryBG"/>
+                        <constraints>
+                            <constraint firstItem="XIc-ce-Vnh" firstAttribute="top" secondItem="O1x-mP-6xH" secondAttribute="top" id="3k3-KA-6WL"/>
+                            <constraint firstItem="kmo-ff-7bs" firstAttribute="top" secondItem="XIc-ce-Vnh" secondAttribute="bottom" id="7RE-OY-Zhs"/>
+                            <constraint firstItem="kmo-ff-7bs" firstAttribute="leading" secondItem="BeD-Qg-Wsw" secondAttribute="leading" id="CXG-2n-Bd2"/>
+                            <constraint firstItem="BeD-Qg-Wsw" firstAttribute="trailing" secondItem="kmo-ff-7bs" secondAttribute="trailing" id="Dnx-rx-Zgz"/>
+                            <constraint firstItem="BeD-Qg-Wsw" firstAttribute="top" secondItem="9VJ-i6-xui" secondAttribute="top" id="ERb-Se-RuQ"/>
+                            <constraint firstItem="BeD-Qg-Wsw" firstAttribute="bottom" secondItem="kmo-ff-7bs" secondAttribute="bottom" id="VsK-aD-yfL"/>
+                            <constraint firstItem="XIc-ce-Vnh" firstAttribute="leading" secondItem="BeD-Qg-Wsw" secondAttribute="leading" id="sKe-kl-LbF"/>
+                            <constraint firstItem="XIc-ce-Vnh" firstAttribute="trailing" secondItem="BeD-Qg-Wsw" secondAttribute="trailing" id="wLL-aC-HwS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="kmo-ff-7bs" id="Kn3-Xj-pxi"/>
+                        <outlet property="titleHolderView" destination="9VJ-i6-xui" id="lgG-53-610"/>
+                        <outlet property="topHolderView" destination="XIc-ce-Vnh" id="RD9-MG-UZs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DS1-zw-udb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-701" y="100"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="CWPrimaryBG">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CWSecondaryBG">
+            <color red="0.9570000171661377" green="0.96100002527236938" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

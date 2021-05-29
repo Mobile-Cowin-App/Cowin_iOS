@@ -23,9 +23,16 @@ internal struct CWUtility {
     static func getController<T>(_ storyBoardName: String, _ identifier: String , type: T.Type) -> T {
             return UIStoryboard(name: storyBoardName, bundle: nil).instantiateViewController(withIdentifier: identifier) as! T
     }
+    
+    struct today {
         
-    static var today: String {
-        return Date().convert(CWApiCallParams.dateFormat)
+        static var statsAPI: String {
+            return Date().convert(CWApiCallParams.statsAPIFormat)
+        }
+        
+        static var searchSlotAPI: String {
+            return Date().convert(CWApiCallParams.searchSlotAPIFormat)
+        }
     }
     
     static var newsFeedModel: CWFeedsModel {
@@ -45,8 +52,12 @@ internal struct CWUtility {
 
 struct CWApiCallParams {
     
-    static var dateFormat: String {
+    static var statsAPIFormat: String {
         return "yyyy-MM-dd"
+    }
+    
+    static var searchSlotAPIFormat: String {
+        return "dd-MM-yyyy"
     }
 }
 

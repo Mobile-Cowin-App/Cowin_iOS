@@ -31,9 +31,9 @@ class CWMainBasePageController: UIPageViewController {
         self.view.backgroundColor = .clear
         
         self.controllers = [ self.preparHomeViewController(),
-                     self.prepareStatsViewController(),
-                     self.prepareBookingViewController(),
-                     self.prepareProfileViewController() ]
+                             self.prepareBookingViewController(),
+                             self.prepareStatsViewController(),
+                             self.prepareProfileViewController() ]
         
         self.scrollView?.delegate = self
         self.scrollView?.isScrollEnabled = true
@@ -87,7 +87,7 @@ fileprivate extension CWMainBasePageController {
     }
     
     func prepareBookingViewController() -> UIViewController {
-        let controller = CWBookingConfiguration.setup()
+        let controller = CWSearchSlotConfiguration.setup()
         return controller
     }
     

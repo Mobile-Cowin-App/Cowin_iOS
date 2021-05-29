@@ -32,7 +32,7 @@ class CWHomeViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        self.interactor?.fetchStats(for: CWUtility.today)
+        self.interactor?.fetchStats(for: CWUtility.today.statsAPI)
     }
     
     private func prepareViews() {
@@ -95,7 +95,7 @@ extension CWHomeViewController: UITableViewDelegate, UITableViewDataSource {
             cell.setData(with: model)
             
             cell.refreshTapped = {[weak self] in
-                self?.interactor?.fetchStats(for: CWUtility.today)
+                self?.interactor?.fetchStats(for: CWUtility.today.statsAPI)
             }
             
             return cell

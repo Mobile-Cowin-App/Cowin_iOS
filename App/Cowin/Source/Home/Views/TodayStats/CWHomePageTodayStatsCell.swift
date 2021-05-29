@@ -77,7 +77,6 @@ class CWHomePageTodayStatsCell: UITableViewCell {
         
         self.collectionView.isScrollEnabled = true
         self.collectionView.showsHorizontalScrollIndicator = false
-
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -104,7 +103,6 @@ class CWHomePageTodayStatsCell: UITableViewCell {
         self.datasource.append(CWHomeTodayStatsData(totalVaccinated: model.total, gender: "localize.female".localized, color: CWStyle.Static.green, count: model.female))
 
         self.datasource.append(CWHomeTodayStatsData(totalVaccinated: model.total, gender: "localize.others".localized, color: CWStyle.Static.blue, count: model.others))
-
     }
     
     @IBAction func refreshclicked(_ sender: UIButton) {

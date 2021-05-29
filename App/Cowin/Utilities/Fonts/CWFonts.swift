@@ -75,6 +75,13 @@ struct CWFonts {
         }
     }
     
+    struct chevronBottomArrow {
+        
+        static var icon: String {
+            return "\u{f107}"
+        }
+    }
+    
     struct chevronLeftArrow {
         
         static var icon: String {

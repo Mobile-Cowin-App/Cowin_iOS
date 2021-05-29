@@ -11,11 +11,14 @@
 
 "title.home"            =   "Home";
 "title.news"            =   "News";
+"title.registration"    =   "Registration";
+"title.booking"         =   "Booking";
 "title.breakingNews"    =   "Breaking news about Vaccination";
 
-
-"localize.title.totalvaccination"  =   "Total Vaccination Doses, by Today";
-"localize.title.vaccinationstatus" = "Covid 19 Vaccine status";
+"localize.title.totalvaccination"   =   "Total Vaccination Doses, by Today";
+"localize.title.vaccinationstatus"  = "Covid 19 Vaccine status";
+"localize.title.searchslots"        =   "Check your nearest vaccination center and slots availability";
+"localize.searchslot.placeholder"   =   "Search slots";
 
 "localize.vaccinated"       = "Vaccinated";
 "localize.notvaccinated"    = "Not Vaccinated";
@@ -25,3 +28,5 @@
 "localize.male"         = "Male";
 "localize.female"       = "Female";
 "localize.others"       = "Others";
+
+"localize.age"          = "Age";

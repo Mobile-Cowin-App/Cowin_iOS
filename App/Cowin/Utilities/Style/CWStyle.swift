@@ -83,7 +83,7 @@ enum CWTextColorStyles {
             return CWStyle.Text.secondary
             
         case .teritary:
-            return #colorLiteral(red: 0.3882352941, green: 0.4352941176, blue: 0.4941176471, alpha: 1)
+            return CWStyle.Text.tertiary
             
         case .appTheme:
             return CWStyle.Static.appTheme

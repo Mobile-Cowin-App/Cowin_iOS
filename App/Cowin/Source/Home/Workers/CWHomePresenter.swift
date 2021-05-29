@@ -19,7 +19,6 @@ class CWHomePresenter: ICWHomePresenter {
 		self.view = view
 	}
     
-    
     func success() {
         DispatchQueue.main.async {
             self.view?.success()

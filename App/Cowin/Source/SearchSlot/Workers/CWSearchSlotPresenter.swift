@@ -6,8 +6,10 @@
 
 import UIKit
 
-protocol ICWSearchSlotPresenter: class {
-	// do someting...
+protocol ICWSearchSlotPresenter: AnyObject {
+    // do someting...
+    func success()
+    func failure(with error: String?)
 }
 
 class CWSearchSlotPresenter: ICWSearchSlotPresenter {	
@@ -16,4 +18,16 @@ class CWSearchSlotPresenter: ICWSearchSlotPresenter {
 	init(view: ICWSearchSlotViewController?) {
 		self.view = view
 	}
+    
+    func success() {
+        DispatchQueue.main.async {
+            self.view?.success()
+        }
+    }
+    
+    func failure(with error: String?) {
+        DispatchQueue.main.async {
+        
+        }
+    }
 }

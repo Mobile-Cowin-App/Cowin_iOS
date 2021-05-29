@@ -33,7 +33,7 @@ class CWNewsViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        self.interactor?.fetchNews(for: CWUtility.today)
+        self.interactor?.fetchNews(for: CWUtility.today.statsAPI)
     }
     
     private func prepareViews() {

@@ -12,3 +12,16 @@
 "title.home"            =   "Home";
 "title.news"            =   "News";
 "title.breakingNews"    =   "Breaking news about Vaccination";
+
+
+"localize.title.totalvaccination"  =   "Total Vaccination Doses, by Today";
+"localize.title.vaccinationstatus" = "Covid 19 Vaccine status";
+
+"localize.vaccinated"       = "Vaccinated";
+"localize.notvaccinated"    = "Not Vaccinated";
+
+"news.author.name"          = "By, $authorname$";
+
+"localize.male"         = "Male";
+"localize.female"       = "Female";
+"localize.others"       = "Others";

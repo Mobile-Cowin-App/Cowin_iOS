@@ -25,7 +25,7 @@ class CWHomePageVaccinatedCell: UITableViewCell {
     
     private func prepareData() {
         
-        self.title.text = "Covid 19 Vaccine status"
+        self.title.text = "localize.title.vaccinationstatus".localized
     }
     
     private func prepareStyles() {
@@ -43,10 +43,10 @@ class CWHomePageVaccinatedCell: UITableViewCell {
     }
 
     func setData(with model: CWVaccinatedStatus) {
-        self.statusicon.text = model.vaccinated ? "\u{f058}": "\u{f057}"
+        self.statusicon.text = model.vaccinated ? CWFonts.tick.withFilled: CWFonts.close.withFilled
         self.statusicon.textColor = model.vaccinated ? CWStyle.Static.green: CWStyle.Static.red
         
-        self.status.text = model.vaccinated ? "Vaccinated": "Not Vaccinated"
+        self.status.text = model.vaccinated ? "localize.vaccinated".localized: "localize.notvaccinated".localized
         self.date.text = model.vaccinatedTime
     }
 }

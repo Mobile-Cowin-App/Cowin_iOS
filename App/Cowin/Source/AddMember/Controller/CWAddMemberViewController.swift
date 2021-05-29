@@ -46,7 +46,7 @@ class CWAddMemberViewController: UIViewController {
         self.closeButton.layer.cornerRadius = closeButton.frame.height / 2
         self.closeButton.backgroundColor = .white
         self.closeButton.titleLabel?.font = UIFont.getIconFont(with: 14)
-        self.closeButton.setTitle(CWFonts.close, for: .normal)
+        self.closeButton.setTitle(CWFonts.close.icon, for: .normal)
         self.closeButton.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black.withAlphaComponent(0.5), radius: 2.0, opacity: 0.35)
         
         

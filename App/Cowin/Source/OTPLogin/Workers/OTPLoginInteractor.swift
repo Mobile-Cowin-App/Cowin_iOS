@@ -70,7 +70,7 @@ extension OTPLoginViewController {
         self.dismissButton.layer.cornerRadius = self.dismissButton.frame.height / 2
         self.dismissButton.backgroundColor = .white
         self.dismissButton.titleLabel?.font = UIFont.getIconFont(with: 14)
-        self.dismissButton.setTitle(CWFonts.close, for: .normal)
+        self.dismissButton.setTitle(CWFonts.close.icon, for: .normal)
         
         self.phonenumberfield.layer.borderColor = UIColor.white.cgColor
         self.phonenumberfield.layer.borderWidth = 2

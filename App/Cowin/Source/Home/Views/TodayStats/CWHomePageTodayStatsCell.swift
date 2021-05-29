@@ -65,8 +65,8 @@ class CWHomePageTodayStatsCell: UITableViewCell {
     private func prepareData() {
         
         self.title.text = Date().convert("EEEE, MMM d, yyyy")
-        self.refresh.setTitle("\u{f01e}", for: .normal)
-        self.totalTitle.text = "Total Vaccination Doses, by Today"
+        self.refresh.setTitle(CWFonts.refresh, for: .normal)
+        self.totalTitle.text = "localize.title.totalvaccination".localized
     }
     
     func prepareCollectionView() {
@@ -88,7 +88,7 @@ class CWHomePageTodayStatsCell: UITableViewCell {
     
     func setData(with model: CWHomeTodayVaccinationStats) {
         
-        self.lastupdated.text = "Last updated, few mins ago"
+        self.lastupdated.text = "Last updated, few mins ago" // Need data with Localize
         
         self.totalCount.text = (model.total?.toInt().convertDelimiterFormat())
         
@@ -99,11 +99,11 @@ class CWHomePageTodayStatsCell: UITableViewCell {
     
     private func generateDataSource(with model: CWHomeTodayVaccinationStats) {
         
-        self.datasource.append(CWHomeTodayStatsData(totalVaccinated: model.total, gender: "Male", color: CWStyle.Static.orange, count: model.male))
+        self.datasource.append(CWHomeTodayStatsData(totalVaccinated: model.total, gender: "localize.male".localized, color: CWStyle.Static.orange, count: model.male))
         
-        self.datasource.append(CWHomeTodayStatsData(totalVaccinated: model.total, gender: "Female", color: CWStyle.Static.green, count: model.female))
+        self.datasource.append(CWHomeTodayStatsData(totalVaccinated: model.total, gender: "localize.female".localized, color: CWStyle.Static.green, count: model.female))
 
-        self.datasource.append(CWHomeTodayStatsData(totalVaccinated: model.total, gender: "Others", color: CWStyle.Static.blue, count: model.others))
+        self.datasource.append(CWHomeTodayStatsData(totalVaccinated: model.total, gender: "localize.others".localized, color: CWStyle.Static.blue, count: model.others))
 
     }
     

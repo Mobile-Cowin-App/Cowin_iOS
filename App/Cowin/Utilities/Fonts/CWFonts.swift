@@ -17,12 +17,28 @@ struct CWFonts {
     static let write = "\u{e901}"
     static let next = "\u{f054}"
     
-    static var close: String {
-        return "\u{f00d}"
+    static var refresh: String {
+        "\u{f01e}"
     }
-    
     static var notification: String {
         return "\u{f0f3}"
+    }
+    
+    struct tick {
+        
+        static var withFilled: String {
+            "\u{f058}"
+        }
+    }
+    
+    struct close {
+        static var icon: String {
+            "\u{f00d}"
+        }
+        
+        static var withFilled: String {
+            "\u{f057}"
+        }
     }
     
     struct chevronRightArrow {

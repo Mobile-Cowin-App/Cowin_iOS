@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -104,14 +105,14 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="CWPrimaryBG"/>
                                 <constraints>
                                     <constraint firstItem="PvZ-kf-el1" firstAttribute="leading" secondItem="xLa-Ja-bf0" secondAttribute="leading" id="BYx-mL-tKx"/>
                                     <constraint firstAttribute="trailing" secondItem="PvZ-kf-el1" secondAttribute="trailing" id="cyz-oe-d28"/>
                                     <constraint firstAttribute="bottom" secondItem="PvZ-kf-el1" secondAttribute="bottom" id="ioR-ri-GUI"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mnt-X5-dr9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mnt-X5-dr9">
                                 <rect key="frame" x="0.0" y="94" width="414" height="802"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -139,8 +140,76 @@
             </objects>
             <point key="canvasLocation" x="154" y="127"/>
         </scene>
+        <!--Web Preview Controller-->
+        <scene sceneID="Roa-8N-Pul">
+            <objects>
+                <viewController storyboardIdentifier="CWWebPreviewController" id="2cx-a1-YxS" customClass="CWWebPreviewController" customModule="Cowin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Qd-zn-bpg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVI-WK-9V8">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhD-ZY-whO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="94"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpK-9U-krA">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Icv-gV-ajJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="CWPrimaryBG"/>
+                                <constraints>
+                                    <constraint firstItem="tpK-9U-krA" firstAttribute="leading" secondItem="dhD-ZY-whO" secondAttribute="leading" id="Qgf-Sv-Bss"/>
+                                    <constraint firstAttribute="trailing" secondItem="tpK-9U-krA" secondAttribute="trailing" id="qDE-0W-3JK"/>
+                                    <constraint firstAttribute="bottom" secondItem="tpK-9U-krA" secondAttribute="bottom" id="vJ8-pU-VLj"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="GmN-cr-HD9">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1CI-OS-jcW"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GmN-cr-HD9" firstAttribute="centerX" secondItem="8Qd-zn-bpg" secondAttribute="centerX" id="346-RS-0FA"/>
+                            <constraint firstItem="dhD-ZY-whO" firstAttribute="leading" secondItem="1CI-OS-jcW" secondAttribute="leading" id="Acx-mR-YTX"/>
+                            <constraint firstItem="1CI-OS-jcW" firstAttribute="top" secondItem="tpK-9U-krA" secondAttribute="top" id="EBy-8u-0Dp"/>
+                            <constraint firstItem="1CI-OS-jcW" firstAttribute="trailing" secondItem="VVI-WK-9V8" secondAttribute="trailing" id="VZA-gL-0UR"/>
+                            <constraint firstAttribute="bottom" secondItem="VVI-WK-9V8" secondAttribute="bottom" id="X56-i3-AYC"/>
+                            <constraint firstItem="dhD-ZY-whO" firstAttribute="top" secondItem="8Qd-zn-bpg" secondAttribute="top" id="ei8-Lv-9U0"/>
+                            <constraint firstItem="GmN-cr-HD9" firstAttribute="centerY" secondItem="8Qd-zn-bpg" secondAttribute="centerY" id="sOM-Ha-ab5"/>
+                            <constraint firstItem="VVI-WK-9V8" firstAttribute="leading" secondItem="1CI-OS-jcW" secondAttribute="leading" id="uUc-jT-ocT"/>
+                            <constraint firstItem="dhD-ZY-whO" firstAttribute="trailing" secondItem="1CI-OS-jcW" secondAttribute="trailing" id="v2r-oa-gCx"/>
+                            <constraint firstItem="VVI-WK-9V8" firstAttribute="top" secondItem="dhD-ZY-whO" secondAttribute="bottom" id="vVn-HT-ltF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loader" destination="GmN-cr-HD9" id="4su-i8-igF"/>
+                        <outlet property="titleHolderView" destination="tpK-9U-krA" id="mBd-wJ-ntS"/>
+                        <outlet property="topHolderView" destination="dhD-ZY-whO" id="n6r-nU-P7b"/>
+                        <outlet property="webView" destination="VVI-WK-9V8" id="Ksb-Va-ylj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXw-zB-Pq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="127"/>
+        </scene>
     </scenes>
     <resources>
+        <namedColor name="CWPrimaryBG">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

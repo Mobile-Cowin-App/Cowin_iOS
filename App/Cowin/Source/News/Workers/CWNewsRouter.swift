@@ -6,9 +6,13 @@
 //
 
 import Foundation
+import UIKit
+import WebKit
 
 protocol ICWNewsRouter: AnyObject {
     // do someting...
+    
+    func navigateNewsDetail(url: String)
 }
 
 class CWNewsRouter: ICWNewsRouter {
@@ -16,5 +20,13 @@ class CWNewsRouter: ICWNewsRouter {
     
     init(view: CWNewsViewController?) {
         self.view = view
+    }
+    
+    func navigateNewsDetail(url: String) {
+        let controller = CWWebPreviewerConfiguration.setup(parameters: ["url": url])
+        controller.modalPresentationStyle = .overFullScreen
+        controller.hero.isEnabled = true
+        controller.hero.modalAnimationType = .selectBy(presenting: .pull(direction: .left), dismissing: .push(direction: .right))
+        self.view?.present(controller, animated: true, completion: nil)
     }
 }

@@ -91,6 +91,13 @@ extension CWHomePageNewsCell: UICollectionViewDelegate, UICollectionViewDataSour
         return self.datasource.count > self.limit ? CGSize(width: (collectionView.frame.width / 2.5), height: collectionView.frame.height): .zero
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let model = self.datasource[indexPath.row]
+        if model.url.isNotEmpty {
+            self.router?.navigateNewsDetail(url: model.url)
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
 

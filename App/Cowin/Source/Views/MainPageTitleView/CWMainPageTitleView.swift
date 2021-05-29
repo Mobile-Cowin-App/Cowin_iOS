@@ -28,8 +28,6 @@ class CWMainPageTitleView: UIView {
         
         self.title.applyTextAttributes(font: .heading, withColor: .primary)
         self.icon.applyIconTextAttributes(fontSize: 14.0, withColor: .appTheme)
-        
-        self.iconHolder.applyDropShadow()
     }
     
     func setValue(title: String, icon: String) {

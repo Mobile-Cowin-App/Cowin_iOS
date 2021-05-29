@@ -53,9 +53,6 @@ class CWNewsViewController: UIViewController {
         self.view.backgroundColor = CWStyle.Background.secondary
         self.tableView.backgroundColor = .clear
         
-        self.topHolderView.backgroundColor = CWStyle.Background.primary
-//        self.topHolderView.applyHomeTopViewBorderRadius()
-        
         self.tableView.separatorInset = .zero
         self.tableView.separatorStyle = .singleLine
         self.tableView.separatorColor = CWStyle.Border.primary
@@ -112,5 +109,11 @@ extension CWNewsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let model = self.getDataSource()?[indexPath.row], model.url.isNotEmpty {
+            self.router?.navigateNewsDetail(url: model.url)
+        }
     }
 }

@@ -6,27 +6,40 @@
   
 */
 
-"localize.unknown"    =   "Unknown";
-"localize.seemore"    =   "See more";
+"localize.cancel"                   =   "Cancel";
+"localize.by"                       =   "By";
+"localize.unknown"                  =   "Unknown";
+"localize.seemore"                  =   "See more";
+"localize.search"                   =   "Search";
 
-"title.home"            =   "Home";
-"title.news"            =   "News";
-"title.registration"    =   "Registration";
-"title.booking"         =   "Booking";
-"title.breakingNews"    =   "Breaking news about Vaccination";
+"localize.vaccinated"               =   "Vaccinated";
+"localize.notvaccinated"            =   "Not Vaccinated";
 
-"localize.title.totalvaccination"   =   "Total Vaccination Doses, by Today";
-"localize.title.vaccinationstatus"  = "Covid 19 Vaccine status";
-"localize.title.searchslots"        =   "Check your nearest vaccination center and slots availability";
-"localize.searchslot.placeholder"   =   "Search slots";
+"localize.author.name"              =   "By, $authorname$";
 
-"localize.vaccinated"       = "Vaccinated";
-"localize.notvaccinated"    = "Not Vaccinated";
+"localize.male"                     =   "Male";
+"localize.female"                   =   "Female";
+"localize.others"                   =   "Others";
+"localize.age"                      =   "Age";
+"localize.paid"                     =   "Paid";
 
-"news.author.name"          = "By, $authorname$";
+"localize.pincode"                  =   "Pincode";
+"localize.district"                  =   "District";
+"localize.location"                  =   "Location";
 
-"localize.male"         = "Male";
-"localize.female"       = "Female";
-"localize.others"       = "Others";
+// Titles
+"localize.title.home"                       =   "Home";
+"localize.title.news"                       =   "News";
+"localize.title.registration"               =   "Registration";
+"localize.title.booking"                    =   "Booking";
+"localize.title.breakingNews"               =   "Breaking news about Vaccination";
 
-"localize.age"          = "Age";
+"localize.title.totalvaccination"           =   "Total Vaccination Doses, by Today";
+"localize.title.vaccinationstatus"          =   "Covid 19 Vaccine status";
+"localize.title.searchslots"                =   "Check your nearest vaccination center and slots availability";
+
+// Placeholder
+"localize.placeholder.postcode"             =   "Enter your Pincode";
+"localize.placeholder.district"             =   "Select District";
+"localize.placeholder.state"                =   "Select State";
+"localize.placeholder.location"             =   "Enter your Location";

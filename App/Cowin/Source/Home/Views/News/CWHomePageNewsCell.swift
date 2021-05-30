@@ -36,7 +36,7 @@ class CWHomePageNewsCell: UITableViewCell {
         self.backgroundColor = .clear
         
         self.title.applyTextAttributes(font: .primary(.heavy), withColor: .primary)
-        self.title.text = "title.breakingNews".localized
+        self.title.text = "localize.title.breakingNews".localized
     }
     
     func prepareCollectionView() {

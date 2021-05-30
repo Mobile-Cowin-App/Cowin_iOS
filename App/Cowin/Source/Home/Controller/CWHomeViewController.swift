@@ -37,7 +37,7 @@ class CWHomeViewController: UIViewController {
     
     private func prepareViews() {
         let headerview: CWMainPageTitleView = .loadFromXib()
-        headerview.setValue(title: "title.home".localized, icon: CWFonts.notification)
+        headerview.setValue(title: "localize.title.home".localized, icon: CWFonts.notification)
         
         self.titleHolderView.addSubview(headerview)
         headerview.g_pinEdges()

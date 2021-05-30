@@ -38,7 +38,7 @@ class CWNewsViewController: UIViewController {
     
     private func prepareViews() {
         let headerview: CWTopNavigationView = .loadFromXib()
-        headerview.setValue(title: "title.news".localized)
+        headerview.setValue(title: "localize.title.news".localized)
         
         headerview.iconClicked = {[weak self] in
             self?.dismiss(animated: true, completion: nil)

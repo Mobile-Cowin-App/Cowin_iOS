@@ -37,7 +37,7 @@ class CWSearchSlotViewController: UIViewController {
     
     private func prepareViews() {
         let headerview: CWMainPageTitleView = .loadFromXib()
-        headerview.setValue(title: "title.registration".localized, icon: CWFonts.notification)
+        headerview.setValue(title: "localize.title.registration".localized, icon: CWFonts.notification)
 
         headerview.iconClicked = {[weak self] in
             self?.dismiss(animated: true, completion: nil)

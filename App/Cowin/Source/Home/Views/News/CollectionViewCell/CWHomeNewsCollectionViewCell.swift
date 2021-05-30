@@ -54,7 +54,7 @@ class CWHomeNewsCollectionViewCell: UICollectionViewCell {
         self.title.text = model.title
                 
         let authorName = model.author.safelyUnwrap.isEmpty ? "localize.unknown".localized: model.author.safelyUnwrap
-        self.author.text = "news.author.name".localized.replacingOccurrences(of: "$authorname$", with: authorName)
+        self.author.text = "localize.author.name".localized.replacingOccurrences(of: "$authorname$", with: authorName)
         
         self.time.text = model.publishedAt.convert("hh:mm a, EEEE, MMM d, yyyy")
     }

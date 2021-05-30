@@ -12,6 +12,8 @@ class CWSlotDataCell: UITableViewCell {
     
     @IBOutlet var holderview: UIView!
     @IBOutlet var name: UILabel!
+    @IBOutlet var feetype: UILabel!
+    @IBOutlet var feetypeHolder: UIView!
     @IBOutlet var address: UILabel!
     @IBOutlet var pincode: UILabel!
     @IBOutlet var collectionView: UICollectionView!
@@ -34,7 +36,12 @@ class CWSlotDataCell: UITableViewCell {
         
         self.holderview.backgroundColor = CWStyle.Background.primary
         self.holderview.applyHomeCellBorderRadius()
-        self.holderview.applyDropShadow()
+        
+        self.feetypeHolder.backgroundColor = CWStyle.Static.appTheme
+        self.feetypeHolder.layer.cornerRadius = 6.0
+        self.feetype.applyTextAttributes(font: .teritary(.bold), withColor: .custom)
+        self.feetype.textColor = .white
+        self.feetypeHolder.isHidden = true
     }
     
     func prepareCollectionView() {
@@ -52,6 +59,9 @@ class CWSlotDataCell: UITableViewCell {
         self.name.text = model.name
         self.address.text = "\(model.address), \(model.districtName), \(model.stateName)"
         self.pincode.text = model.pincode.toString()
+        
+        self.feetype.text = "localize.paid".localized
+        self.feetypeHolder.isHidden = model.feeType == "localize.paid".localized
         
         self.generateDataSource(with: model)
     }

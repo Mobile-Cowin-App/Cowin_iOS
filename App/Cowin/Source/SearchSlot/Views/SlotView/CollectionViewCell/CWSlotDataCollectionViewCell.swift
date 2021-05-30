@@ -35,11 +35,23 @@ class CWSlotDataCollectionViewCell: UICollectionViewCell {
         self.name.applyTextAttributes(font: .secondary(.semibold), withColor: .primary)
         self.age.applyTextAttributes(font: .teritary(.regular), withColor: .custom)
         self.age.textColor = CWStyle.Static.red
-        self.status.applyTextAttributes(font: .teritary(.regular), withColor: .primary)
+        self.status.applyTextAttributes(font: .teritary(.bold), withColor: .custom)
+        self.status.textColor = .white
         
         self.imageview.layer.cornerRadius = 10.0
         self.imageview.layer.borderWidth = 0.5
         self.imageview.layer.borderColor = CWStyle.Border.primary.cgColor
+        
+        self.statusHolderView.layer.cornerRadius = 4.0
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+       if #available(iOS 13.0, *) {
+           if (traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection)) {
+               // ColorUtils.loadCGColorFromAsset returns cgcolor for color name
+            self.imageview.layer.borderColor = CWStyle.Border.primary.cgColor
+           }
+       }
     }
 
     func setData(with model: CWSlotData) {

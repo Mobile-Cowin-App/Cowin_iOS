@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		199E8431646A3AF7AC9A76C1 /* Pods_Cowin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982918DFD9BA9E45C2872B80 /* Pods_Cowin.framework */; };
+		6E1515E3266930240006798E /* CWSyncFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1515E2266930240006798E /* CWSyncFlow.swift */; };
+		6E1515E526693C920006798E /* CWDistrictCoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1515E426693C920006798E /* CWDistrictCoreDataHelper.swift */; };
 		6E1D5ED126591B3D00F9EDD0 /* CWMainBasePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D5ED026591B3D00F9EDD0 /* CWMainBasePageController.swift */; };
 		6E1D5ED42659213200F9EDD0 /* CWBaseTabViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D5ED32659213200F9EDD0 /* CWBaseTabViewConfiguration.swift */; };
 		6E1D5ED7265923D700F9EDD0 /* CWMainBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D5ED6265923D700F9EDD0 /* CWMainBaseController.swift */; };
@@ -31,6 +33,7 @@
 		6E4C2A45265EB8C900E1081E /* CWNewsListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C2A43265EB8C900E1081E /* CWNewsListViewCell.xib */; };
 		6E4C2A48265ED12A00E1081E /* CWTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C2A47265ED12A00E1081E /* CWTopNavigationView.swift */; };
 		6E4C2A4A265ED15500E1081E /* CWTopNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C2A49265ED15500E1081E /* CWTopNavigationView.xib */; };
+		6E5293272665553A007E33BB /* CWStateCoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5293262665553A007E33BB /* CWStateCoreDataHelper.swift */; };
 		6E703EC426596DB100CAFDD1 /* CWMainBaseTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E703EC226596DB100CAFDD1 /* CWMainBaseTabViewCell.swift */; };
 		6E703EC526596DB100CAFDD1 /* CWMainBaseTabViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */; };
 		6EAD506E265D334D00426ED3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD5070265D334D00426ED3 /* Localizable.strings */; };
@@ -158,6 +161,8 @@
 
 /* Begin PBXFileReference section */
 		0156BB6C4EFC1473B20A4709 /* Pods-Cowin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowin.debug.xcconfig"; path = "Target Support Files/Pods-Cowin/Pods-Cowin.debug.xcconfig"; sourceTree = "<group>"; };
+		6E1515E2266930240006798E /* CWSyncFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWSyncFlow.swift; sourceTree = "<group>"; };
+		6E1515E426693C920006798E /* CWDistrictCoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWDistrictCoreDataHelper.swift; sourceTree = "<group>"; };
 		6E1D5ED026591B3D00F9EDD0 /* CWMainBasePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainBasePageController.swift; sourceTree = "<group>"; };
 		6E1D5ED32659213200F9EDD0 /* CWBaseTabViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWBaseTabViewConfiguration.swift; sourceTree = "<group>"; };
 		6E1D5ED6265923D700F9EDD0 /* CWMainBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainBaseController.swift; sourceTree = "<group>"; };
@@ -181,6 +186,7 @@
 		6E4C2A43265EB8C900E1081E /* CWNewsListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWNewsListViewCell.xib; sourceTree = "<group>"; };
 		6E4C2A47265ED12A00E1081E /* CWTopNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWTopNavigationView.swift; sourceTree = "<group>"; };
 		6E4C2A49265ED15500E1081E /* CWTopNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWTopNavigationView.xib; sourceTree = "<group>"; };
+		6E5293262665553A007E33BB /* CWStateCoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWStateCoreDataHelper.swift; sourceTree = "<group>"; };
 		6E703EC226596DB100CAFDD1 /* CWMainBaseTabViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMainBaseTabViewCell.swift; sourceTree = "<group>"; };
 		6E703EC326596DB100CAFDD1 /* CWMainBaseTabViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CWMainBaseTabViewCell.xib; sourceTree = "<group>"; };
 		6EAD506F265D334D00426ED3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -328,6 +334,14 @@
 				BBBAA42F9241AD97FF5ABFFB /* Pods-Cowin.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6E1515E1266930150006798E /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				6E1515E2266930240006798E /* CWSyncFlow.swift */,
+			);
+			path = Sync;
 			sourceTree = "<group>";
 		};
 		6E1D5ECB265918B900F9EDD0 /* MainBasePager */ = {
@@ -508,6 +522,15 @@
 				6E4C2A49265ED15500E1081E /* CWTopNavigationView.xib */,
 			);
 			path = TopNavigationView;
+			sourceTree = "<group>";
+		};
+		6E52932526655521007E33BB /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				6E5293262665553A007E33BB /* CWStateCoreDataHelper.swift */,
+				6E1515E426693C920006798E /* CWDistrictCoreDataHelper.swift */,
+			);
+			path = Coredata;
 			sourceTree = "<group>";
 		};
 		6E703EC126596D9600CAFDD1 /* Cell */ = {
@@ -873,6 +896,8 @@
 		E3E6B14C2657F56000CB39CC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6E1515E1266930150006798E /* Sync */,
+				6E52932526655521007E33BB /* Coredata */,
 				6EAD506B265D261F00426ED3 /* LocalizeFiles */,
 				E368540B265A42CB008335A1 /* UserDefaults */,
 				E3763AB82659795E00D25470 /* Fonts */,
@@ -1363,6 +1388,7 @@
 				E3EDA5392658E88500E9943D /* OTPLoginPresenter.swift in Sources */,
 				6EFC4D292662248C00DBBBD2 /* CWWebPreviewController.swift in Sources */,
 				E368542D265A5AFA008335A1 /* CWGenderCell.swift in Sources */,
+				6E1515E526693C920006798E /* CWDistrictCoreDataHelper.swift in Sources */,
 				6EFC4D2C266224AE00DBBBD2 /* CWWebPreviewerConfiguration.swift in Sources */,
 				E3EDA5912659100400E9943D /* CWProfilePresenter.swift in Sources */,
 				E3685417265A4ACC008335A1 /* CWAddMemberConfiguration.swift in Sources */,
@@ -1425,6 +1451,7 @@
 				E3685418265A4ACC008335A1 /* CWAddMemberPresenter.swift in Sources */,
 				E3EDA56026590F7C00E9943D /* CWHomeViewController.swift in Sources */,
 				E34502D6265A82F800EFA6BE /* CWSearchSlotConfiguration.swift in Sources */,
+				6E1515E3266930240006798E /* CWSyncFlow.swift in Sources */,
 				E3EDA549265907A400E9943D /* CWOnboardContentView.swift in Sources */,
 				E3BDB66D2657F68200DC74AE /* CWOnboardViewController.swift in Sources */,
 				E3EDA5922659100400E9943D /* CWProfileRouter.swift in Sources */,
@@ -1432,6 +1459,7 @@
 				E3EDA58326590FD500E9943D /* CWBookingInteractor.swift in Sources */,
 				E3685409265A3AC2008335A1 /* CWMembersDataCell.swift in Sources */,
 				E3EDA53A2658E88500E9943D /* OTPLoginRouter.swift in Sources */,
+				6E5293272665553A007E33BB /* CWStateCoreDataHelper.swift in Sources */,
 				E3EDA57226590FAC00E9943D /* CWStatsInteractor.swift in Sources */,
 				6E1D5F9F26593FBC00F9EDD0 /* CWMainBaseTabView.swift in Sources */,
 				6E4C2A44265EB8C900E1081E /* CWNewsListViewCell.swift in Sources */,

@@ -3,7 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -86,26 +87,79 @@
                                     <constraint firstAttribute="height" constant="60" id="fXz-rY-8hs"/>
                                 </constraints>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPF-3y-V9A" userLabel="ProgressView">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="qNq-os-Ilw">
+                                        <rect key="frame" x="31" y="18" width="352" height="54"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tw5-wf-iKw">
+                                                <rect key="frame" x="0.0" y="0.0" width="352" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="uG3-93-gZV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ak-8u-Hud">
+                                                <rect key="frame" x="0.0" y="34" width="352" height="20"/>
+                                                <subviews>
+                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H1b-cE-43q">
+                                                        <rect key="frame" x="0.0" y="2" width="352" height="16"/>
+                                                        <color key="tintColor" name="AccentColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="VXK-a6-umM"/>
+                                                        </constraints>
+                                                        <color key="progressTintColor" name="AccentColor"/>
+                                                        <color key="trackTintColor" name="CWPrimaryBG"/>
+                                                    </progressView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="H1b-cE-43q" secondAttribute="trailing" id="6ba-Nw-e6p"/>
+                                                    <constraint firstItem="H1b-cE-43q" firstAttribute="leading" secondItem="9Ak-8u-Hud" secondAttribute="leading" id="qfX-ZY-82I"/>
+                                                    <constraint firstItem="H1b-cE-43q" firstAttribute="centerY" secondItem="9Ak-8u-Hud" secondAttribute="centerY" id="tPL-08-jwA"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qNq-os-Ilw" firstAttribute="centerY" secondItem="zPF-3y-V9A" secondAttribute="centerY" id="0Bj-aV-vd4"/>
+                                    <constraint firstItem="qNq-os-Ilw" firstAttribute="width" secondItem="zPF-3y-V9A" secondAttribute="width" multiplier="0.85" id="D7u-bB-DE1"/>
+                                    <constraint firstItem="qNq-os-Ilw" firstAttribute="centerX" secondItem="zPF-3y-V9A" secondAttribute="centerX" id="frB-c7-0Yr"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="SnC-AP-sxn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2h8-jD-Qzi"/>
+                            <constraint firstItem="zPF-3y-V9A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Cu-Wr-CVx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SnC-AP-sxn" secondAttribute="trailing" id="4y6-Ry-a6P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zPF-3y-V9A" secondAttribute="bottom" id="EBm-Qb-COg"/>
                             <constraint firstItem="jdq-Ya-i09" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="MZR-S9-Q9A"/>
                             <constraint firstItem="T3y-U2-zzO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NQM-vv-486"/>
                             <constraint firstItem="jdq-Ya-i09" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="PtQ-ds-SnM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jdq-Ya-i09" secondAttribute="trailing" constant="10" id="Zth-Vo-wpG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zPF-3y-V9A" secondAttribute="trailing" id="f0t-zP-bgd"/>
                             <constraint firstItem="T3y-U2-zzO" firstAttribute="top" secondItem="SnC-AP-sxn" secondAttribute="bottom" constant="10" id="gqo-cf-BUe"/>
                             <constraint firstItem="T3y-U2-zzO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="lce-O5-Y1e"/>
+                            <constraint firstItem="zPF-3y-V9A" firstAttribute="top" secondItem="SnC-AP-sxn" secondAttribute="bottom" id="q2s-TZ-jjG"/>
                             <constraint firstItem="SnC-AP-sxn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xE8-D6-pyi"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomHolderView" destination="T3y-U2-zzO" id="1b5-ku-bhx"/>
                         <outlet property="containerView" destination="uLu-xC-eqH" id="FOK-Kz-ZSk"/>
+                        <outlet property="dowloadText" destination="Tw5-wf-iKw" id="VxF-bC-QdU"/>
                         <outlet property="nextButton" destination="lU9-gq-LMZ" id="4nL-Nf-8dd"/>
                         <outlet property="nextButtonWidth" destination="6XS-C0-rI7" id="vJE-GO-Kdy"/>
+                        <outlet property="progressContainer" destination="zPF-3y-V9A" id="Enh-LA-xZN"/>
+                        <outlet property="progressView" destination="H1b-cE-43q" id="tyT-NQ-x4n"/>
                         <outlet property="skipButton" destination="sT8-ub-uvd" id="GDC-UJ-tzU"/>
                         <outlet property="topPageControlHolderView" destination="QWl-Zb-nMV" id="vJT-Q0-1ef"/>
                     </connections>
@@ -143,6 +197,12 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CWPrimaryBG">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

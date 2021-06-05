@@ -95,7 +95,8 @@ class CWRegistrationSearchView: UIView {
 
         case .District:
             self.currentView = self.districtHolder
-            
+            self.filtervalue.setTitle("\("localize.by".localized), \("localize.district".localized)", for: .normal)
+
         case .Location:
             self.currentView = self.textfieldHolder
             
@@ -188,6 +189,7 @@ class CWDistrictSearchView: UIView {
     @IBOutlet var firstDropDown: UILabel!
     @IBOutlet var secondDropDown: UILabel!
     
+    private var stateId: String = .defaultValue
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -221,11 +223,17 @@ class CWDistrictSearchView: UIView {
         
         switch sender.tag {
         case 1:
-            UIAlertController.showPickerController(title: "States", doneText: "Done", cancelText: "Cancel", options: ["Tamil nadu", "Kerala", "Delhi", "Karnataka"], completion: { (option) in
+            let states = CWStateCoreDataHelper.getAllStates(sortBy: "id").map({ return $0.name.safelyUnwrap })
+            stateId = "31"
+            UIAlertController.showPickerController(title: "States", doneText: "Done", cancelText: "Cancel", options: states, completion: { (option) in
+                
                 
             })
+            
         case 2:
-            UIAlertController.showPickerController(title: "States", doneText: "Done", cancelText: "Cancel", options: ["Tirunelveli", "Chennai", "Madurai", "Tenkasi"], completion: { (option) in
+            let districts = CWDistrictCoreDataHelper.getAllDistricts(from: stateId, sortBy: "id").map({ return $0.name.safelyUnwrap })
+
+            UIAlertController.showPickerController(title: "States", doneText: "Done", cancelText: "Cancel", options: districts, completion: { (option) in
                 
             })
             

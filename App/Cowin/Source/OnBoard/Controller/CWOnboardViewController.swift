@@ -24,17 +24,48 @@ class CWOnboardViewController: UIViewController {
     @IBOutlet var bottomHolderView: UIView!
     @IBOutlet var nextButton: UIButton!
     
+    @IBOutlet var progressContainer: UIView!
+    @IBOutlet var dowloadText: UILabel!
+    @IBOutlet var progressView: UIProgressView!
+    
     let pageControl = CHIPageControlJaloro(frame: CGRect(x: 0, y:0, width: 100, height: 20))
 
     @IBOutlet var nextButtonWidth: NSLayoutConstraint!
     
 	override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        
+        self.prepareStyles()
         self.preparePageControl()
         self.prepareBottomHolderView()
         
         self.updateLayerProperties()
+    }
+    
+    private func prepareStyles() {
+        self.view.backgroundColor = .white
+        
+        self.dowloadText.applyTextAttributes(font: .secondary(.bold), withColor: .custom)
+        self.dowloadText.textColor = .black
+        self.progressView.progressTintColor = CWStyle.Static.appTheme
+        
+        self.progressView.backgroundColor = .white
+        self.progressView.layer.cornerRadius = 8.0
+        self.progressView.layer.masksToBounds = true
+        self.progressView.layer.borderWidth = 0.8
+        self.progressView.layer.borderColor = UIColor.gray.withAlphaComponent(0.5).cgColor
+
+        self.showBottomView()
+    }
+    
+    private func showBottomView() {
+        self.bottomHolderView.isHidden = false
+        self.progressContainer.isHidden = true
+    }
+    
+    private func showProgressView() {
+        self.bottomHolderView.isHidden = true
+        self.progressContainer.isHidden = false
     }
     
     func updateLayerProperties() {
@@ -43,8 +74,7 @@ class CWOnboardViewController: UIViewController {
         nextButton.layer.shadowOpacity = 1.0
         nextButton.layer.shadowRadius = 20.0
         nextButton.layer.masksToBounds = false
-       }
-    
+    }
     
     fileprivate func prepareBottomHolderView() {
         self.skipButton.setTitle(CWStringConstant.onBoarding.skip.rawValue, for: .normal)
@@ -78,7 +108,28 @@ class CWOnboardViewController: UIViewController {
         self.present(controller, animated: true, completion: nil)
     }
     
+    
     @IBAction func skipActionTapped() {
+        self.showProgressView()
+        
+        CWSyncEngine.startInitialSync { (value, completed, error) in
+            DispatchQueue.main.async {
+                
+                self.loadProgress(with: value)
+             
+                if completed {
+                    self.navigateHomeController()
+                }
+            }
+        }
+    }
+    
+    private func loadProgress(with value: CGFloat) {
+        self.progressView.setProgress(Float(value), animated: true)
+    }
+    
+    private func navigateHomeController() {
+        
         let controller = CWMainBaseControllerConfiguration.setup()
         controller.hero.isEnabled = true
         controller.hero.modalAnimationType = .zoom
@@ -90,8 +141,6 @@ class CWOnboardViewController: UIViewController {
         guard let pageController = segue.destination as? CWOnboardPageViewController else {return}
         pageController.onboardDelegate = self
     }
-
-    
 }
 
 extension CWOnboardViewController: ICWOnboardViewController {

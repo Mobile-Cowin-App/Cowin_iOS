@@ -24,7 +24,7 @@ extension CWUniqueIDRouter: CWEndPointType {
         case .getStateID:
             return CWURLConstants.Service.getStateID.rawValue
         case let .getDistrictID(stateID: stateid):
-            return "\(CWURLConstants.Service.getStateID.rawValue)/\(stateid)"
+            return "\(CWURLConstants.Service.getDistrictID.rawValue)/\(stateid)"
         case .getbeneficiary:
             return CWURLConstants.Service.getbeneficiaryID.rawValue
         case .getGenderID:
